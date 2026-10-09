@@ -1,0 +1,52 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/docs",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/redoc",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/planner",
+      "destination": "/frontend/planner_view.html"
+    },
+    {
+      "source": "/citizen",
+      "destination": "/frontend/public_view.html"
+    },
+    {
+      "source": "/public",
+      "destination": "/frontend/public_view.html"
+    },
+    {
+      "source": "/static/(.*)",
+      "destination": "/frontend/$1"
+    },
+    {
+      "source": "/planner.js",
+      "destination": "/frontend/planner.js"
+    },
+    {
+      "source": "/public.js",
+      "destination": "/frontend/public.js"
+    },
+    {
+      "source": "/public.css",
+      "destination": "/frontend/public.css"
+    }
+  ]
+}

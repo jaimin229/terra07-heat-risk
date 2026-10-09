@@ -147,6 +147,8 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
     summary="Root System Metadata & Health",
     description="Returns Agnitia Hackathon TERRA07 branding, operational health status, target urban domain, and primary API directory."
 )
+@app.get("/api", response_model=RootMetadataResponse, include_in_schema=False)
+@app.get("/api/", response_model=RootMetadataResponse, include_in_schema=False)
 async def root_endpoint(request: Request):
     # Check if client explicitly requests HTML and frontend index exists
     accept_header = request.headers.get("accept", "")
