@@ -1,0 +1,3253 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_0",
+        "v": "I_0_1",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 87.6731215814946,
+        "canopy_shade_ratio": 0.052501075522266696,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.7749
+          ],
+          [
+            -122.41803620768445,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_0",
+        "v": "I_1_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 93.87428020763915,
+        "canopy_shade_ratio": 0.0947999831897865,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.7749
+          ],
+          [
+            -122.4194,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_1",
+        "v": "I_0_0",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 87.6731215814946,
+        "canopy_shade_ratio": 0.052501075522266696,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.7749
+          ],
+          [
+            -122.4194,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_1",
+        "v": "I_0_2",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 83.30035182042943,
+        "canopy_shade_ratio": 0.07232107381488227,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.7749
+          ],
+          [
+            -122.4166724153689,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_1",
+        "v": "I_1_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 55.79729641284505,
+        "canopy_shade_ratio": 0.48692285019797493,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.7749
+          ],
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_2",
+        "v": "I_0_1",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 83.30035182042943,
+        "canopy_shade_ratio": 0.07232107381488227,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.7749
+          ],
+          [
+            -122.41803620768445,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_2",
+        "v": "I_0_3",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 88.83765456996815,
+        "canopy_shade_ratio": 0.11766994874229113,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.7749
+          ],
+          [
+            -122.41530862305335,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_2",
+        "v": "I_1_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 40.114223042277715,
+        "canopy_shade_ratio": 0.8508799885010119,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.7749
+          ],
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_3",
+        "v": "I_0_2",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 88.83765456996815,
+        "canopy_shade_ratio": 0.11766994874229113,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.7749
+          ],
+          [
+            -122.4166724153689,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_3",
+        "v": "I_0_4",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 90.70615481245815,
+        "canopy_shade_ratio": 0.058693883262941615,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.7749
+          ],
+          [
+            -122.41394483073779,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_3",
+        "v": "I_1_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 51.206673007497464,
+        "canopy_shade_ratio": 0.3564200487808075,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.7749
+          ],
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_4",
+        "v": "I_0_3",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 90.70615481245815,
+        "canopy_shade_ratio": 0.058693883262941615,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.7749
+          ],
+          [
+            -122.41530862305335,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_4",
+        "v": "I_0_5",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 85.06306183622324,
+        "canopy_shade_ratio": 0.05297972194380704,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.7749
+          ],
+          [
+            -122.41258103842225,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_4",
+        "v": "I_1_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.78543657670899,
+        "canopy_shade_ratio": 0.0687418613182992,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.7749
+          ],
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_5",
+        "v": "I_0_4",
+        "street_name": "Solar Expressway 1",
+        "length_m": 120.0,
+        "heat_risk": 85.06306183622324,
+        "canopy_shade_ratio": 0.05297972194380704,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.7749
+          ],
+          [
+            -122.41394483073779,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_0_5",
+        "v": "I_1_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 50.95375981020857,
+        "canopy_shade_ratio": 0.5385819428670109,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.7749
+          ],
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_0",
+        "v": "I_1_1",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 47.84229367244684,
+        "canopy_shade_ratio": 0.5010710576206725,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.775977973409994
+          ],
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_0",
+        "v": "I_0_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 93.87428020763915,
+        "canopy_shade_ratio": 0.0947999831897865,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.775977973409994
+          ],
+          [
+            -122.4194,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_0",
+        "v": "I_2_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 92.51641151767203,
+        "canopy_shade_ratio": 0.07202745165589346,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.775977973409994
+          ],
+          [
+            -122.4194,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_1",
+        "v": "I_1_0",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 47.84229367244684,
+        "canopy_shade_ratio": 0.5010710576206725,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ],
+          [
+            -122.4194,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_1",
+        "v": "I_1_2",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 45.344967605890226,
+        "canopy_shade_ratio": 0.4397675301373297,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ],
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_1",
+        "v": "I_0_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 55.79729641284505,
+        "canopy_shade_ratio": 0.48692285019797493,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ],
+          [
+            -122.41803620768445,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_1",
+        "v": "I_2_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 57.17614131412832,
+        "canopy_shade_ratio": 0.42912638021213284,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ],
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_2",
+        "v": "I_1_1",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 45.344967605890226,
+        "canopy_shade_ratio": 0.4397675301373297,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ],
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_2",
+        "v": "I_1_3",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 53.4484976911338,
+        "canopy_shade_ratio": 0.5089882961206433,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ],
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_2",
+        "v": "I_0_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 40.114223042277715,
+        "canopy_shade_ratio": 0.8508799885010119,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ],
+          [
+            -122.4166724153689,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_2",
+        "v": "I_2_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 40.97457107688652,
+        "canopy_shade_ratio": 0.8096507408363618,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ],
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_3",
+        "v": "I_1_2",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 53.4484976911338,
+        "canopy_shade_ratio": 0.5089882961206433,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ],
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_3",
+        "v": "I_1_4",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 47.86572808652906,
+        "canopy_shade_ratio": 0.5178531367751817,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ],
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_3",
+        "v": "I_0_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 51.206673007497464,
+        "canopy_shade_ratio": 0.3564200487808075,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ],
+          [
+            -122.41530862305335,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_3",
+        "v": "I_2_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 51.708322330972734,
+        "canopy_shade_ratio": 0.3993255015387967,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ],
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_4",
+        "v": "I_1_3",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 47.86572808652906,
+        "canopy_shade_ratio": 0.5178531367751817,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ],
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_4",
+        "v": "I_1_5",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 55.52259593681175,
+        "canopy_shade_ratio": 0.40129975193561224,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ],
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_4",
+        "v": "I_0_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.78543657670899,
+        "canopy_shade_ratio": 0.0687418613182992,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ],
+          [
+            -122.41394483073779,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_4",
+        "v": "I_2_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 88.73641760995781,
+        "canopy_shade_ratio": 0.06839191259660547,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ],
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_5",
+        "v": "I_1_4",
+        "street_name": "Maple Avenue 2",
+        "length_m": 120.0,
+        "heat_risk": 55.52259593681175,
+        "canopy_shade_ratio": 0.40129975193561224,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ],
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_5",
+        "v": "I_0_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 50.95375981020857,
+        "canopy_shade_ratio": 0.5385819428670109,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ],
+          [
+            -122.41258103842225,
+            37.7749
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_1_5",
+        "v": "I_2_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 56.18420386312957,
+        "canopy_shade_ratio": 0.5295645767204954,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ],
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_0",
+        "v": "I_2_1",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 36.05819251832808,
+        "canopy_shade_ratio": 0.8637767273985872,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77705594681998
+          ],
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_0",
+        "v": "I_1_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 92.51641151767203,
+        "canopy_shade_ratio": 0.07202745165589346,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77705594681998
+          ],
+          [
+            -122.4194,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_0",
+        "v": "I_3_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 86.79280606168477,
+        "canopy_shade_ratio": 0.06535245314100983,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77705594681998
+          ],
+          [
+            -122.4194,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_1",
+        "v": "I_2_0",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 36.05819251832808,
+        "canopy_shade_ratio": 0.8637767273985872,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ],
+          [
+            -122.4194,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_1",
+        "v": "I_2_2",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 31.402505165179917,
+        "canopy_shade_ratio": 0.7986575399774138,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ],
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_1",
+        "v": "I_1_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 57.17614131412832,
+        "canopy_shade_ratio": 0.42912638021213284,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ],
+          [
+            -122.41803620768445,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_1",
+        "v": "I_3_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 61.965526490931545,
+        "canopy_shade_ratio": 0.4519052587352929,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ],
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_2",
+        "v": "I_2_1",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 31.402505165179917,
+        "canopy_shade_ratio": 0.7986575399774138,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ],
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_2",
+        "v": "I_2_3",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 37.57213072206781,
+        "canopy_shade_ratio": 0.8203913454135152,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ],
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_2",
+        "v": "I_1_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 40.97457107688652,
+        "canopy_shade_ratio": 0.8096507408363618,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ],
+          [
+            -122.4166724153689,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_2",
+        "v": "I_3_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 31.090912946085528,
+        "canopy_shade_ratio": 0.7561251288052155,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ],
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_3",
+        "v": "I_2_2",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 37.57213072206781,
+        "canopy_shade_ratio": 0.8203913454135152,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ],
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_3",
+        "v": "I_2_4",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 28.92745843380148,
+        "canopy_shade_ratio": 0.7916059652200157,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ],
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_3",
+        "v": "I_1_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 51.708322330972734,
+        "canopy_shade_ratio": 0.3993255015387967,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ],
+          [
+            -122.41530862305335,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_3",
+        "v": "I_3_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 49.535087824909226,
+        "canopy_shade_ratio": 0.47548920834061803,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ],
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_4",
+        "v": "I_2_3",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 28.92745843380148,
+        "canopy_shade_ratio": 0.7916059652200157,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ],
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_4",
+        "v": "I_2_5",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 36.4749436634746,
+        "canopy_shade_ratio": 0.852447123764027,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ],
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_4",
+        "v": "I_1_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 88.73641760995781,
+        "canopy_shade_ratio": 0.06839191259660547,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ],
+          [
+            -122.41394483073779,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_4",
+        "v": "I_3_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 91.50495237235558,
+        "canopy_shade_ratio": 0.07955119767597787,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ],
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_5",
+        "v": "I_2_4",
+        "street_name": "Emerald Tree Boulevard",
+        "length_m": 120.0,
+        "heat_risk": 36.4749436634746,
+        "canopy_shade_ratio": 0.852447123764027,
+        "hydration_points": 1,
+        "surface_temp_c": 29.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ],
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_5",
+        "v": "I_1_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 56.18420386312957,
+        "canopy_shade_ratio": 0.5295645767204954,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ],
+          [
+            -122.41258103842225,
+            37.775977973409994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_2_5",
+        "v": "I_3_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 48.8893878861274,
+        "canopy_shade_ratio": 0.42632385730130734,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ],
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_0",
+        "v": "I_3_1",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 55.49266755256694,
+        "canopy_shade_ratio": 0.5459463573387635,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77813392022997
+          ],
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_0",
+        "v": "I_2_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 86.79280606168477,
+        "canopy_shade_ratio": 0.06535245314100983,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77813392022997
+          ],
+          [
+            -122.4194,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_0",
+        "v": "I_4_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 93.95345656288116,
+        "canopy_shade_ratio": 0.08703800415693959,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77813392022997
+          ],
+          [
+            -122.4194,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_1",
+        "v": "I_3_0",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 55.49266755256694,
+        "canopy_shade_ratio": 0.5459463573387635,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ],
+          [
+            -122.4194,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_1",
+        "v": "I_3_2",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 51.97096518891111,
+        "canopy_shade_ratio": 0.5946231527958741,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ],
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_1",
+        "v": "I_2_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 61.965526490931545,
+        "canopy_shade_ratio": 0.4519052587352929,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ],
+          [
+            -122.41803620768445,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_1",
+        "v": "I_4_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 61.59509728659066,
+        "canopy_shade_ratio": 0.5221559404468996,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ],
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_2",
+        "v": "I_3_1",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 51.97096518891111,
+        "canopy_shade_ratio": 0.5946231527958741,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ],
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_2",
+        "v": "I_3_3",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 49.9209469037086,
+        "canopy_shade_ratio": 0.5104081262546454,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ],
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_2",
+        "v": "I_2_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 31.090912946085528,
+        "canopy_shade_ratio": 0.7561251288052155,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ],
+          [
+            -122.4166724153689,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_2",
+        "v": "I_4_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 30.137772263313835,
+        "canopy_shade_ratio": 0.8436938365168253,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ],
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_3",
+        "v": "I_3_2",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 49.9209469037086,
+        "canopy_shade_ratio": 0.5104081262546454,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ],
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_3",
+        "v": "I_3_4",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 55.782260635288935,
+        "canopy_shade_ratio": 0.5237039504728492,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ],
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_3",
+        "v": "I_2_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 49.535087824909226,
+        "canopy_shade_ratio": 0.47548920834061803,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ],
+          [
+            -122.41530862305335,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_3",
+        "v": "I_4_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 57.54394516637205,
+        "canopy_shade_ratio": 0.45739406608175903,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ],
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_4",
+        "v": "I_3_3",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 55.782260635288935,
+        "canopy_shade_ratio": 0.5237039504728492,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ],
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_4",
+        "v": "I_3_5",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 56.2021897040401,
+        "canopy_shade_ratio": 0.5154704290513524,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ],
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_4",
+        "v": "I_2_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 91.50495237235558,
+        "canopy_shade_ratio": 0.07955119767597787,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ],
+          [
+            -122.41394483073779,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_4",
+        "v": "I_4_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.20190227943051,
+        "canopy_shade_ratio": 0.09486732590058655,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ],
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_5",
+        "v": "I_3_4",
+        "street_name": "Maple Avenue 4",
+        "length_m": 120.0,
+        "heat_risk": 56.2021897040401,
+        "canopy_shade_ratio": 0.5154704290513524,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ],
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_5",
+        "v": "I_2_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 48.8893878861274,
+        "canopy_shade_ratio": 0.42632385730130734,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ],
+          [
+            -122.41258103842225,
+            37.77705594681998
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_3_5",
+        "v": "I_4_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 49.56173043034227,
+        "canopy_shade_ratio": 0.436953050133821,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ],
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_0",
+        "v": "I_4_1",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 88.45486203457908,
+        "canopy_shade_ratio": 0.05458243836556623,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77921189363996
+          ],
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_0",
+        "v": "I_3_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 93.95345656288116,
+        "canopy_shade_ratio": 0.08703800415693959,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77921189363996
+          ],
+          [
+            -122.4194,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_0",
+        "v": "I_5_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 87.44468447595048,
+        "canopy_shade_ratio": 0.11676711492647561,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.77921189363996
+          ],
+          [
+            -122.4194,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_1",
+        "v": "I_4_0",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 88.45486203457908,
+        "canopy_shade_ratio": 0.05458243836556623,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ],
+          [
+            -122.4194,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_1",
+        "v": "I_4_2",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 82.73477930781856,
+        "canopy_shade_ratio": 0.07893879636021071,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ],
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_1",
+        "v": "I_3_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 61.59509728659066,
+        "canopy_shade_ratio": 0.5221559404468996,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ],
+          [
+            -122.41803620768445,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_1",
+        "v": "I_5_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 60.261941165294715,
+        "canopy_shade_ratio": 0.40267781015021814,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ],
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_2",
+        "v": "I_4_1",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 82.73477930781856,
+        "canopy_shade_ratio": 0.07893879636021071,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ],
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_2",
+        "v": "I_4_3",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 80.95750372308353,
+        "canopy_shade_ratio": 0.07327908863610302,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ],
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_2",
+        "v": "I_3_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 30.137772263313835,
+        "canopy_shade_ratio": 0.8436938365168253,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ],
+          [
+            -122.4166724153689,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_2",
+        "v": "I_5_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 36.00703335660358,
+        "canopy_shade_ratio": 0.7732247444689171,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ],
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_3",
+        "v": "I_4_2",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 80.95750372308353,
+        "canopy_shade_ratio": 0.07327908863610302,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ],
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_3",
+        "v": "I_4_4",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 81.21201715291674,
+        "canopy_shade_ratio": 0.07779736031100921,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ],
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_3",
+        "v": "I_3_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 57.54394516637205,
+        "canopy_shade_ratio": 0.45739406608175903,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ],
+          [
+            -122.41530862305335,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_3",
+        "v": "I_5_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 60.77678975082749,
+        "canopy_shade_ratio": 0.5241037139673534,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ],
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_4",
+        "v": "I_4_3",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 81.21201715291674,
+        "canopy_shade_ratio": 0.07779736031100921,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ],
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_4",
+        "v": "I_4_5",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 87.6282133311728,
+        "canopy_shade_ratio": 0.08648321789700843,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ],
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_4",
+        "v": "I_3_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.20190227943051,
+        "canopy_shade_ratio": 0.09486732590058655,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ],
+          [
+            -122.41394483073779,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_4",
+        "v": "I_5_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.5813374973836,
+        "canopy_shade_ratio": 0.09472646464062036,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ],
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_5",
+        "v": "I_4_4",
+        "street_name": "Solar Expressway 5",
+        "length_m": 120.0,
+        "heat_risk": 87.6282133311728,
+        "canopy_shade_ratio": 0.08648321789700843,
+        "hydration_points": 0,
+        "surface_temp_c": 48.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ],
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_5",
+        "v": "I_3_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 49.56173043034227,
+        "canopy_shade_ratio": 0.436953050133821,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ],
+          [
+            -122.41258103842225,
+            37.77813392022997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_4_5",
+        "v": "I_5_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 56.525582960134415,
+        "canopy_shade_ratio": 0.38056785370992696,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ],
+          [
+            -122.41258103842225,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_0",
+        "v": "I_5_1",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 49.81235257251947,
+        "canopy_shade_ratio": 0.44190140615429757,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.78028986704995
+          ],
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_0",
+        "v": "I_4_0",
+        "street_name": "Concrete Canyon St 1",
+        "length_m": 120.0,
+        "heat_risk": 87.44468447595048,
+        "canopy_shade_ratio": 0.11676711492647561,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4194,
+            37.78028986704995
+          ],
+          [
+            -122.4194,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_1",
+        "v": "I_5_0",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 49.81235257251947,
+        "canopy_shade_ratio": 0.44190140615429757,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ],
+          [
+            -122.4194,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_1",
+        "v": "I_5_2",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 48.470711686638474,
+        "canopy_shade_ratio": 0.5873309175424988,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ],
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_1",
+        "v": "I_4_1",
+        "street_name": "Pine Street 2",
+        "length_m": 120.0,
+        "heat_risk": 60.261941165294715,
+        "canopy_shade_ratio": 0.40267781015021814,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ],
+          [
+            -122.41803620768445,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_2",
+        "v": "I_5_1",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 48.470711686638474,
+        "canopy_shade_ratio": 0.5873309175424988,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ],
+          [
+            -122.41803620768445,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_2",
+        "v": "I_5_3",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 53.42446000820571,
+        "canopy_shade_ratio": 0.5218262011333976,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ],
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_2",
+        "v": "I_4_2",
+        "street_name": "Parkside Way",
+        "length_m": 120.0,
+        "heat_risk": 36.00703335660358,
+        "canopy_shade_ratio": 0.7732247444689171,
+        "hydration_points": 1,
+        "surface_temp_c": 30.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ],
+          [
+            -122.4166724153689,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_3",
+        "v": "I_5_2",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 53.42446000820571,
+        "canopy_shade_ratio": 0.5218262011333976,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ],
+          [
+            -122.4166724153689,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_3",
+        "v": "I_5_4",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 47.22480242657526,
+        "canopy_shade_ratio": 0.5458253595900698,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ],
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_3",
+        "v": "I_4_3",
+        "street_name": "Pine Street 4",
+        "length_m": 120.0,
+        "heat_risk": 60.77678975082749,
+        "canopy_shade_ratio": 0.5241037139673534,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ],
+          [
+            -122.41530862305335,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_4",
+        "v": "I_5_3",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 47.22480242657526,
+        "canopy_shade_ratio": 0.5458253595900698,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ],
+          [
+            -122.41530862305335,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_4",
+        "v": "I_5_5",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 47.124232418905066,
+        "canopy_shade_ratio": 0.47589108835152955,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ],
+          [
+            -122.41258103842225,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_4",
+        "v": "I_4_4",
+        "street_name": "Concrete Canyon St 5",
+        "length_m": 120.0,
+        "heat_risk": 85.5813374973836,
+        "canopy_shade_ratio": 0.09472646464062036,
+        "hydration_points": 0,
+        "surface_temp_c": 51.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ],
+          [
+            -122.41394483073779,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_5",
+        "v": "I_5_4",
+        "street_name": "Maple Avenue 6",
+        "length_m": 120.0,
+        "heat_risk": 47.124232418905066,
+        "canopy_shade_ratio": 0.47589108835152955,
+        "hydration_points": 0,
+        "surface_temp_c": 36.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.78028986704995
+          ],
+          [
+            -122.41394483073779,
+            37.78028986704995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": "I_5_5",
+        "v": "I_4_5",
+        "street_name": "Pine Street 6",
+        "length_m": 120.0,
+        "heat_risk": 56.525582960134415,
+        "canopy_shade_ratio": 0.38056785370992696,
+        "hydration_points": 0,
+        "surface_temp_c": 38.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41258103842225,
+            37.78028986704995
+          ],
+          [
+            -122.41258103842225,
+            37.77921189363996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_0_0",
+        "type": "hydration_kiosk",
+        "name": "Ave 1 & St 1",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #00)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_1_1",
+        "type": "hydration_kiosk",
+        "name": "Ave 2 & St 2",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #11)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41803620768445,
+          37.775977973409994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_1_3",
+        "type": "hydration_kiosk",
+        "name": "Ave 2 & St 4",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #13)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41530862305335,
+          37.775977973409994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_2_2",
+        "type": "hydration_kiosk",
+        "name": "Ave 3 & St 3",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #22)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4166724153689,
+          37.77705594681998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_3_1",
+        "type": "hydration_kiosk",
+        "name": "Ave 4 & St 2",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #31)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41803620768445,
+          37.77813392022997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_3_3",
+        "type": "hydration_kiosk",
+        "name": "Ave 4 & St 4",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #33)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41530862305335,
+          37.77813392022997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_4_4",
+        "type": "hydration_kiosk",
+        "name": "Ave 5 & St 5",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #44)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41394483073779,
+          37.77921189363996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "I_5_5",
+        "type": "hydration_kiosk",
+        "name": "Ave 6 & St 6",
+        "description": "Smart Misting Station & Chilled Water Fountain (Kiosk #55)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41258103842225,
+          37.78028986704995
+        ]
+      }
+    }
+  ]
+}

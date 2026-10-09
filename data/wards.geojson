@@ -1,0 +1,2842 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "W01",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.59692,
+              23.0125
+            ],
+            [
+              72.59629,
+              23.02473
+            ],
+            [
+              72.583,
+              23.02416
+            ],
+            [
+              72.57637,
+              23.0186
+            ],
+            [
+              72.56665,
+              23.0125
+            ],
+            [
+              72.57038,
+              23.00089
+            ],
+            [
+              72.583,
+              23.00285
+            ],
+            [
+              72.5907,
+              23.00542
+            ],
+            [
+              72.59692,
+              23.0125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W01",
+        "ward_name": "Jamalpur",
+        "zone": "Central",
+        "heat_risk_score": 72.4,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.8,
+        "ndvi": 0.06,
+        "total_population": 142000,
+        "slum_households_pct": 38.5,
+        "ac_penetration_pct": 14.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W02",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.60306,
+              23.024
+            ],
+            [
+              72.60251,
+              23.03459
+            ],
+            [
+              72.591,
+              23.0341
+            ],
+            [
+              72.58526,
+              23.02928
+            ],
+            [
+              72.57684,
+              23.024
+            ],
+            [
+              72.58007,
+              23.01394
+            ],
+            [
+              72.591,
+              23.01564
+            ],
+            [
+              72.59767,
+              23.01787
+            ],
+            [
+              72.60306,
+              23.024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W02",
+        "ward_name": "Khadia",
+        "zone": "Central",
+        "heat_risk_score": 68.6,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.2,
+        "ndvi": 0.05,
+        "total_population": 115000,
+        "slum_households_pct": 24.0,
+        "ac_penetration_pct": 22.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W03",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.60589,
+              23.033
+            ],
+            [
+              72.60531,
+              23.04432
+            ],
+            [
+              72.593,
+              23.04379
+            ],
+            [
+              72.58686,
+              23.03865
+            ],
+            [
+              72.57786,
+              23.033
+            ],
+            [
+              72.58132,
+              23.02225
+            ],
+            [
+              72.593,
+              23.02407
+            ],
+            [
+              72.60013,
+              23.02644
+            ],
+            [
+              72.60589,
+              23.033
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W03",
+        "ward_name": "Dariapur",
+        "zone": "Central",
+        "heat_risk_score": 71.8,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.5,
+        "ndvi": 0.05,
+        "total_population": 138000,
+        "slum_households_pct": 31.0,
+        "ac_penetration_pct": 18.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W04",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.59442,
+              23.038
+            ],
+            [
+              72.59381,
+              23.04979
+            ],
+            [
+              72.581,
+              23.04923
+            ],
+            [
+              72.57461,
+              23.04388
+            ],
+            [
+              72.56524,
+              23.038
+            ],
+            [
+              72.56884,
+              23.02681
+            ],
+            [
+              72.581,
+              23.0287
+            ],
+            [
+              72.58842,
+              23.03117
+            ],
+            [
+              72.59442,
+              23.038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W04",
+        "ward_name": "Shahpur",
+        "zone": "Central",
+        "heat_risk_score": 65.5,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.9,
+        "ndvi": 0.07,
+        "total_population": 128000,
+        "slum_households_pct": 29.0,
+        "ac_penetration_pct": 20.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W05",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.60265,
+              22.998
+            ],
+            [
+              72.60185,
+              23.01351
+            ],
+            [
+              72.585,
+              23.01278
+            ],
+            [
+              72.5766,
+              23.00573
+            ],
+            [
+              72.56428,
+              22.998
+            ],
+            [
+              72.56901,
+              22.98328
+            ],
+            [
+              72.585,
+              22.98577
+            ],
+            [
+              72.59476,
+              22.98902
+            ],
+            [
+              72.60265,
+              22.998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W05",
+        "ward_name": "Danilimda",
+        "zone": "Central",
+        "heat_risk_score": 76.3,
+        "risk_level": "Extreme",
+        "mean_lst_celsius": 45.4,
+        "ndvi": 0.04,
+        "total_population": 195000,
+        "slum_households_pct": 46.0,
+        "ac_penetration_pct": 9.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W06",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.58978,
+              23.003
+            ],
+            [
+              72.58907,
+              23.01687
+            ],
+            [
+              72.574,
+              23.01622
+            ],
+            [
+              72.56649,
+              23.00992
+            ],
+            [
+              72.55546,
+              23.003
+            ],
+            [
+              72.55969,
+              22.98983
+            ],
+            [
+              72.574,
+              22.99206
+            ],
+            [
+              72.58273,
+              22.99497
+            ],
+            [
+              72.58978,
+              23.003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W06",
+        "ward_name": "Behrampura",
+        "zone": "Central",
+        "heat_risk_score": 74.1,
+        "risk_level": "High",
+        "mean_lst_celsius": 45.1,
+        "ndvi": 0.05,
+        "total_population": 162000,
+        "slum_households_pct": 42.0,
+        "ac_penetration_pct": 11.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W07",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.62122,
+              23.051
+            ],
+            [
+              72.62049,
+              23.06525
+            ],
+            [
+              72.605,
+              23.06458
+            ],
+            [
+              72.59728,
+              23.05811
+            ],
+            [
+              72.58595,
+              23.051
+            ],
+            [
+              72.5903,
+              23.03747
+            ],
+            [
+              72.605,
+              23.03976
+            ],
+            [
+              72.61397,
+              23.04275
+            ],
+            [
+              72.62122,
+              23.051
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W07",
+        "ward_name": "Asarwa",
+        "zone": "Central",
+        "heat_risk_score": 59.6,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.4,
+        "ndvi": 0.09,
+        "total_population": 149000,
+        "slum_households_pct": 26.0,
+        "ac_penetration_pct": 24.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W08",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65043,
+              23.078
+            ],
+            [
+              72.64959,
+              23.09418
+            ],
+            [
+              72.632,
+              23.09342
+            ],
+            [
+              72.62323,
+              23.08607
+            ],
+            [
+              72.61036,
+              23.078
+            ],
+            [
+              72.6153,
+              23.06264
+            ],
+            [
+              72.632,
+              23.06524
+            ],
+            [
+              72.64219,
+              23.06863
+            ],
+            [
+              72.65043,
+              23.078
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W08",
+        "ward_name": "Sardarnagar",
+        "zone": "North",
+        "heat_risk_score": 54.9,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 43.1,
+        "ndvi": 0.11,
+        "total_population": 172000,
+        "slum_households_pct": 22.0,
+        "ac_penetration_pct": 31.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W09",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.68033,
+              23.076
+            ],
+            [
+              72.67932,
+              23.09561
+            ],
+            [
+              72.658,
+              23.09469
+            ],
+            [
+              72.64737,
+              23.08578
+            ],
+            [
+              72.63177,
+              23.076
+            ],
+            [
+              72.63776,
+              23.05738
+            ],
+            [
+              72.658,
+              23.06053
+            ],
+            [
+              72.67035,
+              23.06464
+            ],
+            [
+              72.68033,
+              23.076
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W09",
+        "ward_name": "Naroda",
+        "zone": "North",
+        "heat_risk_score": 71.9,
+        "risk_level": "High",
+        "mean_lst_celsius": 45.6,
+        "ndvi": 0.05,
+        "total_population": 235000,
+        "slum_households_pct": 35.0,
+        "ac_penetration_pct": 16.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W10",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65744,
+              23.068
+            ],
+            [
+              72.65669,
+              23.08244
+            ],
+            [
+              72.641,
+              23.08176
+            ],
+            [
+              72.63318,
+              23.0752
+            ],
+            [
+              72.6217,
+              23.068
+            ],
+            [
+              72.6261,
+              23.05429
+            ],
+            [
+              72.641,
+              23.05661
+            ],
+            [
+              72.65009,
+              23.05964
+            ],
+            [
+              72.65744,
+              23.068
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W10",
+        "ward_name": "Kubernagar",
+        "zone": "North",
+        "heat_risk_score": 61.8,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.8,
+        "ndvi": 0.08,
+        "total_population": 158000,
+        "slum_households_pct": 28.0,
+        "ac_penetration_pct": 25.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W11",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65001,
+              23.059
+            ],
+            [
+              72.64928,
+              23.07306
+            ],
+            [
+              72.634,
+              23.0724
+            ],
+            [
+              72.62638,
+              23.06601
+            ],
+            [
+              72.6152,
+              23.059
+            ],
+            [
+              72.61949,
+              23.04565
+            ],
+            [
+              72.634,
+              23.04791
+            ],
+            [
+              72.64285,
+              23.05086
+            ],
+            [
+              72.65001,
+              23.059
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W11",
+        "ward_name": "Saijpur",
+        "zone": "North",
+        "heat_risk_score": 63.7,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.9,
+        "ndvi": 0.07,
+        "total_population": 147000,
+        "slum_households_pct": 30.0,
+        "ac_penetration_pct": 20.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W12",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.66357,
+              23.049
+            ],
+            [
+              72.66286,
+              23.06268
+            ],
+            [
+              72.648,
+              23.06203
+            ],
+            [
+              72.64059,
+              23.05582
+            ],
+            [
+              72.62972,
+              23.049
+            ],
+            [
+              72.63389,
+              23.03602
+            ],
+            [
+              72.648,
+              23.03821
+            ],
+            [
+              72.65661,
+              23.04108
+            ],
+            [
+              72.66357,
+              23.049
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W12",
+        "ward_name": "India Colony",
+        "zone": "North",
+        "heat_risk_score": 58.8,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.6,
+        "ndvi": 0.09,
+        "total_population": 152000,
+        "slum_households_pct": 21.0,
+        "ac_penetration_pct": 34.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W13",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.63165,
+              23.036
+            ],
+            [
+              72.63099,
+              23.04887
+            ],
+            [
+              72.617,
+              23.04827
+            ],
+            [
+              72.61003,
+              23.04242
+            ],
+            [
+              72.59979,
+              23.036
+            ],
+            [
+              72.60372,
+              23.02378
+            ],
+            [
+              72.617,
+              23.02585
+            ],
+            [
+              72.6251,
+              23.02855
+            ],
+            [
+              72.63165,
+              23.036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W13",
+        "ward_name": "Saraspur",
+        "zone": "North",
+        "heat_risk_score": 69.2,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.6,
+        "ndvi": 0.06,
+        "total_population": 139000,
+        "slum_households_pct": 33.0,
+        "ac_penetration_pct": 17.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W14",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65034,
+              23.042
+            ],
+            [
+              72.64965,
+              23.05548
+            ],
+            [
+              72.635,
+              23.05485
+            ],
+            [
+              72.6277,
+              23.04872
+            ],
+            [
+              72.61698,
+              23.042
+            ],
+            [
+              72.62109,
+              23.0292
+            ],
+            [
+              72.635,
+              23.03137
+            ],
+            [
+              72.64348,
+              23.03419
+            ],
+            [
+              72.65034,
+              23.042
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W14",
+        "ward_name": "Bapunagar",
+        "zone": "East",
+        "heat_risk_score": 74.1,
+        "risk_level": "High",
+        "mean_lst_celsius": 45.2,
+        "ndvi": 0.05,
+        "total_population": 182000,
+        "slum_households_pct": 34.0,
+        "ac_penetration_pct": 19.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W15",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.63479,
+              23.018
+            ],
+            [
+              72.63407,
+              23.03187
+            ],
+            [
+              72.619,
+              23.03122
+            ],
+            [
+              72.61148,
+              23.02492
+            ],
+            [
+              72.60046,
+              23.018
+            ],
+            [
+              72.60469,
+              23.00483
+            ],
+            [
+              72.619,
+              23.00706
+            ],
+            [
+              72.62773,
+              23.00997
+            ],
+            [
+              72.63479,
+              23.018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W15",
+        "ward_name": "Gomtipur",
+        "zone": "East",
+        "heat_risk_score": 78.0,
+        "risk_level": "Extreme",
+        "mean_lst_celsius": 45.8,
+        "ndvi": 0.04,
+        "total_population": 164000,
+        "slum_households_pct": 44.0,
+        "ac_penetration_pct": 11.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W16",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65185,
+              23.007
+            ],
+            [
+              72.65108,
+              23.0218
+            ],
+            [
+              72.635,
+              23.02111
+            ],
+            [
+              72.62698,
+              23.01438
+            ],
+            [
+              72.61522,
+              23.007
+            ],
+            [
+              72.61973,
+              22.99295
+            ],
+            [
+              72.635,
+              22.99532
+            ],
+            [
+              72.64431,
+              22.99843
+            ],
+            [
+              72.65185,
+              23.007
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W16",
+        "ward_name": "Amraiwadi",
+        "zone": "East",
+        "heat_risk_score": 75.5,
+        "risk_level": "Extreme",
+        "mean_lst_celsius": 45.5,
+        "ndvi": 0.05,
+        "total_population": 189000,
+        "slum_households_pct": 41.0,
+        "ac_penetration_pct": 13.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W17",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.69124,
+              23.024
+            ],
+            [
+              72.69018,
+              23.04442
+            ],
+            [
+              72.668,
+              23.04346
+            ],
+            [
+              72.65694,
+              23.03418
+            ],
+            [
+              72.64071,
+              23.024
+            ],
+            [
+              72.64694,
+              23.00462
+            ],
+            [
+              72.668,
+              23.0079
+            ],
+            [
+              72.68085,
+              23.01218
+            ],
+            [
+              72.69124,
+              23.024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W17",
+        "ward_name": "Odhav",
+        "zone": "East",
+        "heat_risk_score": 76.2,
+        "risk_level": "Extreme",
+        "mean_lst_celsius": 46.2,
+        "ndvi": 0.03,
+        "total_population": 242000,
+        "slum_households_pct": 39.0,
+        "ac_penetration_pct": 12.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W18",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.66805,
+              23.036
+            ],
+            [
+              72.66728,
+              23.05098
+            ],
+            [
+              72.651,
+              23.05028
+            ],
+            [
+              72.64288,
+              23.04347
+            ],
+            [
+              72.63097,
+              23.036
+            ],
+            [
+              72.63554,
+              23.02178
+            ],
+            [
+              72.651,
+              23.02418
+            ],
+            [
+              72.66043,
+              23.02732
+            ],
+            [
+              72.66805,
+              23.036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W18",
+        "ward_name": "Viratnagar",
+        "zone": "East",
+        "heat_risk_score": 69.0,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.9,
+        "ndvi": 0.06,
+        "total_population": 178000,
+        "slum_households_pct": 31.0,
+        "ac_penetration_pct": 21.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W19",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.68905,
+              23.053
+            ],
+            [
+              72.6881,
+              23.07149
+            ],
+            [
+              72.668,
+              23.07063
+            ],
+            [
+              72.65798,
+              23.06222
+            ],
+            [
+              72.64327,
+              23.053
+            ],
+            [
+              72.64892,
+              23.03544
+            ],
+            [
+              72.668,
+              23.03841
+            ],
+            [
+              72.67964,
+              23.04229
+            ],
+            [
+              72.68905,
+              23.053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W19",
+        "ward_name": "Nikol",
+        "zone": "East",
+        "heat_risk_score": 55.0,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.7,
+        "ndvi": 0.1,
+        "total_population": 210000,
+        "slum_households_pct": 18.0,
+        "ac_penetration_pct": 42.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W20",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.67625,
+              22.985
+            ],
+            [
+              72.67515,
+              23.00631
+            ],
+            [
+              72.652,
+              23.00531
+            ],
+            [
+              72.64046,
+              22.99563
+            ],
+            [
+              72.62352,
+              22.985
+            ],
+            [
+              72.63002,
+              22.96476
+            ],
+            [
+              72.652,
+              22.96819
+            ],
+            [
+              72.66541,
+              22.97266
+            ],
+            [
+              72.67625,
+              22.985
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W20",
+        "ward_name": "Ramol-Hathijan",
+        "zone": "East",
+        "heat_risk_score": 57.4,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.2,
+        "ndvi": 0.12,
+        "total_population": 184000,
+        "slum_households_pct": 28.0,
+        "ac_penetration_pct": 26.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W21",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.62343,
+              22.999
+            ],
+            [
+              72.62268,
+              23.01344
+            ],
+            [
+              72.607,
+              23.01276
+            ],
+            [
+              72.59918,
+              23.0062
+            ],
+            [
+              72.58771,
+              22.999
+            ],
+            [
+              72.59211,
+              22.98529
+            ],
+            [
+              72.607,
+              22.98761
+            ],
+            [
+              72.61608,
+              22.99064
+            ],
+            [
+              72.62343,
+              22.999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W21",
+        "ward_name": "Maninagar",
+        "zone": "South",
+        "heat_risk_score": 51.7,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.8,
+        "ndvi": 0.14,
+        "total_population": 165000,
+        "slum_households_pct": 16.0,
+        "ac_penetration_pct": 49.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W22",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.61288,
+              23.007
+            ],
+            [
+              72.61221,
+              23.02008
+            ],
+            [
+              72.598,
+              23.01946
+            ],
+            [
+              72.59092,
+              23.01352
+            ],
+            [
+              72.58052,
+              23.007
+            ],
+            [
+              72.58451,
+              22.99458
+            ],
+            [
+              72.598,
+              22.99669
+            ],
+            [
+              72.60623,
+              22.99943
+            ],
+            [
+              72.61288,
+              23.007
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W22",
+        "ward_name": "Kankaria",
+        "zone": "South",
+        "heat_risk_score": 46.8,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.9,
+        "ndvi": 0.22,
+        "total_population": 136000,
+        "slum_households_pct": 20.0,
+        "ac_penetration_pct": 44.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W23",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.62097,
+              22.981
+            ],
+            [
+              72.62011,
+              22.99767
+            ],
+            [
+              72.602,
+              22.99689
+            ],
+            [
+              72.59297,
+              22.98931
+            ],
+            [
+              72.57972,
+              22.981
+            ],
+            [
+              72.58481,
+              22.96517
+            ],
+            [
+              72.602,
+              22.96785
+            ],
+            [
+              72.61249,
+              22.97135
+            ],
+            [
+              72.62097,
+              22.981
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W23",
+        "ward_name": "Isanpur",
+        "zone": "South",
+        "heat_risk_score": 63.8,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.1,
+        "ndvi": 0.08,
+        "total_population": 192000,
+        "slum_households_pct": 32.0,
+        "ac_penetration_pct": 25.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W24",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.63584,
+              22.986
+            ],
+            [
+              72.63503,
+              23.00168
+            ],
+            [
+              72.618,
+              23.00094
+            ],
+            [
+              72.60951,
+              22.99382
+            ],
+            [
+              72.59705,
+              22.986
+            ],
+            [
+              72.60183,
+              22.97111
+            ],
+            [
+              72.618,
+              22.97363
+            ],
+            [
+              72.62786,
+              22.97692
+            ],
+            [
+              72.63584,
+              22.986
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W24",
+        "ward_name": "Ghodasar",
+        "zone": "South",
+        "heat_risk_score": 57.6,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.5,
+        "ndvi": 0.1,
+        "total_population": 173000,
+        "slum_households_pct": 24.0,
+        "ac_penetration_pct": 36.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W25",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65723,
+              22.964
+            ],
+            [
+              72.65608,
+              22.98617
+            ],
+            [
+              72.632,
+              22.98513
+            ],
+            [
+              72.61999,
+              22.97506
+            ],
+            [
+              72.60237,
+              22.964
+            ],
+            [
+              72.60914,
+              22.94295
+            ],
+            [
+              72.632,
+              22.94651
+            ],
+            [
+              72.64595,
+              22.95116
+            ],
+            [
+              72.65723,
+              22.964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W25",
+        "ward_name": "Vatva",
+        "zone": "South",
+        "heat_risk_score": 76.9,
+        "risk_level": "Extreme",
+        "mean_lst_celsius": 46.4,
+        "ndvi": 0.04,
+        "total_population": 256000,
+        "slum_households_pct": 43.0,
+        "ac_penetration_pct": 10.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W26",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.62267,
+              22.948
+            ],
+            [
+              72.62155,
+              22.96968
+            ],
+            [
+              72.598,
+              22.96867
+            ],
+            [
+              72.58626,
+              22.95881
+            ],
+            [
+              72.56903,
+              22.948
+            ],
+            [
+              72.57564,
+              22.92741
+            ],
+            [
+              72.598,
+              22.93089
+            ],
+            [
+              72.61164,
+              22.93544
+            ],
+            [
+              72.62267,
+              22.948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W26",
+        "ward_name": "Lambha",
+        "zone": "South",
+        "heat_risk_score": 63.9,
+        "risk_level": "High",
+        "mean_lst_celsius": 44.7,
+        "ndvi": 0.09,
+        "total_population": 168000,
+        "slum_households_pct": 37.0,
+        "ac_penetration_pct": 15.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W27",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.57305,
+              23.037
+            ],
+            [
+              72.57228,
+              23.05198
+            ],
+            [
+              72.556,
+              23.05128
+            ],
+            [
+              72.54788,
+              23.04447
+            ],
+            [
+              72.53597,
+              23.037
+            ],
+            [
+              72.54054,
+              23.02278
+            ],
+            [
+              72.556,
+              23.02518
+            ],
+            [
+              72.56543,
+              23.02832
+            ],
+            [
+              72.57305,
+              23.037
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W27",
+        "ward_name": "Navrangpura",
+        "zone": "West",
+        "heat_risk_score": 33.4,
+        "risk_level": "Low",
+        "mean_lst_celsius": 40.5,
+        "ndvi": 0.24,
+        "total_population": 132000,
+        "slum_households_pct": 8.5,
+        "ac_penetration_pct": 74.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W28",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.58022,
+              23.048
+            ],
+            [
+              72.57949,
+              23.06225
+            ],
+            [
+              72.564,
+              23.06158
+            ],
+            [
+              72.55628,
+              23.05511
+            ],
+            [
+              72.54495,
+              23.048
+            ],
+            [
+              72.5493,
+              23.03447
+            ],
+            [
+              72.564,
+              23.03676
+            ],
+            [
+              72.57297,
+              23.03975
+            ],
+            [
+              72.58022,
+              23.048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W28",
+        "ward_name": "Stadium",
+        "zone": "West",
+        "heat_risk_score": 36.4,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 40.8,
+        "ndvi": 0.22,
+        "total_population": 129000,
+        "slum_households_pct": 9.0,
+        "ac_penetration_pct": 71.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W29",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.57743,
+              23.012
+            ],
+            [
+              72.57668,
+              23.02644
+            ],
+            [
+              72.561,
+              23.02576
+            ],
+            [
+              72.55318,
+              23.0192
+            ],
+            [
+              72.5417,
+              23.012
+            ],
+            [
+              72.54611,
+              22.99829
+            ],
+            [
+              72.561,
+              23.00061
+            ],
+            [
+              72.57008,
+              23.00364
+            ],
+            [
+              72.57743,
+              23.012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W29",
+        "ward_name": "Paldi",
+        "zone": "West",
+        "heat_risk_score": 39.2,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.1,
+        "ndvi": 0.2,
+        "total_population": 138000,
+        "slum_households_pct": 11.0,
+        "ac_penetration_pct": 68.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W30",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.56584,
+              22.998
+            ],
+            [
+              72.56503,
+              23.01368
+            ],
+            [
+              72.548,
+              23.01294
+            ],
+            [
+              72.53951,
+              23.00582
+            ],
+            [
+              72.52705,
+              22.998
+            ],
+            [
+              72.53183,
+              22.98311
+            ],
+            [
+              72.548,
+              22.98563
+            ],
+            [
+              72.55786,
+              22.98892
+            ],
+            [
+              72.56584,
+              22.998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W30",
+        "ward_name": "Vasna",
+        "zone": "West",
+        "heat_risk_score": 48.4,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.2,
+        "ndvi": 0.16,
+        "total_population": 154000,
+        "slum_households_pct": 22.0,
+        "ac_penetration_pct": 48.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W31",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.56485,
+              23.057
+            ],
+            [
+              72.56409,
+              23.0718
+            ],
+            [
+              72.548,
+              23.07111
+            ],
+            [
+              72.53998,
+              23.06438
+            ],
+            [
+              72.52821,
+              23.057
+            ],
+            [
+              72.53273,
+              23.04295
+            ],
+            [
+              72.548,
+              23.04532
+            ],
+            [
+              72.55732,
+              23.04843
+            ],
+            [
+              72.56485,
+              23.057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W31",
+        "ward_name": "Naranpura",
+        "zone": "West",
+        "heat_risk_score": 40.9,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.3,
+        "ndvi": 0.19,
+        "total_population": 146000,
+        "slum_households_pct": 12.0,
+        "ac_penetration_pct": 65.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W32",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.58479,
+              23.067
+            ],
+            [
+              72.58407,
+              23.08087
+            ],
+            [
+              72.569,
+              23.08022
+            ],
+            [
+              72.56148,
+              23.07392
+            ],
+            [
+              72.55045,
+              23.067
+            ],
+            [
+              72.55469,
+              23.05383
+            ],
+            [
+              72.569,
+              23.05606
+            ],
+            [
+              72.57773,
+              23.05897
+            ],
+            [
+              72.58479,
+              23.067
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W32",
+        "ward_name": "Nava Vadaj",
+        "zone": "West",
+        "heat_risk_score": 53.2,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.6,
+        "ndvi": 0.14,
+        "total_population": 143000,
+        "slum_households_pct": 25.0,
+        "ac_penetration_pct": 41.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W33",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.60434,
+              23.082
+            ],
+            [
+              72.60347,
+              23.09899
+            ],
+            [
+              72.585,
+              23.09819
+            ],
+            [
+              72.57579,
+              23.09047
+            ],
+            [
+              72.56228,
+              23.082
+            ],
+            [
+              72.56747,
+              23.06587
+            ],
+            [
+              72.585,
+              23.0686
+            ],
+            [
+              72.59569,
+              23.07216
+            ],
+            [
+              72.60434,
+              23.082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W33",
+        "ward_name": "Sabarmati",
+        "zone": "West",
+        "heat_risk_score": 43.2,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.8,
+        "ndvi": 0.21,
+        "total_population": 162000,
+        "slum_households_pct": 19.0,
+        "ac_penetration_pct": 52.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W34",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.58224,
+              23.076
+            ],
+            [
+              72.58141,
+              23.09202
+            ],
+            [
+              72.564,
+              23.09126
+            ],
+            [
+              72.55532,
+              23.08399
+            ],
+            [
+              72.54258,
+              23.076
+            ],
+            [
+              72.54747,
+              23.06079
+            ],
+            [
+              72.564,
+              23.06337
+            ],
+            [
+              72.57408,
+              23.06672
+            ],
+            [
+              72.58224,
+              23.076
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W34",
+        "ward_name": "Ranip",
+        "zone": "West",
+        "heat_risk_score": 49.3,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.4,
+        "ndvi": 0.15,
+        "total_population": 160000,
+        "slum_households_pct": 21.0,
+        "ac_penetration_pct": 46.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W35",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.55366,
+              23.069
+            ],
+            [
+              72.55285,
+              23.08451
+            ],
+            [
+              72.536,
+              23.08378
+            ],
+            [
+              72.52759,
+              23.07673
+            ],
+            [
+              72.51526,
+              23.069
+            ],
+            [
+              72.52,
+              23.05428
+            ],
+            [
+              72.536,
+              23.05677
+            ],
+            [
+              72.54576,
+              23.06002
+            ],
+            [
+              72.55366,
+              23.069
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W35",
+        "ward_name": "Ghatlodia",
+        "zone": "North-West",
+        "heat_risk_score": 44.9,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.7,
+        "ndvi": 0.17,
+        "total_population": 178000,
+        "slum_households_pct": 15.0,
+        "ac_penetration_pct": 58.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W36",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.54735,
+              23.052
+            ],
+            [
+              72.54665,
+              23.06548
+            ],
+            [
+              72.532,
+              23.06485
+            ],
+            [
+              72.52469,
+              23.05872
+            ],
+            [
+              72.51398,
+              23.052
+            ],
+            [
+              72.51809,
+              23.0392
+            ],
+            [
+              72.532,
+              23.04137
+            ],
+            [
+              72.54048,
+              23.04419
+            ],
+            [
+              72.54735,
+              23.052
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W36",
+        "ward_name": "Memnagar",
+        "zone": "North-West",
+        "heat_risk_score": 38.2,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 40.9,
+        "ndvi": 0.21,
+        "total_population": 135000,
+        "slum_households_pct": 9.5,
+        "ac_penetration_pct": 72.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W37",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.52954,
+              23.056
+            ],
+            [
+              72.52856,
+              23.07492
+            ],
+            [
+              72.508,
+              23.07403
+            ],
+            [
+              72.49774,
+              23.06544
+            ],
+            [
+              72.4827,
+              23.056
+            ],
+            [
+              72.48847,
+              23.03803
+            ],
+            [
+              72.508,
+              23.04107
+            ],
+            [
+              72.51991,
+              23.04504
+            ],
+            [
+              72.52954,
+              23.056
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W37",
+        "ward_name": "Thaltej",
+        "zone": "North-West",
+        "heat_risk_score": 29.3,
+        "risk_level": "Low",
+        "mean_lst_celsius": 40.2,
+        "ndvi": 0.26,
+        "total_population": 182000,
+        "slum_households_pct": 7.0,
+        "ac_penetration_pct": 81.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W38",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.53221,
+              23.039
+            ],
+            [
+              72.53129,
+              23.05676
+            ],
+            [
+              72.512,
+              23.05592
+            ],
+            [
+              72.50238,
+              23.04785
+            ],
+            [
+              72.48826,
+              23.039
+            ],
+            [
+              72.49368,
+              23.02214
+            ],
+            [
+              72.512,
+              23.02499
+            ],
+            [
+              72.52317,
+              23.02872
+            ],
+            [
+              72.53221,
+              23.039
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W38",
+        "ward_name": "Bodakdev",
+        "zone": "North-West",
+        "heat_risk_score": 26.8,
+        "risk_level": "Low",
+        "mean_lst_celsius": 39.8,
+        "ndvi": 0.28,
+        "total_population": 169000,
+        "slum_households_pct": 6.2,
+        "ac_penetration_pct": 86.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W39",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.55765,
+              23.102
+            ],
+            [
+              72.55662,
+              23.12189
+            ],
+            [
+              72.535,
+              23.12095
+            ],
+            [
+              72.52422,
+              23.11192
+            ],
+            [
+              72.5084,
+              23.102
+            ],
+            [
+              72.51447,
+              23.08312
+            ],
+            [
+              72.535,
+              23.08631
+            ],
+            [
+              72.54752,
+              23.09048
+            ],
+            [
+              72.55765,
+              23.102
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W39",
+        "ward_name": "Gota",
+        "zone": "North-West",
+        "heat_risk_score": 43.1,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.1,
+        "ndvi": 0.16,
+        "total_population": 194000,
+        "slum_households_pct": 14.0,
+        "ac_penetration_pct": 62.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W40",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.56205,
+              23.084
+            ],
+            [
+              72.56123,
+              23.09985
+            ],
+            [
+              72.544,
+              23.0991
+            ],
+            [
+              72.53541,
+              23.0919
+            ],
+            [
+              72.52281,
+              23.084
+            ],
+            [
+              72.52764,
+              23.06895
+            ],
+            [
+              72.544,
+              23.0715
+            ],
+            [
+              72.55398,
+              23.07482
+            ],
+            [
+              72.56205,
+              23.084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W40",
+        "ward_name": "Chandlodia",
+        "zone": "North-West",
+        "heat_risk_score": 49.8,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.5,
+        "ndvi": 0.14,
+        "total_population": 158000,
+        "slum_households_pct": 20.0,
+        "ac_penetration_pct": 49.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W41",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.53656,
+              23.081
+            ],
+            [
+              72.53563,
+              23.09905
+            ],
+            [
+              72.516,
+              23.09821
+            ],
+            [
+              72.50621,
+              23.09
+            ],
+            [
+              72.49186,
+              23.081
+            ],
+            [
+              72.49737,
+              23.06386
+            ],
+            [
+              72.516,
+              23.06676
+            ],
+            [
+              72.52737,
+              23.07054
+            ],
+            [
+              72.53656,
+              23.081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W41",
+        "ward_name": "Sola",
+        "zone": "North-West",
+        "heat_risk_score": 37.2,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.2,
+        "ndvi": 0.2,
+        "total_population": 166000,
+        "slum_households_pct": 11.0,
+        "ac_penetration_pct": 70.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W42",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.54485,
+              23.033
+            ],
+            [
+              72.54408,
+              23.0478
+            ],
+            [
+              72.528,
+              23.04711
+            ],
+            [
+              72.51998,
+              23.04038
+            ],
+            [
+              72.50821,
+              23.033
+            ],
+            [
+              72.51273,
+              23.01895
+            ],
+            [
+              72.528,
+              23.02132
+            ],
+            [
+              72.53731,
+              23.02443
+            ],
+            [
+              72.54485,
+              23.033
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W42",
+        "ward_name": "Vastrapur",
+        "zone": "South-West",
+        "heat_risk_score": 30.1,
+        "risk_level": "Low",
+        "mean_lst_celsius": 40.1,
+        "ndvi": 0.27,
+        "total_population": 141000,
+        "slum_households_pct": 6.8,
+        "ac_penetration_pct": 83.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W43",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.54404,
+              23.018
+            ],
+            [
+              72.54313,
+              23.0356
+            ],
+            [
+              72.524,
+              23.03478
+            ],
+            [
+              72.51446,
+              23.02678
+            ],
+            [
+              72.50047,
+              23.018
+            ],
+            [
+              72.50584,
+              23.00128
+            ],
+            [
+              72.524,
+              23.00411
+            ],
+            [
+              72.53508,
+              23.0078
+            ],
+            [
+              72.54404,
+              23.018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W43",
+        "ward_name": "Jodhpur",
+        "zone": "South-West",
+        "heat_risk_score": 33.5,
+        "risk_level": "Low",
+        "mean_lst_celsius": 40.6,
+        "ndvi": 0.23,
+        "total_population": 179000,
+        "slum_households_pct": 8.0,
+        "ac_penetration_pct": 78.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W44",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.54697,
+              23.004
+            ],
+            [
+              72.54611,
+              23.02067
+            ],
+            [
+              72.528,
+              23.01989
+            ],
+            [
+              72.51897,
+              23.01231
+            ],
+            [
+              72.50572,
+              23.004
+            ],
+            [
+              72.51081,
+              22.98817
+            ],
+            [
+              72.528,
+              22.99085
+            ],
+            [
+              72.53849,
+              22.99435
+            ],
+            [
+              72.54697,
+              23.004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W44",
+        "ward_name": "Vejalpur",
+        "zone": "South-West",
+        "heat_risk_score": 50.3,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 42.3,
+        "ndvi": 0.15,
+        "total_population": 188000,
+        "slum_households_pct": 23.0,
+        "ac_penetration_pct": 47.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W45",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.52582,
+              22.986
+            ],
+            [
+              72.52474,
+              23.00693
+            ],
+            [
+              72.502,
+              23.00595
+            ],
+            [
+              72.49066,
+              22.99644
+            ],
+            [
+              72.47403,
+              22.986
+            ],
+            [
+              72.48041,
+              22.96612
+            ],
+            [
+              72.502,
+              22.96949
+            ],
+            [
+              72.51517,
+              22.97388
+            ],
+            [
+              72.52582,
+              22.986
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W45",
+        "ward_name": "Sarkhej",
+        "zone": "South-West",
+        "heat_risk_score": 58.7,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.8,
+        "ndvi": 0.11,
+        "total_population": 196000,
+        "slum_households_pct": 33.0,
+        "ac_penetration_pct": 28.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W46",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.53845,
+              22.991
+            ],
+            [
+              72.53766,
+              23.00633
+            ],
+            [
+              72.521,
+              23.00561
+            ],
+            [
+              72.51269,
+              22.99865
+            ],
+            [
+              72.50051,
+              22.991
+            ],
+            [
+              72.50518,
+              22.97644
+            ],
+            [
+              72.521,
+              22.9789
+            ],
+            [
+              72.53065,
+              22.98212
+            ],
+            [
+              72.53845,
+              22.991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W46",
+        "ward_name": "Maktampur",
+        "zone": "South-West",
+        "heat_risk_score": 56.4,
+        "risk_level": "High",
+        "mean_lst_celsius": 43.2,
+        "ndvi": 0.13,
+        "total_population": 152000,
+        "slum_households_pct": 29.0,
+        "ac_penetration_pct": 33.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W47",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.52369,
+              22.997
+            ],
+            [
+              72.52279,
+              23.0143
+            ],
+            [
+              72.504,
+              23.01349
+            ],
+            [
+              72.49463,
+              23.00563
+            ],
+            [
+              72.48088,
+              22.997
+            ],
+            [
+              72.48616,
+              22.98058
+            ],
+            [
+              72.504,
+              22.98335
+            ],
+            [
+              72.51488,
+              22.98698
+            ],
+            [
+              72.52369,
+              22.997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W47",
+        "ward_name": "Makarba",
+        "zone": "South-West",
+        "heat_risk_score": 40.1,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.5,
+        "ndvi": 0.19,
+        "total_population": 164000,
+        "slum_households_pct": 14.0,
+        "ac_penetration_pct": 64.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W48",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.60671,
+              23.111
+            ],
+            [
+              72.60573,
+              23.13006
+            ],
+            [
+              72.585,
+              23.12917
+            ],
+            [
+              72.57466,
+              23.12051
+            ],
+            [
+              72.5595,
+              23.111
+            ],
+            [
+              72.56532,
+              23.0929
+            ],
+            [
+              72.585,
+              23.09596
+            ],
+            [
+              72.597,
+              23.09996
+            ],
+            [
+              72.60671,
+              23.111
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "ward_id": "W48",
+        "ward_name": "Chandkheda",
+        "zone": "North",
+        "heat_risk_score": 39.8,
+        "risk_level": "Moderate",
+        "mean_lst_celsius": 41.4,
+        "ndvi": 0.18,
+        "total_population": 175000,
+        "slum_households_pct": 15.0,
+        "ac_penetration_pct": 61.0
+      }
+    }
+  ],
+  "metadata": {
+    "city": "Ahmedabad",
+    "total_wards": 48,
+    "crs": "EPSG:4326"
+  }
+}

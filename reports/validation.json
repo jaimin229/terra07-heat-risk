@@ -1,0 +1,64 @@
+{
+  "city": "Ahmedabad",
+  "bbox": [
+    72.54,
+    22.99,
+    72.62,
+    23.06
+  ],
+  "grid_cells_count": 1088,
+  "total_population": 1275655,
+  "physical_sanity": {
+    "spearman_lst_ndvi": -0.9811,
+    "spearman_lst_building": 0.8571,
+    "lst_min_c": 37.34,
+    "lst_max_c": 51.25,
+    "lst_mean_c": 42.93
+  },
+  "cooling_model": {
+    "beta_ndvi": -24.3254,
+    "beta_bldg": -73.2693,
+    "beta_open": -70.4164,
+    "r_squared": 0.9609,
+    "bootstrap_ci_95_ndvi": [
+      -25.1929,
+      -23.2921
+    ],
+    "conservative_cooling_c_per_ndvi": 23.2921
+  },
+  "temporal_consistency": {
+    "split_halves_spearman_correlation": 0.884,
+    "interpretation": "High temporal stability across hot-season multi-scene composite (p < 0.001)"
+  },
+  "cross_sensor_check": {
+    "modis_mod11a1_spearman": 0.762,
+    "sensor_resolution": "Landsat (30m thermal sharpened) vs MODIS (1km native)"
+  },
+  "air_temperature_context": {
+    "open_meteo_archive_hot_season_tmax_c": 41.8,
+    "landsat_lst_mean_c": 42.9,
+    "surface_vs_air_offset_c": 1.1
+  },
+  "robustness_monte_carlo": {
+    "n_draws": 1000,
+    "mean_spearman_perturbed": 0.9839,
+    "p05_spearman": 0.9527,
+    "spearman_vs_geometric": 0.9376,
+    "robust_hotspots_count": 27
+  },
+  "interventions_summary": {
+    "total_actions_cataloged": 73,
+    "actions_by_type": {
+      "shade": 50,
+      "water_point": 15,
+      "cooling_centre": 8
+    },
+    "max_benefit_cost_ratio": 414.2
+  },
+  "limitations": [
+    "Landsat morning overpass (10:30 AM local) captures solar morning heating, not 3:30 PM peak diurnal air temperature.",
+    "30m sharpened thermal data aggregates to 250m grid cells; localized sub-street micro-shade may vary.",
+    "Absence of household-level air conditioning survey; AC deficit modeled via structural and demographic proxies.",
+    "Urban tree cooling relationships are empirical/correlational; site inspections recommended before capital deployment."
+  ]
+}

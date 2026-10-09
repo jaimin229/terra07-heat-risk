@@ -1,0 +1,1590 @@
+/* ==========================================================================
+   TERRA07 - Public Heat Safety Portal
+   Mobile-First, Ultra-Accessible Stylesheet with Daylight Sunlight-Boost Mode
+   WCAG 2.2 AA/AAA Compliant • High Readability • Tactile Micro-Interactions
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Standard Modern Dark Mode */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #121826;
+  --bg-card: #182236;
+  --bg-card-hover: #1f2c45;
+  --bg-input: #0f1523;
+  --border-subtle: #243049;
+  --border-focus: #3b82f6;
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0a0e17;
+
+  /* Thermal Severity Accents */
+  --hazard-extreme: #ef4444;       /* Extreme/Severe - Crimson */
+  --hazard-extreme-bg: rgba(239, 68, 68, 0.15);
+  --hazard-extreme-border: #dc2626;
+
+  --hazard-high: #f97316;          /* High Risk - Orange */
+  --hazard-high-bg: rgba(249, 115, 22, 0.15);
+  --hazard-high-border: #ea580c;
+
+  --hazard-moderate: #eab308;      /* Moderate/Caution - Amber Yellow */
+  --hazard-moderate-bg: rgba(234, 179, 8, 0.15);
+  --hazard-moderate-border: #ca8a04;
+
+  --hazard-safe: #10b981;          /* Safe/Cool - Emerald Green */
+  --hazard-safe-bg: rgba(16, 185, 129, 0.15);
+  --hazard-safe-border: #059669;
+
+  --accent-cool: #06b6d4;          /* Cool Corridor Cyan */
+  --accent-water: #38bdf8;         /* Water Droplet Sky Blue */
+  --accent-purple: #a855f7;        /* Medical/First Aid */
+
+  /* Spacing & Layout */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Touch Target Minimum (48px recommended) */
+  --touch-target: 48px;
+}
+
+/* ==========================================================================
+   SUNLIGHT BOOST MODE (Ultra High-Contrast for Direct Midday Sunlight)
+   ========================================================================== */
+body.sunlight-boost {
+  --bg-primary: #000000 !important;
+  --bg-secondary: #0a0a0a !important;
+  --bg-card: #050505 !important;
+  --bg-card-hover: #141414 !important;
+  --bg-input: #000000 !important;
+  --border-subtle: #ffffff !important;
+  --border-focus: #ffff00 !important;
+
+  --text-primary: #ffffff !important;
+  --text-secondary: #f0f0f0 !important;
+  --text-muted: #d0d0d0 !important;
+  --text-inverse: #000000 !important;
+
+  --hazard-extreme: #ff2222 !important;
+  --hazard-extreme-bg: #440000 !important;
+  --hazard-extreme-border: #ffffff !important;
+
+  --hazard-high: #ff8800 !important;
+  --hazard-high-bg: #442200 !important;
+  --hazard-high-border: #ffffff !important;
+
+  --hazard-moderate: #ffff00 !important;
+  --hazard-moderate-bg: #333300 !important;
+  --hazard-moderate-border: #ffffff !important;
+
+  --hazard-safe: #00ff66 !important;
+  --hazard-safe-bg: #003311 !important;
+  --hazard-safe-border: #ffffff !important;
+
+  --accent-cool: #00ffff !important;
+  --accent-water: #00ddff !important;
+
+  font-weight: 600;
+}
+
+body.sunlight-boost .card,
+body.sunlight-boost .emergency-banner,
+body.sunlight-boost .persona-card,
+body.sunlight-boost .sanctuary-card {
+  border-width: 2px !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+body.sunlight-boost .btn-primary {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  font-weight: 800 !important;
+}
+
+body.sunlight-boost .btn-secondary {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+/* ==========================================================================
+   Base & Reset
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px; /* Space for fixed bottom navigation */
+  overflow-x: hidden;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* High Visibility Focus Ring */
+:focus-visible {
+  outline: 3px solid var(--border-focus);
+  outline-offset: 3px;
+}
+
+/* Layout Container */
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ==========================================================================
+   Header & Status Bar
+   ========================================================================== */
+.site-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #ef4444 0%, #f97316 50%, #eab308 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.4);
+}
+
+.brand-text h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.brand-text .subtext {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  height: 42px;
+  min-width: 42px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+}
+
+.icon-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-focus);
+}
+
+.icon-btn:active {
+  transform: scale(0.96);
+}
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--hazard-safe);
+  border: 1px solid var(--hazard-safe-border);
+}
+
+.status-chip.offline {
+  background: rgba(234, 179, 8, 0.15);
+  color: var(--hazard-moderate);
+  border-color: var(--hazard-moderate-border);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: pulseBeacon 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseBeacon {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* ==========================================================================
+   Heat Emergency Alert Live Status Banner
+   ========================================================================== */
+.emergency-banner {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.22) 0%, rgba(185, 28, 28, 0.28) 100%);
+  border: 2px solid var(--hazard-extreme-border);
+  border-radius: var(--radius-md);
+  margin-top: 14px;
+  padding: 16px;
+  box-shadow: 0 0 24px rgba(239, 68, 68, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.emergency-banner.alert-amber {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.22) 0%, rgba(194, 65, 12, 0.28) 100%);
+  border-color: var(--hazard-high-border);
+  box-shadow: 0 0 24px rgba(249, 115, 22, 0.25);
+}
+
+.emergency-banner.alert-safe {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(4, 120, 87, 0.24) 100%);
+  border-color: var(--hazard-safe-border);
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.2);
+}
+
+.banner-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.alert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--hazard-extreme);
+  color: white;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.alert-badge.badge-amber {
+  background: var(--hazard-high);
+}
+
+.alert-badge.badge-safe {
+  background: var(--hazard-safe);
+}
+
+.banner-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.banner-temp-hero {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.temp-huge {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.temp-unit {
+  font-size: 1.4rem;
+  color: #ff9999;
+}
+
+.temp-subtitle {
+  font-size: 0.95rem;
+  color: #fee2e2;
+  font-weight: 500;
+}
+
+.banner-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 600px) {
+  .banner-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stat-val {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.banner-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.banner-message {
+  font-size: 0.88rem;
+  color: #fff;
+  font-weight: 500;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ==========================================================================
+   Buttons & Interactive Elements
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch-target);
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-danger {
+  background: var(--hazard-extreme);
+  color: white;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn-primary {
+  background: var(--accent-cool);
+  color: #000;
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+}
+
+.btn-primary:hover {
+  background: #0891b2;
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-focus);
+}
+
+.btn-sos {
+  background: #ffffff;
+  color: #b91c1c;
+  font-weight: 800;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-sos:hover {
+  background: #fee2e2;
+}
+
+/* ==========================================================================
+   Section Cards & Headers
+   ========================================================================== */
+.section-block {
+  margin-top: 24px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-head h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+/* ==========================================================================
+   Feature 1: "How Safe is My Street Right Now?" Search & Danger Meter
+   ========================================================================== */
+.search-box-wrap {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 52px;
+  background: var(--bg-input);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 48px 12px 16px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: border-color var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--border-focus);
+  outline: none;
+}
+
+.search-icon-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chip-carousel {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.chip-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.street-chip {
+  flex-shrink: 0;
+  min-height: 38px;
+  padding: 6px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.street-chip:hover,
+.street-chip.active {
+  background: var(--accent-cool);
+  color: #000;
+  border-color: var(--accent-cool);
+}
+
+/* Street Thermal Danger Card */
+.thermal-danger-card {
+  border-radius: var(--radius-md);
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-left: 6px solid var(--hazard-extreme);
+  margin-top: 10px;
+}
+
+.thermal-danger-card.level-extreme {
+  border-left-color: var(--hazard-extreme);
+  background: linear-gradient(to right, rgba(239, 68, 68, 0.1), var(--bg-secondary));
+}
+
+.thermal-danger-card.level-high {
+  border-left-color: var(--hazard-high);
+  background: linear-gradient(to right, rgba(249, 115, 22, 0.1), var(--bg-secondary));
+}
+
+.thermal-danger-card.level-moderate {
+  border-left-color: var(--hazard-moderate);
+  background: linear-gradient(to right, rgba(234, 179, 8, 0.1), var(--bg-secondary));
+}
+
+.thermal-danger-card.level-safe {
+  border-left-color: var(--hazard-safe);
+  background: linear-gradient(to right, rgba(16, 185, 129, 0.1), var(--bg-secondary));
+}
+
+.street-danger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.street-danger-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.street-danger-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.badge-extreme {
+  background: var(--hazard-extreme-bg);
+  color: var(--hazard-extreme);
+  border: 1px solid var(--hazard-extreme-border);
+}
+
+.badge-high {
+  background: var(--hazard-high-bg);
+  color: var(--hazard-high);
+  border: 1px solid var(--hazard-high-border);
+}
+
+.badge-moderate {
+  background: var(--hazard-moderate-bg);
+  color: var(--hazard-moderate);
+  border: 1px solid var(--hazard-moderate-border);
+}
+
+.badge-safe {
+  background: var(--hazard-safe-bg);
+  color: var(--hazard-safe);
+  border: 1px solid var(--hazard-safe-border);
+}
+
+.plain-language-advisory {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+/* Risk Progress Meter Bar */
+.risk-meter-wrap {
+  margin: 12px 0;
+}
+
+.meter-track {
+  height: 10px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border-subtle);
+}
+
+.meter-fill {
+  height: 100%;
+  width: 78%;
+  background: linear-gradient(90deg, #10b981 0%, #eab308 40%, #f97316 70%, #ef4444 100%);
+  border-radius: var(--radius-pill);
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.meter-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* Microclimate Metrics Grid */
+.metrics-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+@media (min-width: 500px) {
+  .metrics-pill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metric-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  text-align: center;
+}
+
+.metric-pill-title {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.metric-pill-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-top: 2px;
+  color: var(--text-primary);
+}
+
+.metric-pill-sub {
+  font-size: 0.7rem;
+  color: var(--hazard-safe);
+  font-weight: 600;
+}
+
+/* Why is this street hot diagnostic */
+.street-diagnostic-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.diagnostic-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diagnostic-text {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* Hourly Thermal Curve Bar Chart */
+.hourly-curve-wrap {
+  margin-top: 16px;
+}
+
+.hourly-curve-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 80px;
+  padding-top: 8px;
+}
+
+.hour-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+}
+
+.hour-bar-track {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.hour-bar {
+  width: 100%;
+  border-radius: 4px;
+  background: var(--hazard-moderate);
+  transition: height 0.5s ease;
+}
+
+.hour-bar.danger-red { background: var(--hazard-extreme); }
+.hour-bar.danger-orange { background: var(--hazard-high); }
+.hour-bar.danger-yellow { background: var(--hazard-moderate); }
+.hour-bar.danger-green { background: var(--hazard-safe); }
+
+.hour-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Feature 2: Persona-based Personal Safety Risk Assessment
+   ========================================================================== */
+.persona-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 600px) {
+  .persona-selector-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.persona-btn {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-primary);
+  min-height: 100px;
+  touch-action: manipulation;
+}
+
+.persona-btn:hover {
+  border-color: var(--accent-cool);
+  background: var(--bg-card-hover);
+}
+
+.persona-btn.selected {
+  border-color: var(--accent-cool);
+  background: rgba(6, 182, 212, 0.14);
+  box-shadow: 0 0 16px rgba(6, 182, 212, 0.25);
+}
+
+.persona-icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.persona-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.persona-sub {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Condition Toggles */
+.conditions-group {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.condition-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.condition-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pill-options {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pill-opt {
+  flex: 1;
+  min-width: 90px;
+  min-height: 42px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+}
+
+.pill-opt:hover {
+  background: var(--bg-card-hover);
+}
+
+.pill-opt.selected {
+  background: var(--text-primary);
+  color: var(--text-inverse);
+  border-color: var(--text-primary);
+  font-weight: 800;
+}
+
+/* Personalized Assessment Output Card */
+.assessment-result-card {
+  margin-top: 18px;
+  background: linear-gradient(145deg, #162035 0%, #101726 100%);
+  border: 2px solid var(--accent-cool);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: 0 4px 24px rgba(6, 182, 212, 0.2);
+}
+
+.assessment-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.risk-level-badge-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Safe Outdoor Limit Countdown Widget */
+.safe-timer-box {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 14px 0;
+}
+
+.timer-circle-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 10px 0;
+}
+
+.timer-svg {
+  transform: rotate(-90deg);
+  width: 140px;
+  height: 140px;
+}
+
+.timer-circle-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 10;
+}
+
+.timer-circle-progress {
+  fill: none;
+  stroke: var(--hazard-extreme);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.timer-minutes {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+
+.timer-sub {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.timer-controls-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Hydration Protocol Card */
+.hydration-card {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-top: 14px;
+}
+
+.hydration-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-water);
+  font-size: 0.92rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.hydration-body {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+/* Clinical Symptoms Warning Checklist */
+.symptoms-box {
+  margin-top: 14px;
+  padding: 12px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: var(--radius-sm);
+}
+
+.symptoms-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--hazard-extreme);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.symptoms-list {
+  padding-left: 20px;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Feature 3: "Find Nearest Cooling Sanctuary" Interactive Radar
+   ========================================================================== */
+.radar-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.filter-pill {
+  flex-shrink: 0;
+  min-height: 38px;
+  padding: 6px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill.active {
+  background: var(--accent-water);
+  color: #000;
+  border-color: var(--accent-water);
+}
+
+/* Radar & Map Container */
+.map-radar-wrapper {
+  height: 320px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #0d131f;
+}
+
+#sanctuaryMap {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* GPS Floating Locate Button */
+.map-gps-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 10;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Sanctuaries List Grid */
+.sanctuaries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sanctuary-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color var(--transition-fast);
+}
+
+.sanctuary-card:hover {
+  border-color: var(--accent-water);
+}
+
+.sanctuary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sanctuary-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.sanctuary-type-badge {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sanctuary-type-ac {
+  background: rgba(6, 182, 212, 0.2);
+  color: var(--accent-cool);
+  border: 1px solid var(--accent-cool);
+}
+
+.sanctuary-type-water {
+  background: rgba(56, 189, 248, 0.2);
+  color: var(--accent-water);
+  border: 1px solid var(--accent-water);
+}
+
+.sanctuary-details-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.sanctuary-amenities {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.amenity-chip {
+  font-size: 0.72rem;
+  padding: 2px 7px;
+  background: var(--bg-card);
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+.sanctuary-action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+/* ==========================================================================
+   Feature 4: "Cool Walk" Navigation Tool
+   ========================================================================== */
+.route-inputs-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.route-select-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 600px) {
+  .route-select-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.route-field {
+  flex: 1;
+}
+
+.route-field-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.route-select {
+  width: 100%;
+  min-height: 48px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 0 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.route-select:focus {
+  border-color: var(--border-focus);
+  outline: none;
+}
+
+/* Side-by-Side Route Comparison Cards */
+.route-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 650px) {
+  .route-compare-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.route-card {
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.route-card.route-shortest {
+  background: linear-gradient(145deg, rgba(239, 68, 68, 0.08) 0%, var(--bg-card) 100%);
+  border-color: var(--hazard-extreme-border);
+}
+
+.route-card.route-cool {
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.12) 0%, var(--bg-card) 100%);
+  border-color: var(--hazard-safe);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.route-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.badge-shortest-path {
+  background: var(--hazard-extreme-bg);
+  color: var(--hazard-extreme);
+  border: 1px solid var(--hazard-extreme-border);
+}
+
+.badge-cool-path {
+  background: var(--hazard-safe-bg);
+  color: var(--hazard-safe);
+  border: 1px solid var(--hazard-safe);
+}
+
+.route-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.route-metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.route-metric-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.route-metric-name {
+  color: var(--text-secondary);
+}
+
+.route-metric-val {
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.highlight-cool-val {
+  color: var(--hazard-safe) !important;
+  font-size: 0.95rem;
+}
+
+.highlight-hot-val {
+  color: var(--hazard-extreme) !important;
+}
+
+/* Turn-by-Turn Steps Accordion */
+.turn-directions-wrap {
+  margin-top: 14px;
+}
+
+.step-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--accent-cool);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 8px;
+}
+
+.step-card.step-water {
+  border-left-color: var(--accent-water);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.step-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-instruction {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.step-meta {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   Emergency SOS Quick Dial Modal
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.sos-modal-card {
+  background: var(--bg-card);
+  border: 2px solid var(--hazard-extreme);
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+}
+
+.sos-modal-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--hazard-extreme);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.sos-dial-btn {
+  width: 100%;
+  min-height: 56px;
+  background: var(--hazard-extreme);
+  color: white;
+  border-radius: var(--radius-md);
+  font-size: 1.15rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+}
+
+.sos-dial-btn:hover {
+  background: #dc2626;
+}
+
+/* ==========================================================================
+   Mobile Bottom Navigation Bar (Thumb Friendly)
+   ========================================================================== */
+.bottom-nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(18, 24, 38, 0.94);
+  border-top: 1px solid var(--border-subtle);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 8px 10px;
+  z-index: 99;
+}
+
+.nav-item-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-height: var(--touch-target);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+}
+
+.nav-item-btn:hover {
+  color: var(--text-primary);
+}
+
+.nav-item-btn.active {
+  color: var(--accent-cool);
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+/* ==========================================================================
+   Print / High Density Media Queries
+   ========================================================================== */
+@media print {
+  .site-header, .bottom-nav-bar, .icon-btn, .btn {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

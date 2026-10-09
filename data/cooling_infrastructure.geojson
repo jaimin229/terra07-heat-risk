@@ -1,0 +1,1683 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Ahmedabad Metropolitan Area",
+    "total_features": 60,
+    "generated_at": "2026-10-09T02:42:24.099820+00:00",
+    "crs": "EPSG:4326"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CC_01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.556,
+          23.0375
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_01",
+        "name": "British Council Air-Conditioned Library",
+        "facility_type": "Air-conditioned Public Library",
+        "ward_id": "WARD_01",
+        "ward_name": "Navrangpura Commercial Core",
+        "address": "Near Commerce Six Roads, Navrangpura",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 180,
+        "current_occupancy": 98,
+        "indoor_temp_celsius": 24.2,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2640 3300",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5925,
+          23.0225
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_02",
+        "name": "Ahmedabad Central Heritage Library",
+        "facility_type": "Air-conditioned Public Library",
+        "ward_id": "WARD_09",
+        "ward_name": "Khadia Heritage Living Pols",
+        "address": "Near Khadia Char Rasta",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 220,
+        "current_occupancy": 142,
+        "indoor_temp_celsius": 24.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2214 4110",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_03",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5695,
+          23.0185
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_03",
+        "name": "Tagore Memorial Air-Cooled Hall",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_05",
+        "ward_name": "Ellisbridge Financial Strip",
+        "address": "Tagore Hall Complex, Paldi Road, Ellisbridge",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 450,
+        "current_occupancy": 368,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2657 8820",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_04",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.588,
+          23.0248
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_04",
+        "name": "Manek Chowk Community Rest Shelter",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_07",
+        "ward_name": "Manek Chowk & Mandvi Pol",
+        "address": "Old City Mandvi Pol Entrance",
+        "operating_hours": "09:00 - 20:00",
+        "capacity_persons": 140,
+        "current_occupancy": 70,
+        "indoor_temp_celsius": 25.0,
+        "has_medical_staff": true,
+        "has_backup_generator": false,
+        "wheelchair_accessible": false,
+        "phone_contact": "+91 79 2216 1020",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_05",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.598,
+          23.0315
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_05",
+        "name": "Kalupur Swaminarayan Shaded Dharamshala",
+        "facility_type": "Dedicated Night Shelter",
+        "ward_id": "WARD_08",
+        "ward_name": "Kalupur Swaminarayan Precinct",
+        "address": "Kalupur Temple Compound",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 320,
+        "current_occupancy": 172,
+        "indoor_temp_celsius": 25.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2213 2220",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_06",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6325,
+          22.9665
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_06",
+        "name": "Vatva GIDC Welfare Center & Health Post",
+        "facility_type": "Municipal Health Center",
+        "ward_id": "WARD_14",
+        "ward_name": "Vatva GIDC Phase-I & II",
+        "address": "Phase-1 Administrative Block, Vatva",
+        "operating_hours": "07:00 - 22:00",
+        "capacity_persons": 260,
+        "current_occupancy": 193,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2583 0410",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_07",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.644,
+          22.9565
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_07",
+        "name": "Vatva Phase-4 Emergency Cooling Shed",
+        "facility_type": "Dedicated Night Shelter",
+        "ward_id": "WARD_15",
+        "ward_name": "Vatva GIDC Phase-IV Chemical Complex",
+        "address": "Mega Estate Gate, Vatva",
+        "operating_hours": "10:00 - 18:00 (Peak Sun)",
+        "capacity_persons": 150,
+        "current_occupancy": 113,
+        "indoor_temp_celsius": 25.5,
+        "has_medical_staff": false,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2589 1910",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_08",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.657,
+          23.0805
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_08",
+        "name": "Naroda Municipal Community Hall",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_16",
+        "ward_name": "Naroda Industrial Estate North",
+        "address": "Near Naroda Fire Station",
+        "operating_hours": "08:00 - 20:00",
+        "capacity_persons": 280,
+        "current_occupancy": 191,
+        "indoor_temp_celsius": 24.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2281 3340",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_09",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6535,
+          23.0305
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_09",
+        "name": "Odhav Shramik Kalyan Cooling Shelter",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_17",
+        "ward_name": "Odhav GIDC Heavy Machinery Belt",
+        "address": "Odhav Ring Road Char Rasta",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 200,
+        "current_occupancy": 152,
+        "indoor_temp_celsius": 24.8,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2287 4500",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5845,
+          22.9985
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_10",
+        "name": "Behrampura Urban Primary Health Center",
+        "facility_type": "Municipal Health Center",
+        "ward_id": "WARD_20",
+        "ward_name": "Behrampura High-Density Tin Roof Basti",
+        "address": "Opposite Municipal Quarters, Behrampura",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 160,
+        "current_occupancy": 115,
+        "indoor_temp_celsius": 23.8,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2535 7710",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.593,
+          22.9915
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_11",
+        "name": "Danilimda Community Health Hall",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_21",
+        "ward_name": "Danilimda Chawl & Tannery Workers Colony",
+        "address": "Near Danilimda Cross Roads",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 210,
+        "current_occupancy": 145,
+        "indoor_temp_celsius": 24.2,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2532 9900",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_12",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6015,
+          22.982
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_12",
+        "name": "Chandola Lake Rehabilitation Rest Center",
+        "facility_type": "Dedicated Night Shelter",
+        "ward_id": "WARD_22",
+        "ward_name": "Chandola Lake Periphery Settlement",
+        "address": "Chandola North Embankment Road",
+        "operating_hours": "09:00 - 20:00",
+        "capacity_persons": 180,
+        "current_occupancy": 110,
+        "indoor_temp_celsius": 25.2,
+        "has_medical_staff": true,
+        "has_backup_generator": false,
+        "wheelchair_accessible": false,
+        "phone_contact": "+91 79 2538 4120",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_13",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.516,
+          23.0425
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_13",
+        "name": "Bodakdev Municipal Ward Community Hall",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_26",
+        "ward_name": "Bodakdev Canopy Residential Enclave",
+        "address": "Judges Bungalow Road, Bodakdev",
+        "operating_hours": "08:00 - 22:00",
+        "capacity_persons": 350,
+        "current_occupancy": 235,
+        "indoor_temp_celsius": 23.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2687 1120",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_14",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.527,
+          23.0235
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_14",
+        "name": "Satellite Municipal Sports & Cooling Complex",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_27",
+        "ward_name": "Satellite Green Residential Avenues",
+        "address": "Shivranjani Cross Roads, Satellite",
+        "operating_hours": "07:00 - 22:00",
+        "capacity_persons": 300,
+        "current_occupancy": 168,
+        "indoor_temp_celsius": 23.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2674 5500",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_15",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5315,
+          23.0355
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_15",
+        "name": "Vastrapur Lake Public Amphitheater Lounge",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_28",
+        "ward_name": "Vastrapur Garden Suburb",
+        "address": "Vastrapur Lake Park Complex",
+        "operating_hours": "07:00 - 22:00",
+        "capacity_persons": 250,
+        "current_occupancy": 132,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2676 8810",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_16",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5055,
+          23.0575
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_16",
+        "name": "Thaltej Community Hall & Health Pavilion",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_29",
+        "ward_name": "Thaltej Mature Canopy Suburb",
+        "address": "Thaltej Shilaj Road",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 240,
+        "current_occupancy": 127,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2685 4400",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_17",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5475,
+          23.0195
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_17",
+        "name": "Ambawadi Panjrapol Municipal Lounge",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_30",
+        "ward_name": "Ambawadi Gulmohar Colony",
+        "address": "Polytechnic Campus North Gate",
+        "operating_hours": "08:00 - 21:00",
+        "capacity_persons": 190,
+        "current_occupancy": 83,
+        "indoor_temp_celsius": 24.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2630 1190",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_18",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.561,
+          23.0075
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_18",
+        "name": "Paldi Sanskar Kendra Cultural Pavilion",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_32",
+        "ward_name": "Paldi Riverside Residential Enclave",
+        "address": "Tagore Hall Annexe, Paldi",
+        "operating_hours": "09:00 - 20:00",
+        "capacity_persons": 200,
+        "current_occupancy": 91,
+        "indoor_temp_celsius": 24.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2658 2210",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_19",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5025,
+          23.0315
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_19",
+        "name": "ISKCON Cross Roads AC Pedestrian Transit Hub",
+        "facility_type": "Metro Concourse",
+        "ward_id": "WARD_33",
+        "ward_name": "SG Highway Commercial Transit Spine",
+        "address": "SG Highway Metro Interchange",
+        "operating_hours": "06:00 - 23:00",
+        "capacity_persons": 500,
+        "current_occupancy": 411,
+        "indoor_temp_celsius": 23.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2692 9000",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_20",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5365,
+          23.0425
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_20",
+        "name": "Helmet Circle 132ft BRTS AC Transit Shelter",
+        "facility_type": "Metro Concourse",
+        "ward_id": "WARD_34",
+        "ward_name": "132 Feet Ring Road Multi-Modal Corridor",
+        "address": "132ft Ring Road Center Concourse",
+        "operating_hours": "06:00 - 23:00",
+        "capacity_persons": 350,
+        "current_occupancy": 207,
+        "indoor_temp_celsius": 23.2,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2791 2200",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6025,
+          23.0295
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_21",
+        "name": "Kalupur Mega Railway Station AC Waiting Complex",
+        "facility_type": "Metro Concourse",
+        "ward_id": "WARD_35",
+        "ward_name": "Kalupur Central Railway Station Concourse",
+        "address": "Ahmedabad Central Station Platform 1 Hub",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 800,
+        "current_occupancy": 370,
+        "indoor_temp_celsius": 23.5,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2211 4455",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_22",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5765,
+          23.0765
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_22",
+        "name": "Ranip Central GSRTC & BRTS Mega Terminal",
+        "facility_type": "Metro Concourse",
+        "ward_id": "WARD_36",
+        "ward_name": "Ranip BRTS & Regional Bus Mega-Terminal",
+        "address": "Ranip Bus Port Main Concourse",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 650,
+        "current_occupancy": 272,
+        "indoor_temp_celsius": 23.2,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2755 0100",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_23",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5725,
+          23.0285
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_23",
+        "name": "Sabarmati Riverfront West Event Center Lounge",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_37",
+        "ward_name": "Sabarmati Riverfront Promenade West",
+        "address": "Riverfront Promenade near Nehru Bridge",
+        "operating_hours": "07:00 - 22:00",
+        "capacity_persons": 300,
+        "current_occupancy": 116,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2658 6600",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_24",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5775,
+          23.0275
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_24",
+        "name": "Sabarmati Riverfront East Flower Park Pavilion",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_38",
+        "ward_name": "Sabarmati Riverfront East & Flower Park",
+        "address": "Flower Park Gate, Riverfront East",
+        "operating_hours": "07:00 - 22:00",
+        "capacity_persons": 250,
+        "current_occupancy": 193,
+        "indoor_temp_celsius": 24.2,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2658 6610",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_25",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6,
+          23.007
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_25",
+        "name": "Kankaria Lakefront Children Health Pavilion",
+        "facility_type": "Community Hall",
+        "ward_id": "WARD_39",
+        "ward_name": "Kankaria Lake Ecological Park & Zoo",
+        "address": "Gate 1 Pavilion, Kankaria Lake",
+        "operating_hours": "06:00 - 22:00",
+        "capacity_persons": 350,
+        "current_occupancy": 140,
+        "indoor_temp_celsius": 24.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2543 1120",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC_26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.613,
+          23.055
+        ]
+      },
+      "properties": {
+        "feature_type": "cooling_center",
+        "center_id": "CC_26",
+        "name": "Civil Hospital Asarwa Heat Stroke Emergency Ward",
+        "facility_type": "Civil Hospital Heat Emergency Ward",
+        "ward_id": "WARD_24",
+        "ward_name": "Meghaninagar Railway Bastis",
+        "address": "Meghaninagar Road, Asarwa",
+        "operating_hours": "24/7 Heat Emergency",
+        "capacity_persons": 500,
+        "current_occupancy": 367,
+        "indoor_temp_celsius": 22.0,
+        "has_medical_staff": true,
+        "has_backup_generator": true,
+        "wheelchair_accessible": true,
+        "phone_contact": "+91 79 2268 0074",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5878,
+          23.0246
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_01",
+        "name": "Manek Chowk Heritage Misting Kiosk",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_07",
+        "ward_name": "Manek Chowk & Mandvi Pol",
+        "address": "Opposite Rani no Hajiro Gate",
+        "flow_rate_lpm": 15.0,
+        "daily_dispensed_liters": 4200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "08:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5822,
+          23.0256
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_02",
+        "name": "Teen Darwaza Public Chabutro Piau",
+        "water_source_type": "Public Chabutro Drinking Post",
+        "ward_id": "WARD_11",
+        "ward_name": "Dhalgarwad & Teen Darwaza Bazaar",
+        "address": "Teen Darwaza Arch Plaza",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 5500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_03",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5972,
+          23.0308
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_03",
+        "name": "Kalupur Swaminarayan Chilled Water Post",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_08",
+        "ward_name": "Kalupur Swaminarayan Precinct",
+        "address": "Kalupur Temple Street Corner",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_04",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5918,
+          23.0228
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_04",
+        "name": "Khadia Bala Hanuman Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_09",
+        "ward_name": "Khadia Heritage Living Pols",
+        "address": "Bala Hanuman Temple Chowk",
+        "flow_rate_lpm": 16.0,
+        "daily_dispensed_liters": 4900,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_05",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5942,
+          23.0162
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_05",
+        "name": "Astodia Darwaja Misting Gazebo",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_10",
+        "ward_name": "Astodia & Raipur Darwaja Sector",
+        "address": "Astodia Darwaja Circle",
+        "flow_rate_lpm": 14.0,
+        "daily_dispensed_liters": 3800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "08:00 - 20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_06",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5832,
+          23.0412
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_06",
+        "name": "Delhi Darwaja Shaded Water Kiosk",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_13",
+        "ward_name": "Shahpur Delhi Darwaja Sector",
+        "address": "Delhi Darwaja Outer Circle",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 5200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_07",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5718,
+          23.0412
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_07",
+        "name": "Ashram Road Income Tax Misting Tower",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_03",
+        "ward_name": "Ashram Road Business District",
+        "address": "Income Tax Circle Pedestrian Island",
+        "flow_rate_lpm": 22.0,
+        "daily_dispensed_liters": 7500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "08:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_08",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5572,
+          23.0312
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_08",
+        "name": "CG Road Swastik Shoppers Mist Point",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_02",
+        "ward_name": "CG Road Retail Promenade",
+        "address": "Swastik Cross Roads Corner",
+        "flow_rate_lpm": 16.0,
+        "daily_dispensed_liters": 4500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "09:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_09",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5552,
+          23.0382
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_09",
+        "name": "Navrangpura Commerce Six Roads Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_01",
+        "ward_name": "Navrangpura Commercial Core",
+        "address": "Commerce Six Roads Bus Stand",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5688,
+          23.0198
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_10",
+        "name": "Ellisbridge Town Hall Hydration Gazebo",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_05",
+        "ward_name": "Ellisbridge Financial Strip",
+        "address": "Town Hall Bus Stop",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 5800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5582,
+          23.0232
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_11",
+        "name": "Law Garden Khau Gali Misting Strip",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_40",
+        "ward_name": "Parimal Garden & Law Garden Urban Forest",
+        "address": "Law Garden Street Food Lane",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6400,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "10:00 - 23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_12",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5572,
+          23.0172
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_12",
+        "name": "Parimal Garden Morning Walk Hydration Post",
+        "water_source_type": "Public Fountain",
+        "ward_id": "WARD_40",
+        "ward_name": "Parimal Garden & Law Garden Urban Forest",
+        "address": "Parimal Garden Gate 1",
+        "flow_rate_lpm": 15.0,
+        "daily_dispensed_liters": 4100,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_13",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6312,
+          22.9682
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_13",
+        "name": "Vatva GIDC Phase-1 Laborer Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_14",
+        "ward_name": "Vatva GIDC Phase-I & II",
+        "address": "Water Tank Square, Vatva GIDC",
+        "flow_rate_lpm": 25.0,
+        "daily_dispensed_liters": 9200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_14",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6352,
+          22.9622
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_14",
+        "name": "Vatva Canal Road Industrial Mist Shelter",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_14",
+        "ward_name": "Vatva GIDC Phase-I & II",
+        "address": "Vatva Canal Bridge",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 5800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "08:00 - 19:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_15",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6462,
+          22.9552
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_15",
+        "name": "Vatva Phase-4 Freight Yard Hydration Post",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_15",
+        "ward_name": "Vatva GIDC Phase-IV Chemical Complex",
+        "address": "Phase-4 Mega Gate",
+        "flow_rate_lpm": 22.0,
+        "daily_dispensed_liters": 7800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_16",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6562,
+          23.0812
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_16",
+        "name": "Naroda Industrial Fire Station Hydration ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_16",
+        "ward_name": "Naroda Industrial Estate North",
+        "address": "Naroda GIDC Main Gate",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 7100,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_17",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6552,
+          23.0312
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_17",
+        "name": "Odhav Ring Road Workers Water Point",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_17",
+        "ward_name": "Odhav GIDC Heavy Machinery Belt",
+        "address": "Odhav Char Rasta Bus Stand",
+        "flow_rate_lpm": 22.0,
+        "daily_dispensed_liters": 7900,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_18",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6222,
+          23.0192
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_18",
+        "name": "Rakhial Monogram Mills Laborer Water Station",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_18",
+        "ward_name": "Rakhial Textile Mills & Foundries",
+        "address": "Rakhial Mill Gate 3",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6900,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_19",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6292,
+          23.0042
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_19",
+        "name": "Amraiwadi Char Rasta Public Chilled Piau",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_19",
+        "ward_name": "Amraiwadi Industrial Logistics Hub",
+        "address": "Near Amraiwadi Police Station",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 6100,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_20",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5842,
+          22.9992
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_20",
+        "name": "Behrampura Basti Mother & Child Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_20",
+        "ward_name": "Behrampura High-Density Tin Roof Basti",
+        "address": "Near Behrampura Health Post",
+        "flow_rate_lpm": 24.0,
+        "daily_dispensed_liters": 8900,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5872,
+          22.9962
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_21",
+        "name": "Behrampura Canal Road High-Pressure Mist Point",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_20",
+        "ward_name": "Behrampura High-Density Tin Roof Basti",
+        "address": "Behrampura Chawl Corner",
+        "flow_rate_lpm": 16.0,
+        "daily_dispensed_liters": 4800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "08:00 - 20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_22",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5922,
+          22.9912
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_22",
+        "name": "Danilimda Tannery Workers Free Water Post",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_21",
+        "ward_name": "Danilimda Chawl & Tannery Workers Colony",
+        "address": "Danilimda Cross Roads North",
+        "flow_rate_lpm": 22.0,
+        "daily_dispensed_liters": 8100,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_23",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6002,
+          22.9832
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_23",
+        "name": "Chandola Lake North Embankment Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_22",
+        "ward_name": "Chandola Lake Periphery Settlement",
+        "address": "Chandola Lake Embankment Gate",
+        "flow_rate_lpm": 24.0,
+        "daily_dispensed_liters": 9400,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_24",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6462,
+          22.9942
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_24",
+        "name": "Ramol Gam Basti Shaded Drinking Station",
+        "water_source_type": "Chilled Water Kiosk",
+        "ward_id": "WARD_23",
+        "ward_name": "Ramol Informal Migrant Bastis",
+        "address": "Ramol Gam Center Chowk",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 6200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_25",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6102,
+          23.0572
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_25",
+        "name": "Meghaninagar Civil Hospital Public Water Point",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_24",
+        "ward_name": "Meghaninagar Railway Bastis",
+        "address": "Civil Hospital External Gate",
+        "flow_rate_lpm": 25.0,
+        "daily_dispensed_liters": 10500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6092,
+          23.0202
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_26",
+        "name": "Gomtipur Mill Chawl Community Water Point",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_25",
+        "ward_name": "Gomtipur Old Mill Workers Chawls",
+        "address": "Gomtipur Ward Office Square",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 7200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_27",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5182,
+          23.0412
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_27",
+        "name": "Bodakdev Pakwan Cross Roads Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_26",
+        "ward_name": "Bodakdev Canopy Residential Enclave",
+        "address": "Pakwan Dining Hall Concourse",
+        "flow_rate_lpm": 18.0,
+        "daily_dispensed_liters": 5400,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "07:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_28",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5292,
+          23.0242
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_28",
+        "name": "Satellite Shivranjani BRTS Water Point",
+        "water_source_type": "BRTS Bus Station Hydration Post",
+        "ward_id": "WARD_27",
+        "ward_name": "Satellite Green Residential Avenues",
+        "address": "Shivranjani BRTS Platform",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "06:00 - 23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_29",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5312,
+          23.0362
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_29",
+        "name": "Vastrapur Lake Entry Plaza Mist Gazebo",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_28",
+        "ward_name": "Vastrapur Garden Suburb",
+        "address": "Vastrapur Lake North Gate",
+        "flow_rate_lpm": 20.0,
+        "daily_dispensed_liters": 6500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "06:00 - 22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_30",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5022,
+          23.0312
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_30",
+        "name": "SG Highway ISKCON BRTS Water & Mist Station",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_33",
+        "ward_name": "SG Highway Commercial Transit Spine",
+        "address": "ISKCON BRTS Pedestrian Plaza",
+        "flow_rate_lpm": 24.0,
+        "daily_dispensed_liters": 8800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "06:00 - 23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_31",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6022,
+          23.0292
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_31",
+        "name": "Kalupur Railway Station West Concourse Water ATM",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_35",
+        "ward_name": "Kalupur Central Railway Station Concourse",
+        "address": "Station Main Entry Gate",
+        "flow_rate_lpm": 25.0,
+        "daily_dispensed_liters": 11200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_32",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5762,
+          23.0762
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_32",
+        "name": "Ranip Mega Bus Port Concourse Water Hub",
+        "water_source_type": "RO Water ATM",
+        "ward_id": "WARD_36",
+        "ward_name": "Ranip BRTS & Regional Bus Mega-Terminal",
+        "address": "Ranip Concourse Ground Level",
+        "flow_rate_lpm": 25.0,
+        "daily_dispensed_liters": 10800,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": false,
+        "operating_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_33",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5722,
+          23.0272
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_33",
+        "name": "Sabarmati Riverfront Promenade West Misting Arch",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_37",
+        "ward_name": "Sabarmati Riverfront Promenade West",
+        "address": "Promenade Walkway Nehru Bridge Foot",
+        "flow_rate_lpm": 22.0,
+        "daily_dispensed_liters": 7200,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "06:00 - 23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HYD_34",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5992,
+          23.0082
+        ]
+      },
+      "properties": {
+        "feature_type": "hydration_point",
+        "point_id": "HYD_34",
+        "name": "Kankaria Lake Gate 1 Misting Pergola",
+        "water_source_type": "High-Pressure Misting Station",
+        "ward_id": "WARD_39",
+        "ward_name": "Kankaria Lake Ecological Park & Zoo",
+        "address": "Kankaria Lake Main Gate Plaza",
+        "flow_rate_lpm": 24.0,
+        "daily_dispensed_liters": 8500,
+        "status": "active",
+        "is_free": true,
+        "has_chilled_water": true,
+        "has_misting_fan": true,
+        "operating_hours": "06:00 - 23:00"
+      }
+    }
+  ]
+}

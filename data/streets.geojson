@@ -1,0 +1,4567 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ST001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.58754,
+            23.01909
+          ],
+          [
+            72.591,
+            23.024
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST001",
+        "street_name": "Jamalpur-Khadia Corridor",
+        "ward_id": "W01",
+        "length_meters": 1515.0,
+        "shade_ratio": 0.15,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST002",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.58358,
+            23.00616
+          ],
+          [
+            72.585,
+            22.998
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST002",
+        "street_name": "Jamalpur-Danilimda Corridor",
+        "ward_id": "W01",
+        "length_meters": 1622.4,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST003",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.57751,
+            23.00789
+          ],
+          [
+            72.574,
+            23.003
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST003",
+        "street_name": "Jamalpur-Behrampura Corridor",
+        "ward_id": "W01",
+        "length_meters": 1398.1,
+        "shade_ratio": 0.15,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST004",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.58985,
+            23.00899
+          ],
+          [
+            72.598,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST004",
+        "street_name": "Jamalpur-Kankaria Corridor",
+        "ward_id": "W01",
+        "length_meters": 1647.3,
+        "shade_ratio": 0.34,
+        "pedestrian_heat_risk": 86.5,
+        "mean_radiant_temp_celsius": 54.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST005",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.591,
+            23.024
+          ],
+          [
+            72.59228,
+            23.02754
+          ],
+          [
+            72.593,
+            23.033
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST005",
+        "street_name": "Khadia-Dariapur Corridor",
+        "ward_id": "W02",
+        "length_meters": 1019.6,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST006",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.591,
+            23.024
+          ],
+          [
+            72.58696,
+            23.03072
+          ],
+          [
+            72.581,
+            23.038
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST006",
+        "street_name": "Khadia-Shahpur Corridor",
+        "ward_id": "W02",
+        "length_meters": 1858.8,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST007",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.591,
+            23.024
+          ],
+          [
+            72.59525,
+            23.01616
+          ],
+          [
+            72.598,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST007",
+        "street_name": "Khadia-Kankaria Corridor",
+        "ward_id": "W02",
+        "length_meters": 2017.6,
+        "shade_ratio": 0.33,
+        "pedestrian_heat_risk": 86.4,
+        "mean_radiant_temp_celsius": 54.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST008",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.593,
+            23.033
+          ],
+          [
+            72.58685,
+            23.03649
+          ],
+          [
+            72.581,
+            23.038
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST008",
+        "street_name": "Dariapur-Shahpur Corridor",
+        "ward_id": "W03",
+        "length_meters": 1343.9,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST009",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.581,
+            23.038
+          ],
+          [
+            72.57159,
+            23.04341
+          ],
+          [
+            72.564,
+            23.048
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST009",
+        "street_name": "Shahpur-Stadium Corridor",
+        "ward_id": "W04",
+        "length_meters": 2058.8,
+        "shade_ratio": 0.35,
+        "pedestrian_heat_risk": 81.2,
+        "mean_radiant_temp_celsius": 53.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST010",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.585,
+            22.998
+          ],
+          [
+            72.57866,
+            22.99996
+          ],
+          [
+            72.574,
+            23.003
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST010",
+        "street_name": "Danilimda-Behrampura Corridor",
+        "ward_id": "W05",
+        "length_meters": 1251.8,
+        "shade_ratio": 0.13,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST011",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.585,
+            22.998
+          ],
+          [
+            72.5915,
+            23.0015
+          ],
+          [
+            72.598,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST011",
+        "street_name": "Danilimda-Kankaria Corridor",
+        "ward_id": "W05",
+        "length_meters": 1660.2,
+        "shade_ratio": 0.32,
+        "pedestrian_heat_risk": 90.0,
+        "mean_radiant_temp_celsius": 54.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST012",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.574,
+            23.003
+          ],
+          [
+            72.56834,
+            23.00696
+          ],
+          [
+            72.561,
+            23.012
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST012",
+        "street_name": "Behrampura-Paldi Corridor",
+        "ward_id": "W06",
+        "length_meters": 1660.2,
+        "shade_ratio": 0.31,
+        "pedestrian_heat_risk": 88.5,
+        "mean_radiant_temp_celsius": 54.3,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST013",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.605,
+            23.051
+          ],
+          [
+            72.61191,
+            23.04392
+          ],
+          [
+            72.617,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST013",
+        "street_name": "Asarwa-Saraspur Corridor",
+        "ward_id": "W07",
+        "length_meters": 2066.5,
+        "shade_ratio": 0.2,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST014",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632,
+            23.078
+          ],
+          [
+            72.63664,
+            23.07399
+          ],
+          [
+            72.641,
+            23.068
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST014",
+        "street_name": "Sardarnagar-Kubernagar Corridor",
+        "ward_id": "W08",
+        "length_meters": 1440.4,
+        "shade_ratio": 0.24,
+        "pedestrian_heat_risk": 97.2,
+        "mean_radiant_temp_celsius": 55.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST015",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632,
+            23.078
+          ],
+          [
+            72.63224,
+            23.06915
+          ],
+          [
+            72.634,
+            23.059
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST015",
+        "street_name": "Sardarnagar-Saijpur Corridor",
+        "ward_id": "W08",
+        "length_meters": 2118.8,
+        "shade_ratio": 0.23,
+        "pedestrian_heat_risk": 98.5,
+        "mean_radiant_temp_celsius": 55.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST016",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.658,
+            23.076
+          ],
+          [
+            72.64854,
+            23.07171
+          ],
+          [
+            72.641,
+            23.068
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST016",
+        "street_name": "Naroda-Kubernagar Corridor",
+        "ward_id": "W09",
+        "length_meters": 1948.2,
+        "shade_ratio": 0.18,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST017",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.641,
+            23.068
+          ],
+          [
+            72.63722,
+            23.06254
+          ],
+          [
+            72.634,
+            23.059
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST017",
+        "street_name": "Kubernagar-Saijpur Corridor",
+        "ward_id": "W10",
+        "length_meters": 1227.9,
+        "shade_ratio": 0.2,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST018",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.634,
+            23.059
+          ],
+          [
+            72.64166,
+            23.05325
+          ],
+          [
+            72.648,
+            23.049
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST018",
+        "street_name": "Saijpur-India Colony Corridor",
+        "ward_id": "W11",
+        "length_meters": 1808.7,
+        "shade_ratio": 0.21,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST019",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.634,
+            23.059
+          ],
+          [
+            72.63549,
+            23.05065
+          ],
+          [
+            72.635,
+            23.042
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST019",
+        "street_name": "Saijpur-Bapunagar Corridor",
+        "ward_id": "W11",
+        "length_meters": 1889.8,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST020",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.648,
+            23.049
+          ],
+          [
+            72.64191,
+            23.04641
+          ],
+          [
+            72.635,
+            23.042
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST020",
+        "street_name": "India Colony-Bapunagar Corridor",
+        "ward_id": "W12",
+        "length_meters": 1536.9,
+        "shade_ratio": 0.19,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST021",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.648,
+            23.049
+          ],
+          [
+            72.64895,
+            23.04334
+          ],
+          [
+            72.651,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST021",
+        "street_name": "India Colony-Viratnagar Corridor",
+        "ward_id": "W12",
+        "length_meters": 1475.1,
+        "shade_ratio": 0.2,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST022",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.648,
+            23.049
+          ],
+          [
+            72.657,
+            23.05099
+          ],
+          [
+            72.668,
+            23.053
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST022",
+        "street_name": "India Colony-Nikol Corridor",
+        "ward_id": "W12",
+        "length_meters": 2087.8,
+        "shade_ratio": 0.24,
+        "pedestrian_heat_risk": 98.2,
+        "mean_radiant_temp_celsius": 55.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST023",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.617,
+            23.036
+          ],
+          [
+            72.62547,
+            23.03815
+          ],
+          [
+            72.635,
+            23.042
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST023",
+        "street_name": "Saraspur-Bapunagar Corridor",
+        "ward_id": "W13",
+        "length_meters": 1953.1,
+        "shade_ratio": 0.15,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST024",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.617,
+            23.036
+          ],
+          [
+            72.61842,
+            23.02609
+          ],
+          [
+            72.619,
+            23.018
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST024",
+        "street_name": "Saraspur-Gomtipur Corridor",
+        "ward_id": "W13",
+        "length_meters": 2008.4,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST025",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.635,
+            23.042
+          ],
+          [
+            72.64399,
+            23.03887
+          ],
+          [
+            72.651,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST025",
+        "street_name": "Bapunagar-Viratnagar Corridor",
+        "ward_id": "W14",
+        "length_meters": 1762.7,
+        "shade_ratio": 0.15,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST026",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.619,
+            23.018
+          ],
+          [
+            72.62765,
+            23.01326
+          ],
+          [
+            72.635,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST026",
+        "street_name": "Gomtipur-Amraiwadi Corridor",
+        "ward_id": "W15",
+        "length_meters": 2038.2,
+        "shade_ratio": 0.13,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST027",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.668,
+            23.024
+          ],
+          [
+            72.65921,
+            23.03096
+          ],
+          [
+            72.651,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST027",
+        "street_name": "Odhav-Viratnagar Corridor",
+        "ward_id": "W17",
+        "length_meters": 2186.5,
+        "shade_ratio": 0.13,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST028",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.607,
+            22.999
+          ],
+          [
+            72.60154,
+            23.00327
+          ],
+          [
+            72.598,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST028",
+        "street_name": "Maninagar-Kankaria Corridor",
+        "ward_id": "W21",
+        "length_meters": 1277.2,
+        "shade_ratio": 0.43,
+        "pedestrian_heat_risk": 73.0,
+        "mean_radiant_temp_celsius": 51.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST029",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.607,
+            22.999
+          ],
+          [
+            72.60375,
+            22.98934
+          ],
+          [
+            72.602,
+            22.981
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST029",
+        "street_name": "Maninagar-Isanpur Corridor",
+        "ward_id": "W21",
+        "length_meters": 2062.1,
+        "shade_ratio": 0.27,
+        "pedestrian_heat_risk": 94.0,
+        "mean_radiant_temp_celsius": 55.2,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST030",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.607,
+            22.999
+          ],
+          [
+            72.61265,
+            22.99151
+          ],
+          [
+            72.618,
+            22.986
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST030",
+        "street_name": "Maninagar-Ghodasar Corridor",
+        "ward_id": "W21",
+        "length_meters": 1827.9,
+        "shade_ratio": 0.3,
+        "pedestrian_heat_risk": 89.8,
+        "mean_radiant_temp_celsius": 54.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST031",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.602,
+            22.981
+          ],
+          [
+            72.61091,
+            22.9831
+          ],
+          [
+            72.618,
+            22.986
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST031",
+        "street_name": "Isanpur-Ghodasar Corridor",
+        "ward_id": "W23",
+        "length_meters": 1723.8,
+        "shade_ratio": 0.23,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.2,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST032",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.556,
+            23.037
+          ],
+          [
+            72.56083,
+            23.04305
+          ],
+          [
+            72.564,
+            23.048
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST032",
+        "street_name": "Navrangpura-Stadium Corridor",
+        "ward_id": "W27",
+        "length_meters": 1468.6,
+        "shade_ratio": 0.59,
+        "pedestrian_heat_risk": 49.4,
+        "mean_radiant_temp_celsius": 47.8,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST033",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.564,
+            23.048
+          ],
+          [
+            72.55599,
+            23.0535
+          ],
+          [
+            72.548,
+            23.057
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST033",
+        "street_name": "Stadium-Naranpura Corridor",
+        "ward_id": "W28",
+        "length_meters": 1913.5,
+        "shade_ratio": 0.53,
+        "pedestrian_heat_risk": 57.4,
+        "mean_radiant_temp_celsius": 49.1,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST034",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.564,
+            23.048
+          ],
+          [
+            72.56565,
+            23.05803
+          ],
+          [
+            72.569,
+            23.067
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST034",
+        "street_name": "Stadium-Nava Vadaj Corridor",
+        "ward_id": "W28",
+        "length_meters": 2169.8,
+        "shade_ratio": 0.48,
+        "pedestrian_heat_risk": 65.5,
+        "mean_radiant_temp_celsius": 50.5,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST035",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.561,
+            23.012
+          ],
+          [
+            72.5536,
+            23.00457
+          ],
+          [
+            72.548,
+            22.998
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST035",
+        "street_name": "Paldi-Vasna Corridor",
+        "ward_id": "W29",
+        "length_meters": 2042.8,
+        "shade_ratio": 0.48,
+        "pedestrian_heat_risk": 65.0,
+        "mean_radiant_temp_celsius": 50.4,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST036",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.548,
+            22.998
+          ],
+          [
+            72.53787,
+            23.00001
+          ],
+          [
+            72.528,
+            23.004
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST036",
+        "street_name": "Vasna-Vejalpur Corridor",
+        "ward_id": "W30",
+        "length_meters": 2146.0,
+        "shade_ratio": 0.42,
+        "pedestrian_heat_risk": 73.8,
+        "mean_radiant_temp_celsius": 51.9,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST037",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.548,
+            23.057
+          ],
+          [
+            72.54277,
+            23.06236
+          ],
+          [
+            72.536,
+            23.069
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST037",
+        "street_name": "Naranpura-Ghatlodia Corridor",
+        "ward_id": "W31",
+        "length_meters": 1809.0,
+        "shade_ratio": 0.48,
+        "pedestrian_heat_risk": 64.5,
+        "mean_radiant_temp_celsius": 50.3,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST038",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.548,
+            23.057
+          ],
+          [
+            72.54096,
+            23.0548
+          ],
+          [
+            72.532,
+            23.052
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST038",
+        "street_name": "Naranpura-Memnagar Corridor",
+        "ward_id": "W31",
+        "length_meters": 1723.8,
+        "shade_ratio": 0.52,
+        "pedestrian_heat_risk": 58.6,
+        "mean_radiant_temp_celsius": 49.3,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST039",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.569,
+            23.067
+          ],
+          [
+            72.56677,
+            23.07246
+          ],
+          [
+            72.564,
+            23.076
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST039",
+        "street_name": "Nava Vadaj-Ranip Corridor",
+        "ward_id": "W32",
+        "length_meters": 1121.7,
+        "shade_ratio": 0.4,
+        "pedestrian_heat_risk": 76.8,
+        "mean_radiant_temp_celsius": 52.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST040",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.536,
+            23.069
+          ],
+          [
+            72.53333,
+            23.06125
+          ],
+          [
+            72.532,
+            23.052
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST040",
+        "street_name": "Ghatlodia-Memnagar Corridor",
+        "ward_id": "W35",
+        "length_meters": 1930.6,
+        "shade_ratio": 0.5,
+        "pedestrian_heat_risk": 61.6,
+        "mean_radiant_temp_celsius": 49.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST041",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.536,
+            23.069
+          ],
+          [
+            72.53901,
+            23.07634
+          ],
+          [
+            72.544,
+            23.084
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST041",
+        "street_name": "Ghatlodia-Chandlodia Corridor",
+        "ward_id": "W35",
+        "length_meters": 1854.2,
+        "shade_ratio": 0.42,
+        "pedestrian_heat_risk": 73.4,
+        "mean_radiant_temp_celsius": 51.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST042",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.532,
+            23.052
+          ],
+          [
+            72.5296,
+            23.04158
+          ],
+          [
+            72.528,
+            23.033
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST042",
+        "street_name": "Memnagar-Vastrapur Corridor",
+        "ward_id": "W36",
+        "length_meters": 2148.1,
+        "shade_ratio": 0.61,
+        "pedestrian_heat_risk": 46.9,
+        "mean_radiant_temp_celsius": 47.4,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST043",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.508,
+            23.056
+          ],
+          [
+            72.51056,
+            23.04667
+          ],
+          [
+            72.512,
+            23.039
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST043",
+        "street_name": "Thaltej-Bodakdev Corridor",
+        "ward_id": "W37",
+        "length_meters": 1930.6,
+        "shade_ratio": 0.67,
+        "pedestrian_heat_risk": 38.5,
+        "mean_radiant_temp_celsius": 46.0,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST044",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.512,
+            23.039
+          ],
+          [
+            72.521,
+            23.03602
+          ],
+          [
+            72.528,
+            23.033
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST044",
+        "street_name": "Bodakdev-Vastrapur Corridor",
+        "ward_id": "W38",
+        "length_meters": 1762.7,
+        "shade_ratio": 0.69,
+        "pedestrian_heat_risk": 36.5,
+        "mean_radiant_temp_celsius": 45.7,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST045",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.535,
+            23.102
+          ],
+          [
+            72.54003,
+            23.09385
+          ],
+          [
+            72.544,
+            23.084
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST045",
+        "street_name": "Gota-Chandlodia Corridor",
+        "ward_id": "W39",
+        "length_meters": 2198.8,
+        "shade_ratio": 0.41,
+        "pedestrian_heat_risk": 75.1,
+        "mean_radiant_temp_celsius": 52.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST046",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.528,
+            23.033
+          ],
+          [
+            72.52557,
+            23.0264
+          ],
+          [
+            72.524,
+            23.018
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST046",
+        "street_name": "Vastrapur-Jodhpur Corridor",
+        "ward_id": "W42",
+        "length_meters": 1714.3,
+        "shade_ratio": 0.63,
+        "pedestrian_heat_risk": 44.5,
+        "mean_radiant_temp_celsius": 47.0,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST047",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.524,
+            23.018
+          ],
+          [
+            72.52501,
+            23.01112
+          ],
+          [
+            72.528,
+            23.004
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST047",
+        "street_name": "Jodhpur-Vejalpur Corridor",
+        "ward_id": "W43",
+        "length_meters": 1606.7,
+        "shade_ratio": 0.5,
+        "pedestrian_heat_risk": 62.0,
+        "mean_radiant_temp_celsius": 49.9,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST048",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.528,
+            23.004
+          ],
+          [
+            72.52386,
+            22.99673
+          ],
+          [
+            72.521,
+            22.991
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST048",
+        "street_name": "Vejalpur-Maktampur Corridor",
+        "ward_id": "W44",
+        "length_meters": 1610.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 78.9,
+        "mean_radiant_temp_celsius": 52.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST049",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.502,
+            22.986
+          ],
+          [
+            72.5118,
+            22.98755
+          ],
+          [
+            72.521,
+            22.991
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST049",
+        "street_name": "Sarkhej-Maktampur Corridor",
+        "ward_id": "W45",
+        "length_meters": 2015.9,
+        "shade_ratio": 0.34,
+        "pedestrian_heat_risk": 87.4,
+        "mean_radiant_temp_celsius": 54.3,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST050",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.502,
+            22.986
+          ],
+          [
+            72.50396,
+            22.99124
+          ],
+          [
+            72.504,
+            22.997
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST050",
+        "street_name": "Sarkhej-Makarba Corridor",
+        "ward_id": "W45",
+        "length_meters": 1237.9,
+        "shade_ratio": 0.41,
+        "pedestrian_heat_risk": 76.5,
+        "mean_radiant_temp_celsius": 52.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST051",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.521,
+            22.991
+          ],
+          [
+            72.51324,
+            22.99467
+          ],
+          [
+            72.504,
+            22.997
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST051",
+        "street_name": "Maktampur-Makarba Corridor",
+        "ward_id": "W46",
+        "length_meters": 1857.5,
+        "shade_ratio": 0.43,
+        "pedestrian_heat_risk": 73.0,
+        "mean_radiant_temp_celsius": 51.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST052",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.581,
+            23.0095
+          ],
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.585,
+            23.0155
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST052",
+        "street_name": "Jamalpur Central Commercial Marg",
+        "ward_id": "W01",
+        "length_meters": 720.0,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST053",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.58,
+            23.015
+          ],
+          [
+            72.583,
+            23.0125
+          ],
+          [
+            72.586,
+            23.01
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST053",
+        "street_name": "Jamalpur Shaded Community Way",
+        "ward_id": "W01",
+        "length_meters": 640.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 68.7,
+        "mean_radiant_temp_celsius": 52.9,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST054",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.589,
+            23.021
+          ],
+          [
+            72.591,
+            23.024
+          ],
+          [
+            72.593,
+            23.027
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST054",
+        "street_name": "Khadia Central Commercial Marg",
+        "ward_id": "W02",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST055",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.588,
+            23.0265
+          ],
+          [
+            72.591,
+            23.024
+          ],
+          [
+            72.594,
+            23.0215
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST055",
+        "street_name": "Khadia Shaded Community Way",
+        "ward_id": "W02",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 68.7,
+        "mean_radiant_temp_celsius": 52.7,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST056",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.591,
+            23.03
+          ],
+          [
+            72.593,
+            23.033
+          ],
+          [
+            72.595,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST056",
+        "street_name": "Dariapur Central Commercial Marg",
+        "ward_id": "W03",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST057",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.59,
+            23.0355
+          ],
+          [
+            72.593,
+            23.033
+          ],
+          [
+            72.596,
+            23.0305
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST057",
+        "street_name": "Dariapur Shaded Community Way",
+        "ward_id": "W03",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 69.9,
+        "mean_radiant_temp_celsius": 53.0,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST058",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.579,
+            23.035
+          ],
+          [
+            72.581,
+            23.038
+          ],
+          [
+            72.583,
+            23.041
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST058",
+        "street_name": "Shahpur Central Commercial Marg",
+        "ward_id": "W04",
+        "length_meters": 720.0,
+        "shade_ratio": 0.18,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST059",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.578,
+            23.0405
+          ],
+          [
+            72.581,
+            23.038
+          ],
+          [
+            72.584,
+            23.0355
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST059",
+        "street_name": "Shahpur Shaded Community Way",
+        "ward_id": "W04",
+        "length_meters": 640.0,
+        "shade_ratio": 0.42,
+        "pedestrian_heat_risk": 62.6,
+        "mean_radiant_temp_celsius": 51.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST060",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            22.995
+          ],
+          [
+            72.585,
+            22.998
+          ],
+          [
+            72.587,
+            23.001
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST060",
+        "street_name": "Danilimda Central Commercial Marg",
+        "ward_id": "W05",
+        "length_meters": 720.0,
+        "shade_ratio": 0.12,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 60.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST061",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.582,
+            23.0005
+          ],
+          [
+            72.585,
+            22.998
+          ],
+          [
+            72.588,
+            22.9955
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST061",
+        "street_name": "Danilimda Shaded Community Way",
+        "ward_id": "W05",
+        "length_meters": 640.0,
+        "shade_ratio": 0.33,
+        "pedestrian_heat_risk": 76.0,
+        "mean_radiant_temp_celsius": 54.3,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST062",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.572,
+            23.0
+          ],
+          [
+            72.574,
+            23.003
+          ],
+          [
+            72.576,
+            23.006
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST062",
+        "street_name": "Behrampura Central Commercial Marg",
+        "ward_id": "W06",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST063",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.571,
+            23.0055
+          ],
+          [
+            72.574,
+            23.003
+          ],
+          [
+            72.577,
+            23.0005
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST063",
+        "street_name": "Behrampura Shaded Community Way",
+        "ward_id": "W06",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 72.3,
+        "mean_radiant_temp_celsius": 53.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST064",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.603,
+            23.048
+          ],
+          [
+            72.605,
+            23.051
+          ],
+          [
+            72.607,
+            23.054
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST064",
+        "street_name": "Asarwa Central Commercial Marg",
+        "ward_id": "W07",
+        "length_meters": 720.0,
+        "shade_ratio": 0.21,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST065",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.602,
+            23.0535
+          ],
+          [
+            72.605,
+            23.051
+          ],
+          [
+            72.608,
+            23.0485
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST065",
+        "street_name": "Asarwa Shaded Community Way",
+        "ward_id": "W07",
+        "length_meters": 640.0,
+        "shade_ratio": 0.47,
+        "pedestrian_heat_risk": 56.8,
+        "mean_radiant_temp_celsius": 50.5,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST066",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.63,
+            23.075
+          ],
+          [
+            72.632,
+            23.078
+          ],
+          [
+            72.634,
+            23.081
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST066",
+        "street_name": "Sardarnagar Central Commercial Marg",
+        "ward_id": "W08",
+        "length_meters": 720.0,
+        "shade_ratio": 0.25,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 55.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST067",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.629,
+            23.0805
+          ],
+          [
+            72.632,
+            23.078
+          ],
+          [
+            72.635,
+            23.0755
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST067",
+        "street_name": "Sardarnagar Shaded Community Way",
+        "ward_id": "W08",
+        "length_meters": 640.0,
+        "shade_ratio": 0.53,
+        "pedestrian_heat_risk": 51.2,
+        "mean_radiant_temp_celsius": 49.5,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST068",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.656,
+            23.073
+          ],
+          [
+            72.658,
+            23.076
+          ],
+          [
+            72.66,
+            23.079
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST068",
+        "street_name": "Naroda Central Commercial Marg",
+        "ward_id": "W09",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 60.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST069",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.655,
+            23.0785
+          ],
+          [
+            72.658,
+            23.076
+          ],
+          [
+            72.661,
+            23.0735
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST069",
+        "street_name": "Naroda Shaded Community Way",
+        "ward_id": "W09",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 74.3,
+        "mean_radiant_temp_celsius": 54.1,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST070",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.639,
+            23.065
+          ],
+          [
+            72.641,
+            23.068
+          ],
+          [
+            72.643,
+            23.071
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST070",
+        "street_name": "Kubernagar Central Commercial Marg",
+        "ward_id": "W10",
+        "length_meters": 720.0,
+        "shade_ratio": 0.19,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST071",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.638,
+            23.0705
+          ],
+          [
+            72.641,
+            23.068
+          ],
+          [
+            72.644,
+            23.0655
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST071",
+        "street_name": "Kubernagar Shaded Community Way",
+        "ward_id": "W10",
+        "length_meters": 640.0,
+        "shade_ratio": 0.44,
+        "pedestrian_heat_risk": 60.9,
+        "mean_radiant_temp_celsius": 51.3,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST072",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632,
+            23.056
+          ],
+          [
+            72.634,
+            23.059
+          ],
+          [
+            72.636,
+            23.062
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST072",
+        "street_name": "Saijpur Central Commercial Marg",
+        "ward_id": "W11",
+        "length_meters": 720.0,
+        "shade_ratio": 0.18,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST073",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.631,
+            23.0615
+          ],
+          [
+            72.634,
+            23.059
+          ],
+          [
+            72.637,
+            23.0565
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST073",
+        "street_name": "Saijpur Shaded Community Way",
+        "ward_id": "W11",
+        "length_meters": 640.0,
+        "shade_ratio": 0.42,
+        "pedestrian_heat_risk": 62.6,
+        "mean_radiant_temp_celsius": 51.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST074",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.646,
+            23.046
+          ],
+          [
+            72.648,
+            23.049
+          ],
+          [
+            72.65,
+            23.052
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST074",
+        "street_name": "India Colony Central Commercial Marg",
+        "ward_id": "W12",
+        "length_meters": 720.0,
+        "shade_ratio": 0.21,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST075",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.645,
+            23.0515
+          ],
+          [
+            72.648,
+            23.049
+          ],
+          [
+            72.651,
+            23.0465
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST075",
+        "street_name": "India Colony Shaded Community Way",
+        "ward_id": "W12",
+        "length_meters": 640.0,
+        "shade_ratio": 0.47,
+        "pedestrian_heat_risk": 57.6,
+        "mean_radiant_temp_celsius": 50.7,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST076",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.615,
+            23.033
+          ],
+          [
+            72.617,
+            23.036
+          ],
+          [
+            72.619,
+            23.039
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST076",
+        "street_name": "Saraspur Central Commercial Marg",
+        "ward_id": "W13",
+        "length_meters": 720.0,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST077",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.614,
+            23.0385
+          ],
+          [
+            72.617,
+            23.036
+          ],
+          [
+            72.62,
+            23.0335
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST077",
+        "street_name": "Saraspur Shaded Community Way",
+        "ward_id": "W13",
+        "length_meters": 640.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 67.9,
+        "mean_radiant_temp_celsius": 52.7,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST078",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.633,
+            23.039
+          ],
+          [
+            72.635,
+            23.042
+          ],
+          [
+            72.637,
+            23.045
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST078",
+        "street_name": "Bapunagar Central Commercial Marg",
+        "ward_id": "W14",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST079",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632,
+            23.0445
+          ],
+          [
+            72.635,
+            23.042
+          ],
+          [
+            72.638,
+            23.0395
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST079",
+        "street_name": "Bapunagar Shaded Community Way",
+        "ward_id": "W14",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 72.7,
+        "mean_radiant_temp_celsius": 53.7,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST080",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.617,
+            23.015
+          ],
+          [
+            72.619,
+            23.018
+          ],
+          [
+            72.621,
+            23.021
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST080",
+        "street_name": "Gomtipur Central Commercial Marg",
+        "ward_id": "W15",
+        "length_meters": 720.0,
+        "shade_ratio": 0.12,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 60.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST081",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.616,
+            23.0205
+          ],
+          [
+            72.619,
+            23.018
+          ],
+          [
+            72.622,
+            23.0155
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST081",
+        "street_name": "Gomtipur Shaded Community Way",
+        "ward_id": "W15",
+        "length_meters": 640.0,
+        "shade_ratio": 0.33,
+        "pedestrian_heat_risk": 77.6,
+        "mean_radiant_temp_celsius": 54.7,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST082",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.633,
+            23.004
+          ],
+          [
+            72.635,
+            23.007
+          ],
+          [
+            72.637,
+            23.01
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST082",
+        "street_name": "Amraiwadi Central Commercial Marg",
+        "ward_id": "W16",
+        "length_meters": 720.0,
+        "shade_ratio": 0.14,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST083",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632,
+            23.0095
+          ],
+          [
+            72.635,
+            23.007
+          ],
+          [
+            72.638,
+            23.0045
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST083",
+        "street_name": "Amraiwadi Shaded Community Way",
+        "ward_id": "W16",
+        "length_meters": 640.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 73.9,
+        "mean_radiant_temp_celsius": 54.0,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST084",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.666,
+            23.021
+          ],
+          [
+            72.668,
+            23.024
+          ],
+          [
+            72.67,
+            23.027
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST084",
+        "street_name": "Odhav Central Commercial Marg",
+        "ward_id": "W17",
+        "length_meters": 720.0,
+        "shade_ratio": 0.1,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 61.2,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST085",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.665,
+            23.0265
+          ],
+          [
+            72.668,
+            23.024
+          ],
+          [
+            72.671,
+            23.0215
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST085",
+        "street_name": "Odhav Shaded Community Way",
+        "ward_id": "W17",
+        "length_meters": 640.0,
+        "shade_ratio": 0.3,
+        "pedestrian_heat_risk": 81.2,
+        "mean_radiant_temp_celsius": 55.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST086",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.649,
+            23.033
+          ],
+          [
+            72.651,
+            23.036
+          ],
+          [
+            72.653,
+            23.039
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST086",
+        "street_name": "Viratnagar Central Commercial Marg",
+        "ward_id": "W18",
+        "length_meters": 720.0,
+        "shade_ratio": 0.16,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 59.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST087",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.648,
+            23.0385
+          ],
+          [
+            72.651,
+            23.036
+          ],
+          [
+            72.654,
+            23.0335
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST087",
+        "street_name": "Viratnagar Shaded Community Way",
+        "ward_id": "W18",
+        "length_meters": 640.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 69.1,
+        "mean_radiant_temp_celsius": 53.0,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST088",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.666,
+            23.05
+          ],
+          [
+            72.668,
+            23.053
+          ],
+          [
+            72.67,
+            23.056
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST088",
+        "street_name": "Nikol Central Commercial Marg",
+        "ward_id": "W19",
+        "length_meters": 720.0,
+        "shade_ratio": 0.23,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST089",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.665,
+            23.0555
+          ],
+          [
+            72.668,
+            23.053
+          ],
+          [
+            72.671,
+            23.0505
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST089",
+        "street_name": "Nikol Shaded Community Way",
+        "ward_id": "W19",
+        "length_meters": 640.0,
+        "shade_ratio": 0.5,
+        "pedestrian_heat_risk": 55.6,
+        "mean_radiant_temp_celsius": 50.4,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST090",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.65,
+            22.982
+          ],
+          [
+            72.652,
+            22.985
+          ],
+          [
+            72.654,
+            22.988
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST090",
+        "street_name": "Ramol-Hathijan Central Commercial Marg",
+        "ward_id": "W20",
+        "length_meters": 720.0,
+        "shade_ratio": 0.27,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST091",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.649,
+            22.9875
+          ],
+          [
+            72.652,
+            22.985
+          ],
+          [
+            72.655,
+            22.9825
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST091",
+        "street_name": "Ramol-Hathijan Shaded Community Way",
+        "ward_id": "W20",
+        "length_meters": 640.0,
+        "shade_ratio": 0.56,
+        "pedestrian_heat_risk": 53.1,
+        "mean_radiant_temp_celsius": 50.2,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST092",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.605,
+            22.996
+          ],
+          [
+            72.607,
+            22.999
+          ],
+          [
+            72.609,
+            23.002
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST092",
+        "street_name": "Maninagar Central Commercial Marg",
+        "ward_id": "W21",
+        "length_meters": 720.0,
+        "shade_ratio": 0.3,
+        "pedestrian_heat_risk": 93.3,
+        "mean_radiant_temp_celsius": 54.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST093",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.604,
+            23.0015
+          ],
+          [
+            72.607,
+            22.999
+          ],
+          [
+            72.61,
+            22.9965
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST093",
+        "street_name": "Maninagar Shaded Community Way",
+        "ward_id": "W21",
+        "length_meters": 640.0,
+        "shade_ratio": 0.61,
+        "pedestrian_heat_risk": 43.7,
+        "mean_radiant_temp_celsius": 48.2,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST094",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.596,
+            23.004
+          ],
+          [
+            72.598,
+            23.007
+          ],
+          [
+            72.6,
+            23.01
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST094",
+        "street_name": "Kankaria Central Commercial Marg",
+        "ward_id": "W22",
+        "length_meters": 720.0,
+        "shade_ratio": 0.45,
+        "pedestrian_heat_risk": 73.6,
+        "mean_radiant_temp_celsius": 51.7,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST095",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.595,
+            23.0095
+          ],
+          [
+            72.598,
+            23.007
+          ],
+          [
+            72.601,
+            23.0045
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST095",
+        "street_name": "Kankaria Shaded Community Way",
+        "ward_id": "W22",
+        "length_meters": 640.0,
+        "shade_ratio": 0.84,
+        "pedestrian_heat_risk": 22.1,
+        "mean_radiant_temp_celsius": 44.4,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST096",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.6,
+            22.978
+          ],
+          [
+            72.602,
+            22.981
+          ],
+          [
+            72.604,
+            22.984
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST096",
+        "street_name": "Isanpur Central Commercial Marg",
+        "ward_id": "W23",
+        "length_meters": 720.0,
+        "shade_ratio": 0.19,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 57.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST097",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.599,
+            22.9835
+          ],
+          [
+            72.602,
+            22.981
+          ],
+          [
+            72.605,
+            22.9785
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST097",
+        "street_name": "Isanpur Shaded Community Way",
+        "ward_id": "W23",
+        "length_meters": 640.0,
+        "shade_ratio": 0.44,
+        "pedestrian_heat_risk": 62.1,
+        "mean_radiant_temp_celsius": 51.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST098",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.616,
+            22.983
+          ],
+          [
+            72.618,
+            22.986
+          ],
+          [
+            72.62,
+            22.989
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST098",
+        "street_name": "Ghodasar Central Commercial Marg",
+        "ward_id": "W24",
+        "length_meters": 720.0,
+        "shade_ratio": 0.23,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST099",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.615,
+            22.9885
+          ],
+          [
+            72.618,
+            22.986
+          ],
+          [
+            72.621,
+            22.9835
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST099",
+        "street_name": "Ghodasar Shaded Community Way",
+        "ward_id": "W24",
+        "length_meters": 640.0,
+        "shade_ratio": 0.5,
+        "pedestrian_heat_risk": 54.8,
+        "mean_radiant_temp_celsius": 50.2,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST100",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.63,
+            22.961
+          ],
+          [
+            72.632,
+            22.964
+          ],
+          [
+            72.634,
+            22.967
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST100",
+        "street_name": "Vatva Central Commercial Marg",
+        "ward_id": "W25",
+        "length_meters": 720.0,
+        "shade_ratio": 0.12,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 61.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST101",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.629,
+            22.9665
+          ],
+          [
+            72.632,
+            22.964
+          ],
+          [
+            72.635,
+            22.9615
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST101",
+        "street_name": "Vatva Shaded Community Way",
+        "ward_id": "W25",
+        "length_meters": 640.0,
+        "shade_ratio": 0.33,
+        "pedestrian_heat_risk": 80.0,
+        "mean_radiant_temp_celsius": 55.3,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST102",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.596,
+            22.945
+          ],
+          [
+            72.598,
+            22.948
+          ],
+          [
+            72.6,
+            22.951
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST102",
+        "street_name": "Lambha Central Commercial Marg",
+        "ward_id": "W26",
+        "length_meters": 720.0,
+        "shade_ratio": 0.21,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 58.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST103",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.595,
+            22.9505
+          ],
+          [
+            72.598,
+            22.948
+          ],
+          [
+            72.601,
+            22.9455
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST103",
+        "street_name": "Lambha Shaded Community Way",
+        "ward_id": "W26",
+        "length_meters": 640.0,
+        "shade_ratio": 0.47,
+        "pedestrian_heat_risk": 62.0,
+        "mean_radiant_temp_celsius": 51.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST104",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.554,
+            23.034
+          ],
+          [
+            72.556,
+            23.037
+          ],
+          [
+            72.558,
+            23.04
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST104",
+        "street_name": "Navrangpura Central Commercial Marg",
+        "ward_id": "W27",
+        "length_meters": 720.0,
+        "shade_ratio": 0.48,
+        "pedestrian_heat_risk": 63.8,
+        "mean_radiant_temp_celsius": 49.8,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST105",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.553,
+            23.0395
+          ],
+          [
+            72.556,
+            23.037
+          ],
+          [
+            72.559,
+            23.0345
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST105",
+        "street_name": "Navrangpura Shaded Community Way",
+        "ward_id": "W27",
+        "length_meters": 640.0,
+        "shade_ratio": 0.89,
+        "pedestrian_heat_risk": 12.7,
+        "mean_radiant_temp_celsius": 42.4,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST106",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.562,
+            23.045
+          ],
+          [
+            72.564,
+            23.048
+          ],
+          [
+            72.566,
+            23.051
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST106",
+        "street_name": "Stadium Central Commercial Marg",
+        "ward_id": "W28",
+        "length_meters": 720.0,
+        "shade_ratio": 0.45,
+        "pedestrian_heat_risk": 68.6,
+        "mean_radiant_temp_celsius": 50.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST107",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.561,
+            23.0505
+          ],
+          [
+            72.564,
+            23.048
+          ],
+          [
+            72.567,
+            23.0455
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST107",
+        "street_name": "Stadium Shaded Community Way",
+        "ward_id": "W28",
+        "length_meters": 640.0,
+        "shade_ratio": 0.84,
+        "pedestrian_heat_risk": 17.7,
+        "mean_radiant_temp_celsius": 43.3,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST108",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.559,
+            23.009
+          ],
+          [
+            72.561,
+            23.012
+          ],
+          [
+            72.563,
+            23.015
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST108",
+        "street_name": "Paldi Central Commercial Marg",
+        "ward_id": "W29",
+        "length_meters": 720.0,
+        "shade_ratio": 0.41,
+        "pedestrian_heat_risk": 74.1,
+        "mean_radiant_temp_celsius": 51.5,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST109",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.558,
+            23.0145
+          ],
+          [
+            72.561,
+            23.012
+          ],
+          [
+            72.564,
+            23.0095
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST109",
+        "street_name": "Paldi Shaded Community Way",
+        "ward_id": "W29",
+        "length_meters": 640.0,
+        "shade_ratio": 0.78,
+        "pedestrian_heat_risk": 23.8,
+        "mean_radiant_temp_celsius": 44.4,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST110",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.546,
+            22.995
+          ],
+          [
+            72.548,
+            22.998
+          ],
+          [
+            72.55,
+            23.001
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST110",
+        "street_name": "Vasna Central Commercial Marg",
+        "ward_id": "W30",
+        "length_meters": 720.0,
+        "shade_ratio": 0.34,
+        "pedestrian_heat_risk": 86.3,
+        "mean_radiant_temp_celsius": 53.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST111",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.545,
+            23.0005
+          ],
+          [
+            72.548,
+            22.998
+          ],
+          [
+            72.551,
+            22.9955
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST111",
+        "street_name": "Vasna Shaded Community Way",
+        "ward_id": "W30",
+        "length_meters": 640.0,
+        "shade_ratio": 0.67,
+        "pedestrian_heat_risk": 36.4,
+        "mean_radiant_temp_celsius": 46.8,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST112",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.546,
+            23.054
+          ],
+          [
+            72.548,
+            23.057
+          ],
+          [
+            72.55,
+            23.06
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST112",
+        "street_name": "Naranpura Central Commercial Marg",
+        "ward_id": "W31",
+        "length_meters": 720.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 77.2,
+        "mean_radiant_temp_celsius": 52.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST113",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.545,
+            23.0595
+          ],
+          [
+            72.548,
+            23.057
+          ],
+          [
+            72.551,
+            23.0545
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST113",
+        "street_name": "Naranpura Shaded Community Way",
+        "ward_id": "W31",
+        "length_meters": 640.0,
+        "shade_ratio": 0.75,
+        "pedestrian_heat_risk": 26.6,
+        "mean_radiant_temp_celsius": 44.9,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST114",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.567,
+            23.064
+          ],
+          [
+            72.569,
+            23.067
+          ],
+          [
+            72.571,
+            23.07
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST114",
+        "street_name": "Nava Vadaj Central Commercial Marg",
+        "ward_id": "W32",
+        "length_meters": 720.0,
+        "shade_ratio": 0.3,
+        "pedestrian_heat_risk": 92.4,
+        "mean_radiant_temp_celsius": 54.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST115",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.566,
+            23.0695
+          ],
+          [
+            72.569,
+            23.067
+          ],
+          [
+            72.572,
+            23.0645
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST115",
+        "street_name": "Nava Vadaj Shaded Community Way",
+        "ward_id": "W32",
+        "length_meters": 640.0,
+        "shade_ratio": 0.61,
+        "pedestrian_heat_risk": 42.9,
+        "mean_radiant_temp_celsius": 48.0,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST116",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.079
+          ],
+          [
+            72.585,
+            23.082
+          ],
+          [
+            72.587,
+            23.085
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST116",
+        "street_name": "Sabarmati Central Commercial Marg",
+        "ward_id": "W33",
+        "length_meters": 720.0,
+        "shade_ratio": 0.43,
+        "pedestrian_heat_risk": 75.3,
+        "mean_radiant_temp_celsius": 51.9,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST117",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.582,
+            23.0845
+          ],
+          [
+            72.585,
+            23.082
+          ],
+          [
+            72.588,
+            23.0795
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST117",
+        "street_name": "Sabarmati Shaded Community Way",
+        "ward_id": "W33",
+        "length_meters": 640.0,
+        "shade_ratio": 0.81,
+        "pedestrian_heat_risk": 24.1,
+        "mean_radiant_temp_celsius": 44.7,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST118",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.562,
+            23.073
+          ],
+          [
+            72.564,
+            23.076
+          ],
+          [
+            72.566,
+            23.079
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST118",
+        "street_name": "Ranip Central Commercial Marg",
+        "ward_id": "W34",
+        "length_meters": 720.0,
+        "shade_ratio": 0.32,
+        "pedestrian_heat_risk": 89.3,
+        "mean_radiant_temp_celsius": 54.1,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST119",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.561,
+            23.0785
+          ],
+          [
+            72.564,
+            23.076
+          ],
+          [
+            72.567,
+            23.0735
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST119",
+        "street_name": "Ranip Shaded Community Way",
+        "ward_id": "W34",
+        "length_meters": 640.0,
+        "shade_ratio": 0.64,
+        "pedestrian_heat_risk": 39.7,
+        "mean_radiant_temp_celsius": 47.4,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST120",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.534,
+            23.066
+          ],
+          [
+            72.536,
+            23.069
+          ],
+          [
+            72.538,
+            23.072
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST120",
+        "street_name": "Ghatlodia Central Commercial Marg",
+        "ward_id": "W35",
+        "length_meters": 720.0,
+        "shade_ratio": 0.36,
+        "pedestrian_heat_risk": 81.9,
+        "mean_radiant_temp_celsius": 52.8,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST121",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.533,
+            23.0715
+          ],
+          [
+            72.536,
+            23.069
+          ],
+          [
+            72.539,
+            23.0665
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST121",
+        "street_name": "Ghatlodia Shaded Community Way",
+        "ward_id": "W35",
+        "length_meters": 640.0,
+        "shade_ratio": 0.7,
+        "pedestrian_heat_risk": 32.4,
+        "mean_radiant_temp_celsius": 46.0,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST122",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.53,
+            23.049
+          ],
+          [
+            72.532,
+            23.052
+          ],
+          [
+            72.534,
+            23.055
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST122",
+        "street_name": "Memnagar Central Commercial Marg",
+        "ward_id": "W36",
+        "length_meters": 720.0,
+        "shade_ratio": 0.43,
+        "pedestrian_heat_risk": 71.1,
+        "mean_radiant_temp_celsius": 51.0,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST123",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.529,
+            23.0545
+          ],
+          [
+            72.532,
+            23.052
+          ],
+          [
+            72.535,
+            23.0495
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST123",
+        "street_name": "Memnagar Shaded Community Way",
+        "ward_id": "W36",
+        "length_meters": 640.0,
+        "shade_ratio": 0.81,
+        "pedestrian_heat_risk": 20.5,
+        "mean_radiant_temp_celsius": 43.8,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST124",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.506,
+            23.053
+          ],
+          [
+            72.508,
+            23.056
+          ],
+          [
+            72.51,
+            23.059
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST124",
+        "street_name": "Thaltej Central Commercial Marg",
+        "ward_id": "W37",
+        "length_meters": 720.0,
+        "shade_ratio": 0.52,
+        "pedestrian_heat_risk": 58.2,
+        "mean_radiant_temp_celsius": 48.9,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST125",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.505,
+            23.0585
+          ],
+          [
+            72.508,
+            23.056
+          ],
+          [
+            72.511,
+            23.0535
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST125",
+        "street_name": "Thaltej Shaded Community Way",
+        "ward_id": "W37",
+        "length_meters": 640.0,
+        "shade_ratio": 0.9,
+        "pedestrian_heat_risk": 10.8,
+        "mean_radiant_temp_celsius": 42.0,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST126",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.51,
+            23.036
+          ],
+          [
+            72.512,
+            23.039
+          ],
+          [
+            72.514,
+            23.042
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST126",
+        "street_name": "Bodakdev Central Commercial Marg",
+        "ward_id": "W38",
+        "length_meters": 720.0,
+        "shade_ratio": 0.55,
+        "pedestrian_heat_risk": 53.5,
+        "mean_radiant_temp_celsius": 48.1,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST127",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.509,
+            23.0415
+          ],
+          [
+            72.512,
+            23.039
+          ],
+          [
+            72.515,
+            23.0365
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST127",
+        "street_name": "Bodakdev Shaded Community Way",
+        "ward_id": "W38",
+        "length_meters": 640.0,
+        "shade_ratio": 0.9,
+        "pedestrian_heat_risk": 10.0,
+        "mean_radiant_temp_celsius": 41.6,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST128",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.533,
+            23.099
+          ],
+          [
+            72.535,
+            23.102
+          ],
+          [
+            72.537,
+            23.105
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST128",
+        "street_name": "Gota Central Commercial Marg",
+        "ward_id": "W39",
+        "length_meters": 720.0,
+        "shade_ratio": 0.34,
+        "pedestrian_heat_risk": 85.9,
+        "mean_radiant_temp_celsius": 53.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST129",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.532,
+            23.1045
+          ],
+          [
+            72.535,
+            23.102
+          ],
+          [
+            72.538,
+            23.0995
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST129",
+        "street_name": "Gota Shaded Community Way",
+        "ward_id": "W39",
+        "length_meters": 640.0,
+        "shade_ratio": 0.67,
+        "pedestrian_heat_risk": 36.0,
+        "mean_radiant_temp_celsius": 46.7,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST130",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.542,
+            23.081
+          ],
+          [
+            72.544,
+            23.084
+          ],
+          [
+            72.546,
+            23.087
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST130",
+        "street_name": "Chandlodia Central Commercial Marg",
+        "ward_id": "W40",
+        "length_meters": 720.0,
+        "shade_ratio": 0.3,
+        "pedestrian_heat_risk": 91.9,
+        "mean_radiant_temp_celsius": 54.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST131",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.541,
+            23.0865
+          ],
+          [
+            72.544,
+            23.084
+          ],
+          [
+            72.547,
+            23.0815
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST131",
+        "street_name": "Chandlodia Shaded Community Way",
+        "ward_id": "W40",
+        "length_meters": 640.0,
+        "shade_ratio": 0.61,
+        "pedestrian_heat_risk": 42.5,
+        "mean_radiant_temp_celsius": 47.9,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST132",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.514,
+            23.078
+          ],
+          [
+            72.516,
+            23.081
+          ],
+          [
+            72.518,
+            23.084
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST132",
+        "street_name": "Sola Central Commercial Marg",
+        "ward_id": "W41",
+        "length_meters": 720.0,
+        "shade_ratio": 0.41,
+        "pedestrian_heat_risk": 74.6,
+        "mean_radiant_temp_celsius": 51.6,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST133",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.513,
+            23.0835
+          ],
+          [
+            72.516,
+            23.081
+          ],
+          [
+            72.519,
+            23.0785
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST133",
+        "street_name": "Sola Shaded Community Way",
+        "ward_id": "W41",
+        "length_meters": 640.0,
+        "shade_ratio": 0.78,
+        "pedestrian_heat_risk": 24.2,
+        "mean_radiant_temp_celsius": 44.5,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST134",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.526,
+            23.03
+          ],
+          [
+            72.528,
+            23.033
+          ],
+          [
+            72.53,
+            23.036
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST134",
+        "street_name": "Vastrapur Central Commercial Marg",
+        "ward_id": "W42",
+        "length_meters": 720.0,
+        "shade_ratio": 0.54,
+        "pedestrian_heat_risk": 55.7,
+        "mean_radiant_temp_celsius": 48.5,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST135",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.525,
+            23.0355
+          ],
+          [
+            72.528,
+            23.033
+          ],
+          [
+            72.531,
+            23.0305
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST135",
+        "street_name": "Vastrapur Shaded Community Way",
+        "ward_id": "W42",
+        "length_meters": 640.0,
+        "shade_ratio": 0.9,
+        "pedestrian_heat_risk": 10.4,
+        "mean_radiant_temp_celsius": 41.9,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST136",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.522,
+            23.015
+          ],
+          [
+            72.524,
+            23.018
+          ],
+          [
+            72.526,
+            23.021
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST136",
+        "street_name": "Jodhpur Central Commercial Marg",
+        "ward_id": "W43",
+        "length_meters": 720.0,
+        "shade_ratio": 0.46,
+        "pedestrian_heat_risk": 66.4,
+        "mean_radiant_temp_celsius": 50.2,
+        "risk_level": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST137",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.521,
+            23.0205
+          ],
+          [
+            72.524,
+            23.018
+          ],
+          [
+            72.527,
+            23.0155
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST137",
+        "street_name": "Jodhpur Shaded Community Way",
+        "ward_id": "W43",
+        "length_meters": 640.0,
+        "shade_ratio": 0.86,
+        "pedestrian_heat_risk": 15.5,
+        "mean_radiant_temp_celsius": 42.9,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST138",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.526,
+            23.001
+          ],
+          [
+            72.528,
+            23.004
+          ],
+          [
+            72.53,
+            23.007
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST138",
+        "street_name": "Vejalpur Central Commercial Marg",
+        "ward_id": "W44",
+        "length_meters": 720.0,
+        "shade_ratio": 0.32,
+        "pedestrian_heat_risk": 88.9,
+        "mean_radiant_temp_celsius": 54.0,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST139",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.525,
+            23.0065
+          ],
+          [
+            72.528,
+            23.004
+          ],
+          [
+            72.531,
+            23.0015
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST139",
+        "street_name": "Vejalpur Shaded Community Way",
+        "ward_id": "W44",
+        "length_meters": 640.0,
+        "shade_ratio": 0.64,
+        "pedestrian_heat_risk": 39.3,
+        "mean_radiant_temp_celsius": 47.3,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST140",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.5,
+            22.983
+          ],
+          [
+            72.502,
+            22.986
+          ],
+          [
+            72.504,
+            22.989
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST140",
+        "street_name": "Sarkhej Central Commercial Marg",
+        "ward_id": "W45",
+        "length_meters": 720.0,
+        "shade_ratio": 0.25,
+        "pedestrian_heat_risk": 99.0,
+        "mean_radiant_temp_celsius": 56.6,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST141",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.499,
+            22.9885
+          ],
+          [
+            72.502,
+            22.986
+          ],
+          [
+            72.505,
+            22.9835
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST141",
+        "street_name": "Sarkhej Shaded Community Way",
+        "ward_id": "W45",
+        "length_meters": 640.0,
+        "shade_ratio": 0.53,
+        "pedestrian_heat_risk": 54.0,
+        "mean_radiant_temp_celsius": 50.2,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST142",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.519,
+            22.988
+          ],
+          [
+            72.521,
+            22.991
+          ],
+          [
+            72.523,
+            22.994
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST142",
+        "street_name": "Maktampur Central Commercial Marg",
+        "ward_id": "W46",
+        "length_meters": 720.0,
+        "shade_ratio": 0.28,
+        "pedestrian_heat_risk": 97.2,
+        "mean_radiant_temp_celsius": 55.5,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST143",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.518,
+            22.9935
+          ],
+          [
+            72.521,
+            22.991
+          ],
+          [
+            72.524,
+            22.9885
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST143",
+        "street_name": "Maktampur Shaded Community Way",
+        "ward_id": "W46",
+        "length_meters": 640.0,
+        "shade_ratio": 0.58,
+        "pedestrian_heat_risk": 47.8,
+        "mean_radiant_temp_celsius": 49.0,
+        "risk_level": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST144",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.502,
+            22.994
+          ],
+          [
+            72.504,
+            22.997
+          ],
+          [
+            72.506,
+            23.0
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST144",
+        "street_name": "Makarba Central Commercial Marg",
+        "ward_id": "W47",
+        "length_meters": 720.0,
+        "shade_ratio": 0.39,
+        "pedestrian_heat_risk": 78.1,
+        "mean_radiant_temp_celsius": 52.2,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST145",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.501,
+            22.9995
+          ],
+          [
+            72.504,
+            22.997
+          ],
+          [
+            72.507,
+            22.9945
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST145",
+        "street_name": "Makarba Shaded Community Way",
+        "ward_id": "W47",
+        "length_meters": 640.0,
+        "shade_ratio": 0.75,
+        "pedestrian_heat_risk": 27.4,
+        "mean_radiant_temp_celsius": 45.1,
+        "risk_level": "Low"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST146",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.583,
+            23.108
+          ],
+          [
+            72.585,
+            23.111
+          ],
+          [
+            72.587,
+            23.114
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST146",
+        "street_name": "Chandkheda Central Commercial Marg",
+        "ward_id": "W48",
+        "length_meters": 720.0,
+        "shade_ratio": 0.37,
+        "pedestrian_heat_risk": 79.7,
+        "mean_radiant_temp_celsius": 52.4,
+        "risk_level": "Extreme"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ST147",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.582,
+            23.1135
+          ],
+          [
+            72.585,
+            23.111
+          ],
+          [
+            72.588,
+            23.1085
+          ]
+        ]
+      },
+      "properties": {
+        "street_id": "ST147",
+        "street_name": "Chandkheda Shaded Community Way",
+        "ward_id": "W48",
+        "length_meters": 640.0,
+        "shade_ratio": 0.72,
+        "pedestrian_heat_risk": 29.4,
+        "mean_radiant_temp_celsius": 45.4,
+        "risk_level": "Low"
+      }
+    }
+  ],
+  "metadata": {
+    "city": "Ahmedabad",
+    "total_streets": 147,
+    "crs": "EPSG:4326"
+  }
+}

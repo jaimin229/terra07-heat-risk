@@ -1,0 +1,19 @@
+city: Ahmedabad
+bbox: [72.54, 22.99, 72.62, 23.06]
+grid_size_m: 250
+season: {months: [4, 5, 6], years: [2023, 2024, 2025]}
+landsat: {max_cloud_cover: 15, min_scenes: 4}
+weights:
+  components: {hazard: 0.35, exposure: 0.25, vulnerability: 0.25, adaptive_gap: 0.15}
+  hazard: {lst: 0.60, building_coverage: 0.20, veg_deficit: 0.20}
+  exposure: {pop_density: 0.60, outdoor_activity_proxy: 0.40}
+  vulnerability: {elderly_share: 0.60, child_share: 0.40}
+  adaptive_gap: {dist_cooling_centre: 0.50, dist_water_point: 0.50}
+normalisation: {winsor_low: 0.02, winsor_high: 0.98}
+access: {water_walk_m: 300, cooling_walk_m: 1000}
+tiers: {low: 25, moderate: 50, high: 75}   # score cut-offs -> Low/Moderate/High/Extreme
+actions:
+  shade: {delta_ndvi: 0.10, max_plantable_fraction: 0.30, cost_inr_per_cell_per_0p1_ndvi: 1500000}
+  water: {k: 15, cost_inr_per_point: 250000}
+  cooling: {k: 8, cost_inr_per_centre: 1200000}
+random_seed: 42
