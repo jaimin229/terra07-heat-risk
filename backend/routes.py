@@ -473,28 +473,49 @@ async def get_public_heat_advice(
     description="Directory of designated municipal air-conditioned community shelters, libraries, and underground cooling havens."
 )
 async def get_cooling_centers(
-    ward_id: Optional[str] = Query(None, description="Optional filter by ward ID")
+    ward_id: Optional[str] = Query(None, description="Optional filter by ward ID"),
+    lat: Optional[float] = Query(None, description="User latitude for distance calculation"),
+    lon: Optional[float] = Query(None, description="User longitude for distance calculation")
 ):
     if not store._initialized:
         store.initialize()
+
+    from backend.engine import haversine_distance_meters
+
+    ref_lat = lat if lat is not None else 23.0225
+    ref_lon = lon if lon is not None else 72.5714
+    has_user_location = (lat is not None and lon is not None)
 
     results = []
     for c in store.cooling_centers:
         if ward_id and c["ward_id"] != ward_id.upper():
             continue
+        c_lat = c.get("lat") or c["coordinates"]["lat"]
+        c_lon = c.get("lon") or c["coordinates"]["lon"]
+        dist = round(haversine_distance_meters(ref_lat, ref_lon, c_lat, c_lon), 1)
+        walk_min = max(1, int(dist / 70.0))
+        cap = c.get("capacity") or c.get("capacity_persons", 200)
+
         results.append(CoolingCenterItem(
             center_id=c["center_id"],
             name=c["name"],
             facility_type=c["facility_type"],
             address=c["address"],
-            coordinates=Coordinates(**c["coordinates"]),
-            distance_meters=0.0,
-            walking_time_minutes=0,
+            coordinates=Coordinates(lat=c_lat, lon=c_lon),
+            distance_meters=dist if has_user_location else dist,
+            walking_time_minutes=walk_min if has_user_location else walk_min,
             operating_hours=c["operating_hours"],
-            capacity_persons=c["capacity_persons"],
-            has_medical_staff=c["has_medical_staff"],
-            phone_contact=c["phone_contact"]
+            capacity_persons=cap,
+            capacity=cap,
+            has_medical_staff=c.get("has_medical_staff", False),
+            has_ac=c.get("has_ac", True),
+            lat=c_lat,
+            lon=c_lon,
+            phone_contact=c.get("phone_contact", "+91-79-2535-2535")
         ))
+
+    if has_user_location:
+        results.sort(key=lambda x: x.distance_meters)
     return results
 
 
@@ -505,22 +526,39 @@ async def get_cooling_centers(
     description="Directory of chilled drinking water ATMs, temple piaus, and public hydration posts."
 )
 async def get_hydration_points(
-    ward_id: Optional[str] = Query(None, description="Optional filter by ward ID")
+    ward_id: Optional[str] = Query(None, description="Optional filter by ward ID"),
+    lat: Optional[float] = Query(None, description="User latitude for distance calculation"),
+    lon: Optional[float] = Query(None, description="User longitude for distance calculation")
 ):
     if not store._initialized:
         store.initialize()
+
+    from backend.engine import haversine_distance_meters
+
+    ref_lat = lat if lat is not None else 23.0225
+    ref_lon = lon if lon is not None else 72.5714
+    has_user_location = (lat is not None and lon is not None)
 
     results = []
     for h in store.hydration_points:
         if ward_id and h["ward_id"] != ward_id.upper():
             continue
+        h_lat = h.get("lat") or h["coordinates"]["lat"]
+        h_lon = h.get("lon") or h["coordinates"]["lon"]
+        dist = round(haversine_distance_meters(ref_lat, ref_lon, h_lat, h_lon), 1)
+
         results.append(HydrationPointItem(
             point_id=h["point_id"],
             name=h["name"],
             water_source_type=h["water_source_type"],
-            coordinates=Coordinates(**h["coordinates"]),
-            distance_meters=0.0,
-            status=h["status"],
-            is_free=h["is_free"]
+            coordinates=Coordinates(lat=h_lat, lon=h_lon),
+            distance_meters=dist if has_user_location else dist,
+            lat=h_lat,
+            lon=h_lon,
+            status=h.get("status", "operational"),
+            is_free=h.get("is_free", True)
         ))
+
+    if has_user_location:
+        results.sort(key=lambda x: x.distance_meters)
     return results

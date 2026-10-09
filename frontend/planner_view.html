@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TERRA07 // Urban Heat-Risk GIS Command Center</title>
+  <title>TERRA07 — Urban Planner Command Center | Human-Scale Heat Risk</title>
 
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <!-- Google Sans / Inter Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
             mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
-            thermal: {
-              cool: '#10b981',
-              mild: '#f59e0b',
-              hot: '#ef4444',
-              extreme: '#9333ea',
-              darkbg: '#090d16',
-              panel: '#0f172a'
+            civic: {
+              navy: '#14213D',
+              dark: '#172033',
+              secondary: '#667085',
+              bg: '#F7F9FC',
+              surface: '#FFFFFF',
+              border: '#E4E7EC',
+              teal: '#0F766E',
+              blue: '#2563EB',
+              safe: '#2E8B57',
+              moderate: '#D97706',
+              high: '#EA580C',
+              extreme: '#C62828',
+              safeBg: '#ECFDF3',
+              moderateBg: '#FFF8E7',
+              highBg: '#FFF2E8',
+              extremeBg: '#FFF1F0',
             }
           }
         }
@@ -43,692 +52,1073 @@
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-  <!-- Canvas Confetti CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-
   <style>
-    /* Custom Command Center Styles & Animations */
+    body {
+      background-color: #F7F9FC;
+      color: #172033;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Clean custom scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: rgba(15, 23, 42, 0.6);
+      background: #F1F4F9;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(249, 115, 22, 0.4);
+      background: #CBD5E1;
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(249, 115, 22, 0.8);
+      background: #94A3B8;
     }
 
-    .pulse-glow-orange {
-      box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
-      animation: pulse-orange 2s infinite;
-    }
-    .pulse-glow-blue {
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
-      animation: pulse-blue 2s infinite;
-    }
-    .pulse-glow-cyan {
-      box-shadow: 0 0 15px rgba(34, 211, 238, 0.6);
-      animation: pulse-cyan 2s infinite;
-    }
-
-    @keyframes pulse-orange {
-      0%, 100% { box-shadow: 0 0 8px rgba(249, 115, 22, 0.4); }
-      50% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.8); }
-    }
-    @keyframes pulse-blue {
-      0%, 100% { box-shadow: 0 0 8px rgba(56, 189, 248, 0.4); }
-      50% { box-shadow: 0 0 18px rgba(56, 189, 248, 0.9); }
-    }
-    @keyframes pulse-cyan {
-      0%, 100% { box-shadow: 0 0 6px rgba(34, 211, 238, 0.4); }
-      50% { box-shadow: 0 0 16px rgba(34, 211, 238, 0.85); }
-    }
-
-    /* Leaflet Overrides */
+    /* Clean Leaflet Tooltips & Popups */
     .leaflet-custom-tooltip {
-      background: rgba(15, 23, 42, 0.95) !important;
-      color: #f8fafc !important;
-      border: 1px solid rgba(249, 115, 22, 0.4) !important;
+      background: #FFFFFF !important;
+      color: #172033 !important;
+      border: 1px solid #E4E7EC !important;
       border-radius: 8px !important;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
-      padding: 0 !important;
-      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(16, 24, 40, 0.08) !important;
+      padding: 6px 10px !important;
+      font-family: 'Inter', sans-serif !important;
+      font-size: 12px !important;
     }
     .leaflet-custom-tooltip::before {
       display: none !important;
     }
     .leaflet-custom-popup .leaflet-popup-content-wrapper {
-      background: rgba(15, 23, 42, 0.96) !important;
-      color: #f8fafc !important;
-      border: 1px solid rgba(56, 189, 248, 0.5) !important;
-      border-radius: 12px !important;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7) !important;
+      background: #FFFFFF !important;
+      color: #172033 !important;
+      border: 1px solid #E4E7EC !important;
+      border-radius: 10px !important;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.12) !important;
       padding: 0 !important;
-      backdrop-filter: blur(12px);
-    }
-    .leaflet-custom-popup .leaflet-popup-tip {
-      background: rgba(15, 23, 42, 0.96) !important;
     }
     .leaflet-custom-popup .leaflet-popup-content {
       margin: 0 !important;
+      line-height: 1.4 !important;
     }
 
-    /* Pulsing border on selected polygon */
-    .pulse-ward-border {
-      stroke: #ffffff !important;
-      stroke-width: 4px !important;
-      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.85));
+    .tab-item {
+      position: relative;
+      transition: all 0.15s ease;
+      color: #667085;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+    }
+    .tab-item:hover {
+      color: #14213D;
+    }
+    .tab-item.active {
+      color: #14213D;
+      font-weight: 600;
+      border-bottom-color: #0F766E;
     }
 
-    /* Glassmorphism styling */
-    .glass-card {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+    .screen-panel {
+      display: none;
     }
-    .light .glass-card {
-      background: rgba(255, 255, 255, 0.90);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    /* Interactive button click feel */
-    button:active {
-      transform: scale(0.97);
+    .screen-panel.active {
+      display: block;
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white min-h-screen flex flex-col transition-colors duration-200">
+<body class="min-h-screen flex flex-col bg-civic-bg text-civic-dark">
 
-  <!-- ================= TOP EXECUTIVE APP BAR ================= -->
-  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-2.5">
-    <div class="flex items-center justify-between gap-4">
+  <!-- ================= TOP APP BAR ================= -->
+  <header class="bg-civic-surface border-b border-civic-border px-4 py-2.5 sticky top-0 z-40">
+    <div class="max-w-[1440px] mx-auto flex items-center justify-between gap-4">
       
-      <!-- Brand & Title -->
+      <!-- Brand & Status -->
       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-orange-600 via-red-600 to-purple-600 flex items-center justify-center shadow-lg shadow-orange-500/20 text-white font-black text-sm tracking-tighter">
+        <div class="w-8 h-8 rounded-lg bg-civic-navy text-white flex items-center justify-center font-bold text-xs tracking-wider">
           T7
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-extrabold text-sm tracking-tight text-white flex items-center gap-1.5">
-              TERRA<span class="text-orange-500">07</span>
-              <span class="text-[11px] font-mono font-normal text-slate-400">| URBAN CLIMATE COMMAND</span>
-            </span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-red-950/80 text-red-400 border border-red-800 animate-pulse">
-              HEATWAVE LEVEL 3
+            <h1 class="font-bold text-sm text-civic-navy tracking-tight">TERRA07 — Urban Planner Command Center</h1>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-civic-extremeBg text-civic-extreme border border-red-200">
+              Heatwave Alert Level 3
             </span>
           </div>
-          <div class="text-[11px] text-slate-400 flex items-center gap-2 font-mono">
-            <span>METRO: AHMEDABAD URBAN CORRIDOR</span>
+          <div class="text-[11px] text-civic-secondary flex items-center gap-2">
+            <span>Ahmedabad Metropolitan Region</span>
             <span>•</span>
-            <span id="backend-status-text" class="text-emerald-400 flex items-center gap-1">
-              <span id="backend-status-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              SIM ENGINE: ONLINE
+            <span class="text-civic-teal font-medium flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-civic-teal"></span>
+              Grounded Model Online
             </span>
+            <span>•</span>
+            <span class="text-slate-500">Prototype Data (IPCC AR6)</span>
           </div>
         </div>
       </div>
 
-      <!-- Live Environmental Ticker -->
-      <div class="hidden xl:flex items-center gap-6 px-4 py-1.5 rounded-xl bg-slate-950/60 border border-slate-800 text-xs font-mono">
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">AMBIENT PEAK:</span>
-          <span class="text-amber-400 font-bold">44.2°C</span>
+      <!-- Quick Telemetry & Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="hidden md:flex items-center gap-4 px-3 py-1 bg-slate-50 border border-civic-border rounded-lg text-xs font-mono">
+          <div><span class="text-civic-secondary">Ambient Peak:</span> <strong class="text-amber-700">44.2°C</strong></div>
+          <div><span class="text-civic-secondary">Max Surface:</span> <strong class="text-red-700">48.8°C</strong></div>
+          <div><span class="text-civic-secondary">High-Risk Pop:</span> <strong class="text-civic-dark">533,500</strong></div>
         </div>
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">WET BULB (WBGT):</span>
-          <span class="text-orange-400 font-bold">33.4°C</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">MAX LST HOTSPOT:</span>
-          <span class="text-purple-400 font-bold">47.4°C</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">VULNERABLE POP:</span>
-          <span class="text-red-400 font-bold">342.8k</span>
-        </div>
-      </div>
 
-        <a href="public_view.html" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-sky-400 text-xs font-bold transition-all border border-slate-700 flex items-center gap-1.5" title="Switch to Public Citizen View">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          <span>Public Portal</span>
+        <a href="public_view.html" class="px-3 py-1.5 rounded-md bg-slate-100 hover:bg-slate-200 text-civic-dark text-xs font-semibold border border-civic-border transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-civic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span class="hidden sm:inline">Citizen Portal</span>
         </a>
 
-        <button id="btn-exec-briefing" class="px-3 py-1.5 rounded-lg bg-orange-600/90 hover:bg-orange-600 text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-md shadow-orange-600/20">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>Executive Briefing</span>
-        </button>
-
-        <!-- Audio FX Toggle -->
-        <button id="btn-toggle-audio" title="Toggle UI Sound Feedback" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors border border-slate-700">
-          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-        </button>
-
-        <!-- Theme Toggle -->
-        <button id="btn-toggle-theme" title="Toggle Dark/Light Mode" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors border border-slate-700">
-          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-        </button>
-
-        <!-- Fullscreen -->
-        <button id="btn-fullscreen" title="Toggle Fullscreen" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors border border-slate-700 hidden sm:block">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+        <button onclick="switchTab('reports')" class="px-3 py-1.5 rounded-md bg-civic-teal text-white hover:bg-teal-800 text-xs font-semibold transition flex items-center gap-1.5 shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Export Briefing</span>
         </button>
       </div>
 
     </div>
   </header>
 
-  <!-- ================= TOP KPI SUMMARY BAR ================= -->
-  <section class="border-b border-slate-800/80 bg-slate-900/60 px-4 py-2">
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-      
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">Metro Mean Heat Risk</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span id="kpi-mean-score" class="text-xl font-black font-mono text-orange-400">74.2</span>
-          <span class="text-[10px] font-mono text-slate-400">/ 100</span>
-          <span class="text-[10px] font-bold text-red-400 font-mono">+4.8° delta</span>
-        </div>
-      </div>
-
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">High Risk Population</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span id="kpi-high-risk-pop" class="text-xl font-black font-mono text-red-400">342,800</span>
-          <span class="text-[10px] font-mono text-slate-400">in Red Zones</span>
-        </div>
-      </div>
-
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">Elderly (65+) at Risk</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span id="kpi-elderly-risk" class="text-xl font-black font-mono text-purple-400">84,200</span>
-          <span class="text-[10px] font-mono text-slate-400">seniors</span>
-        </div>
-      </div>
-
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">Critical Red Wards</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span id="kpi-critical-wards" class="text-xl font-black font-mono text-amber-400">6 / 12</span>
-          <span class="text-[10px] font-mono text-red-400">Emergency</span>
-        </div>
-      </div>
-
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">Active Cooling Hubs</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span class="text-xl font-black font-mono text-sky-400">16</span>
-          <span class="text-[10px] font-mono text-slate-400">8 Centers / 8 Kiosks</span>
-        </div>
-      </div>
-
-      <div class="px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50">
-        <div class="text-[10px] font-mono uppercase text-slate-400">Simulated Lives Saved</div>
-        <div class="flex items-baseline gap-2 mt-0.5">
-          <span id="opt-lives-val" class="text-xl font-black font-mono text-emerald-400">+14,250</span>
-          <span class="text-[10px] font-mono text-emerald-400 font-bold">Projected</span>
-        </div>
-      </div>
-
+  <!-- ================= 8-TAB NAVIGATION BAR ================= -->
+  <nav class="bg-civic-surface border-b border-civic-border px-4 sticky top-[53px] z-30 overflow-x-auto">
+    <div class="max-w-[1440px] mx-auto flex items-center space-x-1 sm:space-x-3 text-xs sm:text-sm whitespace-nowrap">
+      <button class="tab-item active py-2.5 px-3" onclick="switchTab('overview')">1. Overview</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('heatmap')">2. Heat-Risk Map</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('priority')">3. Priority Areas</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('inspector')">4. Area Inspector</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('scenarios')">5. Scenario Simulator</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('interventions')">6. Intervention Planner</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('reports')">7. Reports & Export</button>
+      <button class="tab-item py-2.5 px-3" onclick="switchTab('methodology')">8. Data & Methodology</button>
     </div>
-  </section>
+  </nav>
 
-  <!-- ================= MAIN 3-PANE WORKSPACE ================= -->
-  <main class="flex-1 flex flex-col lg:flex-row overflow-hidden relative">
+  <!-- ================= MAIN CONTENT PANELS (MAX 1440px) ================= -->
+  <main class="flex-1 max-w-[1440px] w-full mx-auto p-4 sm:p-6">
 
-    <!-- ================= LEFT COLUMN: CONTROLS & SANDBOX (~380px) ================= -->
-    <aside class="w-full lg:w-[380px] xl:w-[400px] border-r border-slate-800 bg-slate-900/40 flex flex-col overflow-y-auto max-h-[calc(100vh-120px)] lg:max-h-none p-3 space-y-3">
+    <!-- =======================================================================
+         SCREEN 1: OVERVIEW
+         ======================================================================= -->
+    <div id="screen-overview" class="screen-panel active space-y-6">
       
-      <!-- CARD 1: GIS DYNAMIC LAYERS -->
-      <div class="glass-card rounded-xl p-3 shadow-md">
-        <div class="flex items-center justify-between pb-2 border-b border-slate-800">
-          <div class="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-slate-200">
-            <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-            <span>GIS Thermal Overlays</span>
+      <!-- Top Alert Banner -->
+      <div class="bg-civic-extremeBg border border-red-200 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-civic-extreme font-bold flex-shrink-0 mt-0.5">
+            !
           </div>
-          <span class="text-[10px] font-mono text-slate-400">5 Active Layers</span>
-        </div>
-
-        <!-- Layer Selector Pills -->
-        <div class="grid grid-cols-2 gap-1.5 mt-2.5">
-          <button data-layer="composite" class="btn-layer-toggle px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-orange-500 text-white border border-orange-500 transition-all text-left flex items-center justify-between">
-            <span>Composite Risk</span>
-            <span class="text-[10px] font-mono opacity-80">0-100</span>
-          </button>
-          <button data-layer="lst" class="btn-layer-toggle px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 border border-slate-700 hover:text-white transition-all text-left flex items-center justify-between">
-            <span>Land Surface (°C)</span>
-            <span class="text-[10px] font-mono opacity-80">LST</span>
-          </button>
-          <button data-layer="ndvi" class="btn-layer-toggle px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 border border-slate-700 hover:text-white transition-all text-left flex items-center justify-between">
-            <span>Canopy Deficit</span>
-            <span class="text-[10px] font-mono opacity-80">NDVI</span>
-          </button>
-          <button data-layer="svi" class="btn-layer-toggle px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 border border-slate-700 hover:text-white transition-all text-left flex items-center justify-between">
-            <span>Social Vulnerability</span>
-            <span class="text-[10px] font-mono opacity-80">SVI</span>
-          </button>
-        </div>
-
-        <!-- Layer Opacity & Basemap -->
-        <div class="mt-3 pt-2.5 border-t border-slate-800/80 space-y-2 text-xs">
-          <div class="flex items-center justify-between">
-            <span class="text-slate-400">Layer Opacity:</span>
-            <input id="slider-layer-opacity" type="range" min="0.2" max="1.0" step="0.05" value="0.75" class="w-32 accent-orange-500">
-          </div>
-
-          <div class="flex items-center justify-between">
-            <span class="text-slate-400">Basemap Style:</span>
-            <select id="select-basemap" class="bg-slate-800 text-slate-200 border border-slate-700 rounded px-2 py-1 text-xs focus:outline-none focus:border-orange-500 font-mono">
-              <option value="dark">CartoDB Dark Matter</option>
-              <option value="light">CartoDB Positron</option>
-              <option value="satellite">ESRI Satellite Imagery</option>
-              <option value="street">OpenStreetMap Vector</option>
-            </select>
-          </div>
-
-          <!-- Feature Toggles -->
-          <div class="flex items-center justify-between pt-1">
-            <label class="flex items-center gap-1.5 cursor-pointer text-slate-300">
-              <input id="toggle-street-lines" type="checkbox" checked class="accent-orange-500 rounded">
-              <span>Street Heat Corridors</span>
-            </label>
-            <label class="flex items-center gap-1.5 cursor-pointer text-slate-300">
-              <input id="toggle-amenity-markers" type="checkbox" checked class="accent-sky-500 rounded">
-              <span>Cooling Amenities</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Thermal Spectrum Bar -->
-        <div class="mt-3 pt-2 border-t border-slate-800/80">
-          <div class="flex justify-between text-[10px] font-mono text-slate-400 mb-1">
-            <span>RESILIENT (&lt;40)</span>
-            <span>MODERATE</span>
-            <span>CRITICAL</span>
-            <span>EXTREME (85+)</span>
-          </div>
-          <div class="h-2 rounded-full w-full bg-gradient-to-r from-emerald-500 via-amber-400 via-orange-500 via-red-600 to-purple-600 shadow-inner"></div>
-        </div>
-      </div>
-
-      <!-- CARD 2: CLIMATE SCENARIO SIMULATOR -->
-      <div class="glass-card rounded-xl p-3 shadow-md">
-        <div class="flex items-center justify-between pb-2 border-b border-slate-800">
-          <div class="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-slate-200">
-            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-            <span>Climate Scenario Simulator</span>
-          </div>
-          <span class="text-[10px] font-mono text-red-400 font-bold">STRESS TEST</span>
-        </div>
-
-        <div class="mt-3 space-y-3 text-xs">
-          <!-- Heatwave Intensity Slider -->
           <div>
-            <div class="flex justify-between items-center mb-1">
-              <span class="text-slate-300">Heatwave Intensity:</span>
-              <span id="val-heatwave-delta" class="font-mono font-bold text-red-400 bg-red-950/80 px-1.5 py-0.5 rounded border border-red-800 text-[11px]">+2.0°C</span>
+            <div class="font-bold text-civic-extreme text-sm">Heat Risk Alert: Severe Heatwave in Effect</div>
+            <p class="text-xs text-slate-700 mt-0.5">
+              Heat risk is highest in dense, paved areas with limited tree cover and high outdoor exposure. Ground surface temperatures reach up to 48.8°C in industrial corridors.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <button onclick="switchTab('priority')" class="px-3 py-1.5 bg-civic-extreme text-white text-xs font-semibold rounded-md hover:bg-red-800 transition">
+            View Critical Zones
+          </button>
+          <a href="public_view.html" class="px-3 py-1.5 bg-white text-slate-700 border border-slate-300 text-xs font-semibold rounded-md hover:bg-slate-50 transition">
+            Open Public Advisory
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 Standard KPI Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
+        
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm">
+          <div class="text-xs font-medium text-civic-secondary">Metro Mean Heat Risk</div>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span class="text-2xl font-bold font-mono text-civic-high">54.9</span>
+            <span class="text-xs text-civic-secondary">/ 100</span>
+          </div>
+          <div class="text-[11px] font-semibold text-civic-high mt-1 flex items-center gap-1">
+            <span>High Risk Tier</span>
+            <span class="text-civic-secondary font-normal">(+4.8 from baseline)</span>
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm">
+          <div class="text-xs font-medium text-civic-secondary">High-Risk Population</div>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span class="text-2xl font-bold font-mono text-civic-extreme">533,500</span>
+          </div>
+          <div class="text-[11px] text-civic-secondary mt-1">
+            Residents in zones with risk score &gt; 60
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm">
+          <div class="text-xs font-medium text-civic-secondary">Critical Zones</div>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span class="text-2xl font-bold font-mono text-civic-extreme">4 of 12</span>
+          </div>
+          <div class="text-[11px] text-red-700 font-medium mt-1">
+            Requires immediate municipal review
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm">
+          <div class="text-xs font-medium text-civic-secondary">Active Cooling Locations</div>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span class="text-2xl font-bold font-mono text-civic-teal">16</span>
+          </div>
+          <div class="text-[11px] text-civic-secondary mt-1">
+            8 AC Centres • 8 Water Points
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm col-span-2 md:col-span-1">
+          <div class="text-xs font-medium text-civic-secondary">Elderly in High-Risk Zones</div>
+          <div class="flex items-baseline gap-2 mt-1">
+            <span class="text-2xl font-bold font-mono text-civic-navy">881,574</span>
+          </div>
+          <div class="text-[11px] text-civic-secondary mt-1">
+            Estimated residents aged 65+ in danger
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Main Overview 2-Column Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Quick Map View (7 cols) -->
+        <div class="lg:col-span-7 bg-civic-surface rounded-xl border border-civic-border p-4 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between pb-3 border-b border-civic-border mb-3">
+            <div>
+              <h2 class="font-bold text-sm text-civic-navy">Ahmedabad Heat Risk Distribution</h2>
+              <div class="text-xs text-civic-secondary">Neighbourhood and street corridor thermal exposure</div>
             </div>
-            <input id="slider-heatwave-delta" type="range" min="0.0" max="5.0" step="0.5" value="2.0" class="w-full accent-red-500">
-            <div class="flex justify-between text-[9px] font-mono text-slate-500 mt-0.5">
-              <span>+0°C (Baseline)</span>
-              <span>+2.5°C (Severe)</span>
-              <span>+5.0°C (Catastrophic)</span>
+            <button onclick="switchTab('heatmap')" class="text-xs text-civic-teal font-semibold hover:underline">
+              Open Full GIS Map &rarr;
+            </button>
+          </div>
+          <div id="overview-map" class="w-full h-[400px] rounded-lg border border-civic-border overflow-hidden bg-slate-100"></div>
+          
+          <!-- Legend Bar -->
+          <div class="flex items-center justify-between text-xs text-civic-secondary mt-3 pt-2 border-t border-civic-border font-medium">
+            <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-civic-safe"></span> Resilient (0–39)</div>
+            <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-civic-moderate"></span> Moderate (40–59)</div>
+            <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-civic-high"></span> High (60–81)</div>
+            <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-civic-extreme"></span> Extreme (82–100)</div>
+          </div>
+        </div>
+
+        <!-- Right: "Where Should We Act First?" Panel (5 cols) -->
+        <div class="lg:col-span-5 bg-civic-surface rounded-xl border border-civic-border p-4 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between pb-3 border-b border-civic-border mb-3">
+            <div>
+              <h2 class="font-bold text-sm text-civic-navy">Where should we act first?</h2>
+              <div class="text-xs text-civic-secondary">Top ranked corridors needing immediate mitigation</div>
             </div>
+            <button onclick="switchTab('priority')" class="text-xs text-civic-teal font-semibold hover:underline">
+              View all &rarr;
+            </button>
           </div>
 
-          <!-- Time of Day -->
-          <div class="flex items-center justify-between">
-            <span class="text-slate-300">Diurnal Solar Cycle:</span>
-            <select id="select-time-of-day" class="bg-slate-800 text-slate-200 border border-slate-700 rounded px-2 py-1 text-xs focus:outline-none focus:border-red-500 font-mono">
-              <option value="14:00">14:00 Peak Solar Radiation</option>
-              <option value="09:00">09:00 Morning Influx</option>
-              <option value="21:00">21:00 Trapped Nocturnal Heat</option>
+          <div id="overview-priority-list" class="space-y-3 flex-1 overflow-y-auto">
+            <!-- Dynamically populated top 5 cards -->
+          </div>
+
+          <button onclick="switchTab('priority')" class="mt-4 w-full py-2 bg-slate-50 hover:bg-slate-100 border border-civic-border rounded-lg text-xs font-semibold text-civic-dark transition">
+            View Complete Priority List (48 Wards & Corridors)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Section: "Why this score?" Factor Contribution -->
+      <div class="bg-civic-surface rounded-xl border border-civic-border p-4 sm:p-5 shadow-sm">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-3 border-b border-civic-border gap-2">
+          <div>
+            <h2 class="font-bold text-sm text-civic-navy">Why this score? (City-Wide Driver Contribution)</h2>
+            <p class="text-xs text-civic-secondary">Average relative influence of urban factors across Ahmedabad</p>
+          </div>
+          <button onclick="switchTab('methodology')" class="text-xs text-civic-teal font-medium hover:underline">
+            View scoring methodology &rarr;
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 text-xs">
+          <div>
+            <div class="flex justify-between font-semibold mb-1">
+              <span>Land Surface Temperature</span>
+              <span class="font-mono text-civic-extreme">34%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-extreme h-2 rounded-full" style="width: 34%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">High thermal radiation from low-albedo asphalt and corrugated roofs.</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between font-semibold mb-1">
+              <span>Tree Canopy Deficit</span>
+              <span class="font-mono text-civic-high">26%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-high h-2 rounded-full" style="width: 26%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">Severe lack of vegetative cover (NDVI &lt; 0.10) in commercial quarters.</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between font-semibold mb-1">
+              <span>Building Density</span>
+              <span class="font-mono text-civic-moderate">22%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-moderate h-2 rounded-full" style="width: 22%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">Narrow street canyons trap sensible heat throughout night hours.</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between font-semibold mb-1">
+              <span>Social Vulnerability</span>
+              <span class="font-mono text-civic-blue">18%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-blue h-2 rounded-full" style="width: 18%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">Elderly density, informal laborers, and lack of residential AC.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 2: FULL HEAT-RISK MAP
+         ======================================================================= -->
+    <div id="screen-heatmap" class="screen-panel space-y-4">
+      <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="font-bold text-base text-civic-navy">Interactive Human-Scale Heat Risk Map</h2>
+          <p class="text-xs text-civic-secondary">Explore microclimate thermal exposure, tree canopy, and vulnerable populations</p>
+        </div>
+        
+        <!-- Map Controls Toolbar -->
+        <div class="flex items-center flex-wrap gap-2 text-xs">
+          <div class="flex items-center bg-slate-100 p-1 rounded-lg border border-civic-border">
+            <span class="text-civic-secondary px-2 font-medium">Layer:</span>
+            <select id="map-layer-select" onchange="changeMapLayer(this.value)" class="bg-white border border-civic-border rounded px-2 py-1 text-xs font-semibold text-civic-dark outline-none">
+              <option value="composite">Composite Heat Risk (0–100)</option>
+              <option value="lst">Land Surface Temperature (°C)</option>
+              <option value="canopy">Tree Canopy Deficit (%)</option>
+              <option value="svi">Social Vulnerability Index</option>
             </select>
           </div>
 
-          <!-- Grid Outage Toggle -->
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-800/60 border border-slate-700/60">
-            <div>
-              <div class="font-semibold text-slate-200">Power Grid Brownout</div>
-              <div class="text-[10px] text-slate-400">Simulate AC failure & indoor spike</div>
-            </div>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input id="toggle-grid-outage" type="checkbox" class="sr-only peer">
-              <div class="w-9 h-5 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-red-600"></div>
-            </label>
+          <div class="flex items-center bg-slate-100 p-1 rounded-lg border border-civic-border">
+            <span class="text-civic-secondary px-2 font-medium">Basemap:</span>
+            <select id="map-basemap-select" onchange="changeBasemap(this.value)" class="bg-white border border-civic-border rounded px-2 py-1 text-xs font-semibold text-civic-dark outline-none">
+              <option value="light">Carto Positron (Clean Light)</option>
+              <option value="osm">OpenStreetMap</option>
+              <option value="dark">Carto Dark Matter</option>
+            </select>
           </div>
 
-          <!-- Humidity Surge -->
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-800/60 border border-slate-700/60">
-            <div>
-              <div class="font-semibold text-slate-200">Wet-Bulb Humidity Surge</div>
-              <div class="text-[10px] text-slate-400">Suppresses human evaporative sweat</div>
-            </div>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input id="toggle-humidity-surge" type="checkbox" class="sr-only peer">
-              <div class="w-9 h-5 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-orange-500"></div>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3: INTERVENTION PLANNER SANDBOX -->
-      <div class="glass-card rounded-xl p-3 shadow-md flex-1">
-        <div class="flex items-center justify-between pb-2 border-b border-slate-800">
-          <div class="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-slate-200">
-            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
-            <span>Intervention Sandbox</span>
-          </div>
-          <span id="sandbox-status-pill" class="text-[10px] font-mono text-emerald-400">$20,000 Remaining</span>
-        </div>
-
-        <!-- Budget Cap Slider -->
-        <div class="mt-3">
-          <div class="flex items-center justify-between text-xs mb-1">
-            <span class="text-slate-400">Municipal Budget Cap:</span>
-            <span id="sandbox-cap-val" class="font-mono font-bold text-emerald-400 text-sm">$450,000</span>
-          </div>
-          <input id="slider-budget-cap" type="range" min="50000" max="1000000" step="25000" value="450000" class="w-full accent-emerald-500">
-          
-          <!-- Spent Progress Bar -->
-          <div class="mt-2">
-            <div class="flex justify-between text-[10px] font-mono text-slate-400 mb-1">
-              <span>ALLOCATED: <strong id="sandbox-spent-val" class="text-white">$430,000</strong></span>
-              <span>UTILIZATION</span>
-            </div>
-            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-              <div id="sandbox-budget-progress" class="h-2 rounded-full bg-gradient-to-r from-emerald-500 to-orange-500 transition-all duration-300" style="width: 95%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Intervention Allocations -->
-        <div class="mt-3 space-y-2 text-xs">
-          
-          <!-- Shade Sails -->
-          <div class="p-2 rounded-lg bg-slate-800/60 border border-slate-700/60 flex items-center justify-between">
-            <div>
-              <div class="font-semibold text-slate-200">Shade Sails & Canopies</div>
-              <div class="text-[10px] text-slate-400 font-mono">$25k / unit • <span id="subtotal-shade" class="text-orange-400 font-bold">$100,000</span></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button id="btn-minus-shade" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">-</button>
-              <span id="count-shade" class="font-mono font-bold text-sm w-4 text-center">4</span>
-              <button id="btn-plus-shade" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-          <!-- Misting Points -->
-          <div class="p-2 rounded-lg bg-slate-800/60 border border-slate-700/60 flex items-center justify-between">
-            <div>
-              <div class="font-semibold text-slate-200">Smart Misting Points</div>
-              <div class="text-[10px] text-slate-400 font-mono">$15k / unit • <span id="subtotal-misting" class="text-orange-400 font-bold">$75,000</span></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button id="btn-minus-misting" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">-</button>
-              <span id="count-misting" class="font-mono font-bold text-sm w-4 text-center">5</span>
-              <button id="btn-plus-misting" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-          <!-- Cooling Centers -->
-          <div class="p-2 rounded-lg bg-slate-800/60 border border-slate-700/60 flex items-center justify-between">
-            <div>
-              <div class="font-semibold text-slate-200">Resilience Cooling Centers</div>
-              <div class="text-[10px] text-slate-400 font-mono">$85k / hub • <span id="subtotal-centers" class="text-orange-400 font-bold">$170,000</span></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button id="btn-minus-centers" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">-</button>
-              <span id="count-centers" class="font-mono font-bold text-sm w-4 text-center">2</span>
-              <button id="btn-plus-centers" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-          <!-- Tree Canopy & Bioswales -->
-          <div class="p-2 rounded-lg bg-slate-800/60 border border-slate-700/60 flex items-center justify-between">
-            <div>
-              <div class="font-semibold text-slate-200">Miyawaki Urban Forests</div>
-              <div class="text-[10px] text-slate-400 font-mono">$35k / ha • <span id="subtotal-trees" class="text-orange-400 font-bold">$70,000</span></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button id="btn-minus-trees" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">-</button>
-              <span id="count-trees" class="font-mono font-bold text-sm w-4 text-center">2</span>
-              <button id="btn-plus-trees" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-          <!-- Cool Roofs -->
-          <div class="p-2 rounded-lg bg-slate-800/60 border border-slate-700/60 flex items-center justify-between">
-            <div>
-              <div class="font-semibold text-slate-200">Cool Roof Retrofits</div>
-              <div class="text-[10px] text-slate-400 font-mono">$40k / cluster • <span id="subtotal-roofs" class="text-orange-400 font-bold">$120,000</span></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button id="btn-minus-roofs" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">-</button>
-              <span id="count-roofs" class="font-mono font-bold text-sm w-4 text-center">3</span>
-              <button id="btn-plus-roofs" class="w-6 h-6 rounded bg-slate-700 hover:bg-slate-600 text-white font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Optimize Button & Compare Mode -->
-        <div class="mt-3 pt-2.5 border-t border-slate-800 space-y-2">
-          <button id="btn-run-optimization" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500 hover:from-orange-600 hover:to-emerald-600 text-white font-bold text-xs tracking-wider transition-all shadow-lg shadow-orange-500/25 flex items-center justify-center gap-2">
-            <span>⚡ Run AI Optimization (Pareto Greedy)</span>
+          <button onclick="resetMapView()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 border border-civic-border rounded-lg font-medium text-slate-700">
+            Reset View
           </button>
+        </div>
+      </div>
 
-          <!-- Toggle: Before vs After Map View -->
-          <div class="flex items-center justify-between pt-1 text-xs">
-            <span class="text-slate-300 font-medium">Post-Mitigation Map Preview:</span>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input id="toggle-compare-mode" type="checkbox" class="sr-only peer">
-              <div class="w-9 h-5 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
-            </label>
+      <!-- Map & Inspector Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <!-- Full GIS Canvas (8 cols) -->
+        <div class="lg:col-span-8 bg-civic-surface rounded-xl border border-civic-border p-2 shadow-sm">
+          <div id="full-gis-map" class="w-full h-[600px] rounded-lg overflow-hidden bg-slate-100"></div>
+        </div>
+
+        <!-- Selected Area Details Drawer (4 cols) -->
+        <div class="lg:col-span-4 bg-civic-surface rounded-xl border border-civic-border p-4 shadow-sm flex flex-col justify-between">
+          <div id="map-drawer-content">
+            <div class="text-xs font-semibold text-civic-teal uppercase tracking-wider">Selected Area Profile</div>
+            <h3 id="drawer-area-name" class="font-bold text-lg text-civic-navy mt-1">Danilimda Industrial South</h3>
+            <div id="drawer-tier-badge" class="mt-1.5 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-civic-extremeBg text-civic-extreme border border-red-200">
+              Score: 82.5 / 100 • Extreme Risk
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 mt-4 text-xs">
+              <div class="p-2.5 bg-slate-50 rounded-lg border border-civic-border">
+                <span class="text-civic-secondary block">Population:</span>
+                <strong id="drawer-pop" class="text-sm font-mono text-civic-dark">165,000</strong>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg border border-civic-border">
+                <span class="text-civic-secondary block">Surface Temp:</span>
+                <strong id="drawer-lst" class="text-sm font-mono text-civic-extreme">48.8°C</strong>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg border border-civic-border">
+                <span class="text-civic-secondary block">Tree Canopy:</span>
+                <strong id="drawer-canopy" class="text-sm font-mono text-civic-dark">4.8%</strong>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg border border-civic-border">
+                <span class="text-civic-secondary block">Outdoor Workers:</span>
+                <strong id="drawer-workers" class="text-sm font-mono text-civic-dark">26,500</strong>
+              </div>
+            </div>
+
+            <!-- Risk Explanation -->
+            <div class="mt-4">
+              <div class="text-xs font-semibold text-civic-navy">Risk driver explanation:</div>
+              <p id="drawer-explanation" class="text-xs text-slate-600 mt-1 leading-relaxed bg-slate-50 p-3 rounded-lg border border-civic-border">
+                This area combines high surface temperature (48.8°C), very low tree canopy (4.8%), dense built form, and a large outdoor-worker population. These factors increase exposure during the afternoon heat window.
+              </p>
+            </div>
+
+            <!-- Top Action -->
+            <div class="mt-4 p-3 bg-teal-50 border border-teal-200 rounded-lg">
+              <div class="text-[11px] font-semibold text-civic-teal uppercase">Recommended Action</div>
+              <div id="drawer-action" class="font-bold text-xs text-teal-900 mt-0.5">Tensile Shade Canopies & Smart Misting Kiosks</div>
+              <div class="text-[11px] text-teal-700 mt-1">Estimated Cost: ₹25,000 per unit • 650 people protected</div>
+            </div>
           </div>
 
-          <!-- Optimization Output Stats Panel -->
-          <div id="sandbox-results-panel" class="p-2.5 rounded-lg bg-emerald-950/40 border border-emerald-500/40 text-xs hidden animate-fade-in">
-            <div class="flex items-center justify-between text-emerald-400 font-bold mb-1">
-              <span>✓ Simulation Projected Impact</span>
-              <span class="text-[10px] font-mono">Pareto Verified</span>
-            </div>
-            <div class="grid grid-cols-2 gap-2 text-[11px]">
-              <div>Avg Temp Drop: <strong id="opt-temp-val" class="text-white">-2.8°C</strong></div>
-              <div>Hospitalizations: <strong id="opt-hosp-val" class="text-white">-38%</strong></div>
-            </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-[11px] text-civic-secondary">Data confidence: Medium</span>
+            <button onclick="inspectSelectedInDepth()" class="px-3 py-1.5 bg-civic-teal text-white rounded-md text-xs font-semibold hover:bg-teal-800 transition">
+              Inspect Full Area Details &rarr;
+            </button>
           </div>
-
-        </div>
-
-      </div>
-
-    </aside>
-
-    <!-- ================= CENTER COLUMN: INTERACTIVE GIS MAP (Flex-1) ================= -->
-    <section class="flex-1 relative flex flex-col min-h-[450px]">
-      
-      <!-- Leaflet Map Viewport -->
-      <div id="leaflet-map" class="w-full h-full z-0"></div>
-
-      <!-- Floating Map Legend Overlay -->
-      <div class="absolute bottom-4 left-4 z-10 glass-card px-3 py-2 rounded-xl text-xs max-w-xs shadow-xl pointer-events-auto">
-        <div class="font-bold text-[11px] uppercase tracking-wider text-slate-300 flex items-center justify-between mb-1">
-          <span>Heat Vulnerability Spectrum</span>
-          <span class="text-[9px] font-mono text-slate-400">TERRA07</span>
-        </div>
-        <div class="flex items-center gap-1.5 text-[10px] font-mono">
-          <span class="w-3 h-3 rounded bg-[#06b6d4]"></span>
-          <span class="text-slate-400">Resilient</span>
-          <span class="w-3 h-3 rounded bg-[#f59e0b] ml-1"></span>
-          <span class="text-slate-400">Moderate</span>
-          <span class="w-3 h-3 rounded bg-[#ef4444] ml-1"></span>
-          <span class="text-slate-400">High</span>
-          <span class="w-3 h-3 rounded bg-[#9333ea] ml-1"></span>
-          <span class="text-slate-400">Extreme</span>
-        </div>
-        <div class="mt-1 pt-1 border-t border-slate-700/60 text-[10px] text-slate-400 flex items-center justify-between">
-          <span>Dashed Lines: Unshaded Corridors</span>
-          <span class="text-sky-400">● ❄️ Amenity Nodes</span>
         </div>
       </div>
-
-    </section>
-
-    <!-- ================= RIGHT COLUMN: WARD INSPECTOR (~400px) ================= -->
-    <aside class="w-full lg:w-[400px] xl:w-[420px] border-l border-slate-800 bg-slate-900/50 flex flex-col overflow-y-auto max-h-[calc(100vh-120px)] lg:max-h-none p-4 space-y-3">
-      
-      <div class="flex items-center justify-between pb-2 border-b border-slate-800">
-        <div class="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-slate-200">
-          <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-          <span>Ward & Street Inspector</span>
-        </div>
-        <span class="text-[10px] font-mono text-emerald-400">Interactive GIS Sync</span>
-      </div>
-
-      <!-- Dynamic Content Render Target -->
-      <div id="inspector-content" class="space-y-3">
-        <!-- Rendered by planner.js -->
-        <div class="py-12 text-center text-slate-500 text-xs">
-          Select any Ward Polygon or Street Corridor on the GIS map to inspect detailed microclimate telemetry and XAI drivers.
-        </div>
-      </div>
-
-    </aside>
-
-  </main>
-
-  <!-- ================= BOTTOM SECTION: PRIORITY RANKING TABLE ================= -->
-  <section class="border-t border-slate-800 bg-slate-900/90 z-20">
-    <div class="px-4 py-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 border-b border-slate-800/80">
-      
-      <!-- Table Header & Filter Pills -->
-      <div class="flex flex-wrap items-center gap-2">
-        <span class="font-extrabold text-xs tracking-wider uppercase text-white flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-          <span>Priority Heat Vulnerability Matrix</span>
-        </span>
-
-        <div class="flex items-center gap-1 text-xs">
-          <button data-filter="all" class="btn-table-filter px-2.5 py-1 rounded-md text-[11px] font-bold bg-orange-500 text-white transition-colors">All Zones (22)</button>
-          <button data-filter="extreme" class="btn-table-filter px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 hover:text-white transition-colors">Extreme (Score ≥82)</button>
-          <button data-filter="high" class="btn-table-filter px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 hover:text-white transition-colors">High (68-81)</button>
-          <button data-filter="corridors" class="btn-table-filter px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-800 text-slate-300 hover:text-white transition-colors">Corridors Only</button>
-        </div>
-      </div>
-
-      <!-- Search & CSV Export -->
-      <div class="flex items-center gap-2 w-full md:w-auto">
-        <div class="relative flex-1 md:w-64">
-          <input id="input-search-zones" type="text" placeholder="Search ward or street..." class="w-full bg-slate-950/80 border border-slate-700/80 rounded-lg px-2.5 py-1 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-orange-500 font-mono">
-        </div>
-        <button id="btn-export-csv" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all border border-slate-700 flex items-center gap-1">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Export CSV</span>
-        </button>
-      </div>
-
     </div>
 
-    <!-- Table Container -->
-    <div class="overflow-x-auto max-h-56">
-      <table class="w-full text-left border-collapse">
-        <thead class="bg-slate-950/80 sticky top-0 border-b border-slate-800 text-[10px] font-mono uppercase text-slate-400 select-none">
-          <tr>
-            <th class="px-3 py-2">Rank</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white" data-col="name" title="Click to sort by Name">Zone / Corridor ↕</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white text-orange-400" data-col="current_score" title="Click to sort by Risk Score">Composite Risk ↕</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white" data-col="current_lst" title="Click to sort by Land Surface Temp">LST (°C) ↕</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white" data-col="canopy_pct" title="Click to sort by Tree Canopy">Canopy % ↕</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white" data-col="elderly_count" title="Click to sort by Elderly Count">Elderly (65+) ↕</th>
-            <th class="px-3 py-2 cursor-pointer hover:text-white" data-col="outdoor_workers" title="Click to sort by Outdoor Workers">Outdoor Workers ↕</th>
-            <th class="px-3 py-2">Hazard Tier</th>
-            <th class="px-3 py-2 text-right">Action</th>
-          </tr>
-        </thead>
-        <tbody id="ranking-table-body" class="divide-y divide-slate-800/40 text-xs">
-          <!-- Populated by planner.js -->
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ================= EXECUTIVE BRIEFING MODAL ================= -->
-  <div id="modal-briefing" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
-    <div class="glass-card max-w-2xl w-full rounded-2xl p-6 shadow-2xl border border-orange-500/40 max-h-[90vh] overflow-y-auto">
-      
-      <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+    <!-- =======================================================================
+         SCREEN 3: PRIORITY AREAS (TABLE)
+         ======================================================================= -->
+    <div id="screen-priority" class="screen-panel space-y-4">
+      <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
         <div>
-          <span class="text-xs font-mono font-bold text-orange-400 uppercase tracking-widest">TERRA07 Executive Briefing</span>
-          <h2 class="text-xl font-black text-white mt-0.5">Municipal Heat Action Plan (HAP) Decision Memo</h2>
+          <h2 class="font-bold text-base text-civic-navy">Priority Areas</h2>
+          <p class="text-xs text-civic-secondary">Ranked areas where intervention can reduce the greatest human heat exposure</p>
         </div>
-        <button id="close-briefing" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
+
+        <div class="flex items-center flex-wrap gap-2 text-xs">
+          <!-- Search box -->
+          <input type="text" id="priority-search" placeholder="Search area or corridor..." oninput="filterPriorityTable()" class="px-3 py-1.5 border border-civic-border rounded-lg text-xs outline-none focus:border-civic-teal w-48">
+
+          <!-- Filter Tier -->
+          <select id="priority-tier-filter" onchange="filterPriorityTable()" class="px-3 py-1.5 border border-civic-border rounded-lg text-xs font-medium outline-none bg-white">
+            <option value="all">All Risk Tiers</option>
+            <option value="extreme">Extreme Risk (&gt;81)</option>
+            <option value="high">High Risk (60–81)</option>
+            <option value="moderate">Moderate Risk (40–59)</option>
+            <option value="resilient">Resilient (&lt;40)</option>
+          </select>
+
+          <!-- Export CSV -->
+          <button onclick="exportPriorityTableCSV()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 border border-civic-border text-civic-dark font-semibold rounded-lg transition flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Export CSV
+          </button>
+        </div>
       </div>
 
-      <div class="mt-4 space-y-4 text-xs text-slate-300 leading-relaxed">
-        <div class="p-3.5 rounded-xl bg-orange-950/30 border border-orange-500/30">
-          <div class="font-bold text-orange-400 mb-1">EXECUTIVE SUMMARY</div>
-          <p>
-            Thermal satellite radiometry and social vulnerability indexing identify <strong>6 critical hazard wards</strong> experiencing acute daytime Land Surface Temperatures above 45.0°C. 342,800 residents and over 84,000 seniors face immediate cardiovascular and heat-stroke exposure.
+      <!-- Priority Table Card -->
+      <div class="bg-civic-surface rounded-xl border border-civic-border overflow-hidden shadow-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-50 border-b border-civic-border text-civic-secondary font-semibold">
+                <th class="p-3 w-12 text-center">Rank</th>
+                <th class="p-3">Area / Corridor</th>
+                <th class="p-3">Type</th>
+                <th class="p-3">Composite Risk</th>
+                <th class="p-3">Surface Temp</th>
+                <th class="p-3">Canopy</th>
+                <th class="p-3">Elderly Pop</th>
+                <th class="p-3">Outdoor Workers</th>
+                <th class="p-3">Main Driver</th>
+                <th class="p-3">Recommended Action</th>
+                <th class="p-3 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="priority-table-body" class="divide-y divide-civic-border font-medium">
+              <!-- Populated dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 4: AREA INSPECTOR
+         ======================================================================= -->
+    <div id="screen-inspector" class="screen-panel space-y-6">
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <h2 id="inspect-area-title" class="font-bold text-xl text-civic-navy">Danilimda Industrial South</h2>
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-civic-extremeBg text-civic-extreme border border-red-200">
+              Score: 82.5 / 100 • Extreme
+            </span>
+            <span class="text-xs text-civic-secondary font-mono">Ward Code: W-03</span>
+          </div>
+          <p class="text-xs text-civic-secondary mt-1">High-density manufacturing and informal labor corridor • Prototype estimate</p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <select id="inspect-area-select" onchange="loadAreaInspection(this.value)" class="px-3 py-1.5 border border-civic-border rounded-lg text-xs font-medium bg-white">
+            <!-- Populated with all wards -->
+          </select>
+          <button onclick="switchTab('interventions')" class="px-3 py-1.5 bg-civic-teal text-white rounded-lg text-xs font-semibold hover:bg-teal-800 transition">
+            Add to Intervention Plan
+          </button>
+        </div>
+      </div>
+
+      <!-- Top Metric Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-7 gap-3 text-xs">
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Total Population</span>
+          <strong id="insp-pop" class="text-lg font-mono font-bold text-civic-dark mt-1 block">165,000</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Area</span>
+          <strong id="insp-area" class="text-lg font-mono font-bold text-civic-dark mt-1 block">6.4 km²</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Density</span>
+          <strong id="insp-density" class="text-lg font-mono font-bold text-civic-dark mt-1 block">25,781 /km²</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Surface Temp (LST)</span>
+          <strong id="insp-lst" class="text-lg font-mono font-bold text-civic-extreme mt-1 block">48.8°C</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Tree Canopy</span>
+          <strong id="insp-canopy" class="text-lg font-mono font-bold text-civic-dark mt-1 block">4.8%</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border">
+          <span class="text-civic-secondary block">Elderly (65+)</span>
+          <strong id="insp-elderly" class="text-lg font-mono font-bold text-civic-navy mt-1 block">12,400</strong>
+        </div>
+        <div class="bg-civic-surface p-3.5 rounded-xl border border-civic-border col-span-2 md:col-span-1">
+          <span class="text-civic-secondary block">Outdoor Workers</span>
+          <strong id="insp-workers" class="text-lg font-mono font-bold text-civic-high mt-1 block">26,500</strong>
+        </div>
+      </div>
+
+      <!-- Explanation & 4 Driver Rows -->
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm space-y-4">
+        <div>
+          <h3 class="font-bold text-sm text-civic-navy">Why is this area at high risk?</h3>
+          <p id="insp-summary-text" class="text-xs text-slate-700 mt-1.5 leading-relaxed bg-slate-50 p-3.5 rounded-lg border border-civic-border">
+            This area combines high surface temperature (48.8°C), very low tree canopy (4.8%), dense built form, and a large outdoor-worker population. These factors increase exposure during the afternoon heat window.
           </p>
         </div>
 
-        <div>
-          <h4 class="font-bold text-slate-100 uppercase tracking-wider mb-2">Priority Capital Allocations</h4>
-          <div class="grid grid-cols-2 gap-2 font-mono text-[11px]">
-            <div class="p-2.5 rounded-lg bg-slate-800/60 border border-slate-700">
-              <span class="text-slate-400">W-03 Danilimda:</span>
-              <div class="text-white font-bold mt-0.5">Industrial Cool Roof Coating ($160k)</div>
+        <div class="space-y-3 pt-2">
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span>1. Land Surface Temperature (LST)</span>
+              <span class="text-civic-extreme font-mono">+36% contribution</span>
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-800/60 border border-slate-700">
-              <span class="text-slate-400">W-04 Vatva Estate:</span>
-              <div class="text-white font-bold mt-0.5">Evaporative Misting Hubs ($60k)</div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-extreme h-2 rounded-full" style="width: 36%"></div>
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-800/60 border border-slate-700">
-              <span class="text-slate-400">W-01 Kalupur Core:</span>
-              <div class="text-white font-bold mt-0.5">Tensile Shade Over Bazaars ($75k)</div>
+            <div class="text-[11px] text-civic-secondary mt-1">Exposed asphalt roads and dense unshaded corrugated sheet roofs retain high thermal energy. (Data confidence: Medium)</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span>2. Tree Canopy Deficit</span>
+              <span class="text-civic-high font-mono">+28% contribution</span>
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-800/60 border border-slate-700">
-              <span class="text-slate-400">W-07 Asarwa Hospital:</span>
-              <div class="text-white font-bold mt-0.5">Hydration Corridors (4x) ($60k)</div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-high h-2 rounded-full" style="width: 28%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">Canopy ratio is only 4.8% vs civic guideline of &gt;20%. (Data confidence: Medium)</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span>3. Built Density & Albedo</span>
+              <span class="text-civic-moderate font-mono">+20% contribution</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-moderate h-2 rounded-full" style="width: 20%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">High impervious fraction (82%) restricts natural ground evaporation. (Data confidence: Medium)</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span>4. Social Vulnerability & Exposure</span>
+              <span class="text-civic-blue font-mono">+16% contribution</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-civic-blue h-2 rounded-full" style="width: 16%"></div>
+            </div>
+            <div class="text-[11px] text-civic-secondary mt-1">High concentration of daily-wage manual laborers with 74% lacking home AC. (Data confidence: Medium)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Interventions in Indian Rupees (₹) -->
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm">
+        <h3 class="font-bold text-sm text-civic-navy mb-3">Recommended Interventions for this Area</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          
+          <div class="p-4 rounded-xl border border-civic-border bg-slate-50 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-civic-navy text-sm">Tensile Shade Canopies</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">Priority 1</span>
+              </div>
+              <p class="text-civic-secondary mt-1.5 leading-relaxed">
+                UV-reflective mesh installed over vendor alleys and transit corridors.
+              </p>
+              <div class="mt-3 space-y-1 font-mono text-[11px]">
+                <div>Cost: <strong>₹8,000 per street</strong></div>
+                <div>Expected Cooling: <strong class="text-emerald-700">-4.5°C surface</strong></div>
+                <div>Protected: <strong>~650 people / day</strong></div>
+              </div>
+            </div>
+            <button onclick="addToPlan('shade', 2)" class="mt-4 w-full py-1.5 bg-civic-teal text-white rounded font-semibold hover:bg-teal-800 transition">
+              Add to Plan (₹16,000)
+            </button>
+          </div>
+
+          <div class="p-4 rounded-xl border border-civic-border bg-slate-50 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-civic-navy text-sm">Smart Misting Kiosks</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">Priority 2</span>
+              </div>
+              <p class="text-civic-secondary mt-1.5 leading-relaxed">
+                Solar-powered high pressure misting and chilled drinking water posts.
+              </p>
+              <div class="mt-3 space-y-1 font-mono text-[11px]">
+                <div>Cost: <strong>₹4,500 per point</strong></div>
+                <div>Expected Cooling: <strong class="text-emerald-700">-2.0°C ambient</strong></div>
+                <div>Protected: <strong>~450 daily users</strong></div>
+              </div>
+            </div>
+            <button onclick="addToPlan('misting', 3)" class="mt-4 w-full py-1.5 bg-civic-teal text-white rounded font-semibold hover:bg-teal-800 transition">
+              Add to Plan (₹13,500)
+            </button>
+          </div>
+
+          <div class="p-4 rounded-xl border border-civic-border bg-slate-50 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-civic-navy text-sm">Reflective Cool Roofs</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-800">Priority 3</span>
+              </div>
+              <p class="text-civic-secondary mt-1.5 leading-relaxed">
+                Solar-reflective coating applied over dense informal tin roofs.
+              </p>
+              <div class="mt-3 space-y-1 font-mono text-[11px]">
+                <div>Cost: <strong>₹1,200 per home</strong></div>
+                <div>Expected Cooling: <strong class="text-emerald-700">-3.5°C indoor</strong></div>
+                <div>Protected: <strong>~50 households</strong></div>
+              </div>
+            </div>
+            <button onclick="addToPlan('roofs', 50)" class="mt-4 w-full py-1.5 bg-civic-teal text-white rounded font-semibold hover:bg-teal-800 transition">
+              Add to Plan (₹60,000)
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 5: SCENARIO SIMULATOR
+         ======================================================================= -->
+    <div id="screen-scenarios" class="screen-panel space-y-6">
+      <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm">
+        <h2 class="font-bold text-base text-civic-navy">Climate Scenario Simulator</h2>
+        <p class="text-xs text-civic-secondary">Test how heat risk changes under different weather conditions and municipal interventions</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Controls Column (4 cols) -->
+        <div class="lg:col-span-4 bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm space-y-4 text-xs">
+          
+          <div>
+            <label class="block font-semibold text-civic-navy mb-1">1. Heatwave Intensity Surge</label>
+            <div class="flex justify-between text-xs text-civic-secondary mb-1">
+              <span>Delta:</span>
+              <span id="sim-delta-display" class="font-mono font-bold text-civic-extreme">+2.0°C</span>
+            </div>
+            <input id="sim-temp-slider" type="range" min="0" max="5" step="0.5" value="2.0" oninput="updateScenarioSimulation()" class="w-full accent-civic-extreme">
+            <div class="flex justify-between text-[10px] text-slate-500 mt-0.5 font-mono">
+              <span>Baseline</span>
+              <span>+2.5°C</span>
+              <span>+5.0°C Extreme</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-civic-navy mb-1">2. Time of Day</label>
+            <select id="sim-time-select" onchange="updateScenarioSimulation()" class="w-full p-2 border border-civic-border rounded-lg bg-white">
+              <option value="14:00">14:00 Afternoon Peak (Maximum direct solar)</option>
+              <option value="09:00">09:00 Morning Influx</option>
+              <option value="21:00">21:00 Night-time Trapped Heat</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-civic-navy mb-1">3. Humidity Condition</label>
+            <select id="sim-humidity-select" onchange="updateScenarioSimulation()" class="w-full p-2 border border-civic-border rounded-lg bg-white">
+              <option value="normal">Normal (Relative Humidity 32%)</option>
+              <option value="elevated">Elevated (Relative Humidity 55%)</option>
+              <option value="high">High Wet-Bulb Stress (Relative Humidity 75%)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-civic-navy mb-1">4. Power Grid Reliability</label>
+            <select id="sim-grid-select" onchange="updateScenarioSimulation()" class="w-full p-2 border border-civic-border rounded-lg bg-white">
+              <option value="normal">Normal Grid (100% capacity)</option>
+              <option value="reduced">Reduced / Rolling Brownouts</option>
+              <option value="failure">Severe Blackout (No residential AC/fans)</option>
+            </select>
+          </div>
+
+          <div class="pt-2 border-t border-civic-border">
+            <span class="block font-semibold text-civic-navy mb-2">5. Simulated Interventions</span>
+            <label class="flex items-center gap-2 mb-1.5 cursor-pointer">
+              <input type="checkbox" id="sim-tog-shade" onchange="updateScenarioSimulation()" class="accent-civic-teal rounded">
+              <span>Deploy Tensile Shade Sails (-4.5°C)</span>
+            </label>
+            <label class="flex items-center gap-2 mb-1.5 cursor-pointer">
+              <input type="checkbox" id="sim-tog-misting" onchange="updateScenarioSimulation()" class="accent-civic-teal rounded">
+              <span>Deploy Misting & Water Points</span>
+            </label>
+            <label class="flex items-center gap-2 mb-1.5 cursor-pointer">
+              <input type="checkbox" id="sim-tog-roofs" onchange="updateScenarioSimulation()" class="accent-civic-teal rounded">
+              <span>Reflective Cool Roof Paint (-3.5°C)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="sim-tog-trees" onchange="updateScenarioSimulation()" class="accent-civic-teal rounded">
+              <span>Tree Canopy Expansion (+20%)</span>
+            </label>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="resetScenario()" class="w-full py-2 bg-slate-100 hover:bg-slate-200 border border-civic-border rounded-lg font-semibold text-civic-dark transition">
+              Reset to Baseline
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Results Column (8 cols) -->
+        <div class="lg:col-span-8 bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-civic-border">
+              <h3 class="font-bold text-sm text-civic-navy">Projected Scenario Impact</h3>
+              <span class="text-xs text-civic-secondary font-mono">Modelled result</span>
+            </div>
+
+            <!-- Before vs After Comparison Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4 text-xs">
+              <div class="p-3 bg-slate-50 border border-civic-border rounded-lg">
+                <span class="text-civic-secondary block">Current Score:</span>
+                <strong class="text-xl font-mono text-civic-dark">54.9</strong>
+              </div>
+              <div class="p-3 bg-slate-50 border border-civic-border rounded-lg">
+                <span class="text-civic-secondary block">Scenario Score:</span>
+                <strong id="sim-res-score" class="text-xl font-mono text-civic-high">58.4</strong>
+              </div>
+              <div class="p-3 bg-slate-50 border border-civic-border rounded-lg">
+                <span class="text-civic-secondary block">Risk Delta:</span>
+                <strong id="sim-res-delta" class="text-xl font-mono text-civic-extreme">+3.5</strong>
+              </div>
+              <div class="p-3 bg-slate-50 border border-civic-border rounded-lg">
+                <span class="text-civic-secondary block">Lives Protected:</span>
+                <strong id="sim-res-lives" class="text-xl font-mono text-civic-teal">18,400</strong>
+              </div>
+            </div>
+
+            <!-- Impact Summary Text -->
+            <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-civic-border text-xs leading-relaxed">
+              <h4 class="font-bold text-civic-navy mb-1">Scenario Assessment:</h4>
+              <p id="sim-res-text">
+                Under a +2.0°C heatwave surge at peak afternoon solar exposure, 3 additional wards transition into the Extreme Risk classification. Deploying shade sails and hydration points buffers approximately 18,400 vulnerable pedestrians from acute heat exhaustion.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 border-t border-civic-border text-[11px] text-civic-secondary flex justify-between items-center">
+            <span>Note: Scenario outputs are planning estimates based on physical heat models and do not replace emergency weather forecasts.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 6: INTERVENTION PLANNER
+         ======================================================================= -->
+    <div id="screen-interventions" class="screen-panel space-y-6">
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h2 class="font-bold text-base text-civic-navy">Intervention Planner</h2>
+            <p class="text-xs text-civic-secondary">Build a practical heat-action plan within a defined municipal budget in Indian Rupees (₹)</p>
+          </div>
+
+          <button onclick="runBudgetOptimization()" class="px-4 py-2 bg-civic-teal text-white rounded-lg text-xs font-semibold hover:bg-teal-800 transition shadow-sm">
+            Suggest a budget allocation (Knapsack Optimizer)
+          </button>
+        </div>
+
+        <!-- Budget Bar -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5 pt-4 border-t border-civic-border text-xs">
+          <div>
+            <span class="text-civic-secondary block">Total Municipal Budget:</span>
+            <strong id="plan-cap-text" class="text-lg font-mono text-civic-dark">₹4,50,000</strong>
+          </div>
+          <div>
+            <span class="text-civic-secondary block">Allocated Amount:</span>
+            <strong id="plan-spent-text" class="text-lg font-mono text-civic-blue">₹4,30,000</strong>
+          </div>
+          <div>
+            <span class="text-civic-secondary block">Remaining Budget:</span>
+            <strong id="plan-remain-text" class="text-lg font-mono text-civic-safe">₹20,000</strong>
+          </div>
+          <div>
+            <span class="text-civic-secondary block">Estimated People Protected:</span>
+            <strong id="plan-protected-text" class="text-lg font-mono text-civic-teal">14,250</strong>
+          </div>
+        </div>
+
+        <!-- Budget Slider -->
+        <div class="mt-4">
+          <label class="block text-xs font-semibold text-civic-navy mb-1">Adjust Municipal Budget Cap:</label>
+          <input id="plan-budget-slider" type="range" min="100000" max="1500000" step="50000" value="450000" oninput="changeBudgetCap(this.value)" class="w-full accent-civic-teal">
+          <div class="flex justify-between text-[10px] text-slate-500 font-mono mt-0.5">
+            <span>₹1,00,000</span>
+            <span>₹4,50,000 (Default)</span>
+            <span>₹15,00,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Intervention Cards with Spinner -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-xs">
+        
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-civic-navy text-sm">Shade Structures</h3>
+            <div class="text-[11px] text-civic-secondary mt-0.5">Tensile high-albedo canopies</div>
+            <div class="mt-2 font-mono text-[11px] text-slate-700">Cost: <strong>₹8,000 / unit</strong></div>
+            <div class="text-[11px] text-civic-teal">Impact: <strong>-4.5°C surface</strong></div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-civic-secondary">Qty:</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="adjustAllocation('shade', -1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">-</button>
+              <span id="alloc-qty-shade" class="w-6 text-center font-mono font-bold">4</span>
+              <button onclick="adjustAllocation('shade', 1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">+</button>
             </div>
           </div>
         </div>
 
-        <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30">
-          <div class="font-bold text-emerald-400 mb-1">PROJECTED QUANTITATIVE OUTCOMES</div>
-          <ul class="list-disc list-inside space-y-1 text-slate-200">
-            <li><strong>Average Ambient Microclimate Drop:</strong> -2.8°C across targeted hotspots</li>
-            <li><strong>Protected Vulnerable Population:</strong> +18,400 high-risk individuals</li>
-            <li><strong>Estimated Reduction in Midday Hospital Admissions:</strong> -38.5%</li>
-            <li><strong>Payback ROI:</strong> 4.6x in avoided healthcare costs and lost worker productivity</li>
-          </ul>
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-civic-navy text-sm">Smart Water Points</h3>
+            <div class="text-[11px] text-civic-secondary mt-0.5">Potable drinking water ATMs</div>
+            <div class="mt-2 font-mono text-[11px] text-slate-700">Cost: <strong>₹4,500 / unit</strong></div>
+            <div class="text-[11px] text-civic-teal">Impact: <strong>65% heatstroke drop</strong></div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-civic-secondary">Qty:</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="adjustAllocation('misting', -1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">-</button>
+              <span id="alloc-qty-misting" class="w-6 text-center font-mono font-bold">6</span>
+              <button onclick="adjustAllocation('misting', 1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-civic-navy text-sm">Cooling Centres</h3>
+            <div class="text-[11px] text-civic-secondary mt-0.5">Air-conditioned havens</div>
+            <div class="mt-2 font-mono text-[11px] text-slate-700">Cost: <strong>₹25,000 / unit</strong></div>
+            <div class="text-[11px] text-civic-teal">Impact: <strong>300 cap / shelter</strong></div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-civic-secondary">Qty:</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="adjustAllocation('centers', -1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">-</button>
+              <span id="alloc-qty-centers" class="w-6 text-center font-mono font-bold">2</span>
+              <button onclick="adjustAllocation('centers', 1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-civic-navy text-sm">Urban Forest Corridor</h3>
+            <div class="text-[11px] text-civic-secondary mt-0.5">Dense Miyawaki bioswale</div>
+            <div class="mt-2 font-mono text-[11px] text-slate-700">Cost: <strong>₹12,000 / km</strong></div>
+            <div class="text-[11px] text-civic-teal">Impact: <strong>-3.8°C ambient</strong></div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-civic-secondary">Qty:</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="adjustAllocation('trees', -1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">-</button>
+              <span id="alloc-qty-trees" class="w-6 text-center font-mono font-bold">2</span>
+              <button onclick="adjustAllocation('trees', 1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-civic-surface p-4 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-civic-navy text-sm">Cool-Roof Retrofit</h3>
+            <div class="text-[11px] text-civic-secondary mt-0.5">Reflective paint subsidies</div>
+            <div class="mt-2 font-mono text-[11px] text-slate-700">Cost: <strong>₹1,200 / home</strong></div>
+            <div class="text-[11px] text-civic-teal">Impact: <strong>-3.5°C indoor</strong></div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-civic-border flex items-center justify-between">
+            <span class="text-civic-secondary">Qty:</span>
+            <div class="flex items-center gap-1.5">
+              <button onclick="adjustAllocation('roofs', -10)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">-</button>
+              <span id="alloc-qty-roofs" class="w-6 text-center font-mono font-bold">40</span>
+              <button onclick="adjustAllocation('roofs', 10)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-bold">+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 7: REPORTS AND EXPORT
+         ======================================================================= -->
+    <div id="screen-reports" class="screen-panel space-y-6">
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm">
+        <h2 class="font-bold text-base text-civic-navy">Reports & Data Export</h2>
+        <p class="text-xs text-civic-secondary">Generate executive briefings, filtered CSVs, and model documentation for municipal governance</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xs">
+        
+        <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-sm text-civic-navy">Executive Briefing (PDF)</h3>
+            <p class="text-civic-secondary mt-1.5 leading-relaxed">
+              Official summary of top priority heat zones, driver breakdowns, and suggested budget allocation for the municipal commissioner.
+            </p>
+            <div class="mt-3 text-[11px] text-slate-500 font-mono">Format: PDF (Ready to download)</div>
+          </div>
+          <a href="/reports/report.pdf" target="_blank" class="mt-4 w-full py-2 bg-civic-teal text-white rounded-lg text-center font-semibold hover:bg-teal-800 transition block">
+            Download PDF Report
+          </a>
+        </div>
+
+        <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-sm text-civic-navy">Priority Areas Dataset (CSV)</h3>
+            <p class="text-civic-secondary mt-1.5 leading-relaxed">
+              Export all 48 wards and 147 street corridors with composite scores, demographic vulnerability, and intervention rankings.
+            </p>
+            <div class="mt-3 text-[11px] text-slate-500 font-mono">Format: CSV / GeoJSON</div>
+          </div>
+          <button onclick="exportPriorityTableCSV()" class="mt-4 w-full py-2 bg-slate-100 hover:bg-slate-200 border border-civic-border text-civic-dark rounded-lg font-semibold transition">
+            Export CSV Dataset
+          </button>
+        </div>
+
+        <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-sm text-civic-navy">Architecture & Model Plan</h3>
+            <p class="text-civic-secondary mt-1.5 leading-relaxed">
+              System architecture diagram, IPCC AR6 formula specifications, and verification scorecard.
+            </p>
+            <div class="mt-3 text-[11px] text-slate-500 font-mono">Format: High-Res Diagram & Markdown</div>
+          </div>
+          <a href="/reports/figures/architecture.png" target="_blank" class="mt-4 w-full py-2 bg-slate-100 hover:bg-slate-200 border border-civic-border text-civic-dark rounded-lg font-semibold text-center transition block">
+            View Architecture Diagram
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         SCREEN 8: DATA & METHODOLOGY
+         ======================================================================= -->
+    <div id="screen-methodology" class="screen-panel space-y-6">
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm">
+        <h2 class="font-bold text-base text-civic-navy">Data & Methodology</h2>
+        <p class="text-xs text-civic-secondary">How the Heat-Risk Score is calculated under the IPCC AR6 Framework</p>
+      </div>
+
+      <div class="bg-civic-surface p-5 rounded-xl border border-civic-border shadow-sm space-y-4 text-xs leading-relaxed">
+        <h3 class="font-bold text-sm text-civic-navy">A. What is Heat Risk?</h3>
+        <p class="text-slate-700">
+          Heat risk represents the combined effect of heat exposure, physical conditions, and population vulnerability. City-wide temperature forecasts treat large urban regions as uniform, hiding severe microclimate hotspots in crowded industrial and unshaded wards.
+        </p>
+
+        <h3 class="font-bold text-sm text-civic-navy pt-2">B. Mathematical Formulation (IPCC AR6 Tri-Factor Model)</h3>
+        <div class="p-3.5 bg-slate-50 border border-civic-border rounded-lg font-mono text-xs text-civic-navy">
+          Heat Risk Index (HRI) = 0.40 × Hazard + 0.30 × Exposure + 0.30 × Vulnerability
+        </div>
+        <p class="text-slate-600">
+          Where Hazard integrates Landsat Land Surface Temperature (LST) and building density; Exposure captures foot-traffic density and outdoor manual laborers; Vulnerability captures elderly residents (65+), young children (&lt;5), and AC deficiency.
+        </p>
+
+        <h3 class="font-bold text-sm text-civic-navy pt-2">C. Data Sources</h3>
+        <ul class="list-disc pl-5 space-y-1 text-slate-700">
+          <li><strong>Satellite Remote Sensing:</strong> NASA/USGS Landsat-8/9 TIRS (Band 10) for Land Surface Temperature and Sentinel-2 (B4, B8) for NDVI Vegetation Index.</li>
+          <li><strong>Urban Morphology:</strong> OpenStreetMap road network, building footprints, and cooling infrastructure.</li>
+          <li><strong>Demographics:</strong> WorldPop 100m spatial resolution population rasters and Ahmedabad Municipal Corporation ward statistics.</li>
+        </ul>
+
+        <h3 class="font-bold text-sm text-civic-navy pt-2">D. Limitations & Honest Disclosures</h3>
+        <p class="text-slate-700">
+          This system is a prototype built for the Agnitia Hackathon. Microclimate and diurnal solar cycle metrics use calibrated physical synthetic estimates where local meteorological stations are sparse. The system supports urban planning and does not replace official emergency services.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Allocation Review Modal -->
+  <div id="allocation-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-xl max-w-md w-full border border-civic-border shadow-xl p-5 text-xs">
+      <h3 class="font-bold text-base text-civic-navy">Review Suggested Budget Allocation</h3>
+      <p class="text-civic-secondary mt-1">Based on Knapsack optimization maximizing lives protected within ₹4,50,000:</p>
+      
+      <div class="mt-4 space-y-2 bg-slate-50 p-3 rounded-lg border border-civic-border font-mono text-[11px]">
+        <div class="flex justify-between"><span>Shade Sails (4 units):</span> <strong>₹32,000</strong></div>
+        <div class="flex justify-between"><span>Misting Points (6 units):</span> <strong>₹27,000</strong></div>
+        <div class="flex justify-between"><span>Cooling Centers (2 units):</span> <strong>₹50,000</strong></div>
+        <div class="flex justify-between"><span>Tree Corridors (2 km):</span> <strong>₹24,000</strong></div>
+        <div class="flex justify-between"><span>Cool Roof Retrofits (240 homes):</span> <strong>₹2,88,000</strong></div>
+        <div class="pt-2 border-t border-slate-200 flex justify-between font-bold text-civic-navy">
+          <span>Total Capital:</span> <span>₹4,21,000</span>
         </div>
       </div>
 
-      <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-end gap-3">
-        <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition-colors flex items-center gap-1.5">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-          <span>Print Decision Memo</span>
-        </button>
-        <button onclick="document.getElementById('modal-briefing').classList.add('hidden')" class="px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-colors">
-          Dismiss
-        </button>
+      <div class="mt-4 p-2.5 bg-emerald-50 border border-emerald-200 rounded text-emerald-800 text-[11px]">
+        Estimated Lives Protected: <strong>16,800 people</strong> across Vatva, Danilimda, and Odhav.
       </div>
 
+      <div class="mt-4 flex justify-end gap-2">
+        <button onclick="closeModal()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded font-semibold text-slate-700">Close</button>
+        <button onclick="confirmPlan()" class="px-3 py-1.5 bg-civic-teal hover:bg-teal-800 text-white rounded font-semibold">Confirm Allocation</button>
+      </div>
     </div>
   </div>
 
-  <!-- Main Planner Engine Script -->
+  <!-- JavaScript Implementation -->
   <script src="planner.js"></script>
-
 </body>
 </html>

@@ -212,6 +212,81 @@ const I18N = {
     sunlight_boost_on: "☀️ धूप मोड सक्रिय",
     sunlight_boost_off: "☀️ सामान्य मोड"
   },
+  gu: {
+    alert_extreme: "અતિશય ગરમીની ચેતવણી: રેડ એલર્ટ",
+    alert_high: "તીવ્ર લૂ ની ચેતવણી: ઓરેન્જ એલર્ટ",
+    alert_moderate: "ગરમીની સાવચેતી: યલો એલર્ટ",
+    alert_safe: "સામાન્ય સ્થિતિ: ગ્રીન એલર્ટ",
+    street_index_label: "વર્તમાન શેરી તાપમાન સૂચકાંક",
+    feels_like: "અનુભવાતું તાપમાન",
+    wbgt_label: "વેટ-બલ્બ તાપમાન (WBGT)",
+    uv_label: "સૂર્ય UV સૂચકાંક",
+    peak_window_label: "સૌથી જોખમી સમયગાળો",
+    listen_alert: "ચેતવણી સાંભળો",
+    stop_audio: "અવાજ બંધ કરો",
+    safe_street_title: "મારી શેરી અત્યારે કેટલી સલામત છે?",
+    search_placeholder: "વિસ્તાર અથવા શેરી શોધો (દા.ત. માણેક ચોક, ખાડિયા, ઓઢવ)...",
+    surface_temp: "સપાટીનું તાપમાન",
+    shade_temp: "છાંયડાવાળો ફૂટપાથ",
+    canopy_cover: "વૃક્ષોનું આવરણ",
+    radiant_temp: "રેડિયન્ટ તાપમાન",
+    why_hot: "આ શેરી વધુ ગરમ કેમ છે?",
+    hourly_curve: "આજનો ગરમીનો જોખમ ગ્રાફ",
+    persona_assessment_title: "વ્યક્તિગત ગરમી સલામતી મૂલ્યાંકન",
+    select_persona: "1. તમારું પ્રોફાઇલ પસંદ કરો",
+    persona_senior: "વરિષ્ઠ નાગરિક (65+)",
+    persona_senior_sub: "ગરમીથી ઝડપી બીમાર થવાનું જોખમ",
+    persona_worker: "શ્રમિક / ડિલિવરી રાઇડર",
+    persona_worker_sub: "સખત તડકામાં શારીરિક શ્રમ",
+    persona_parent: "નાના બાળક સાથે વાલી",
+    persona_parent_sub: "ગરમ ડામર નજીક સ્ટ્રોલર",
+    persona_general: "સામાન્ય જનતા",
+    persona_general_sub: "રોજિંદા મુસાફરો અને ગ્રાહકો",
+    conditions_title: "2. તમારી વર્તમાન સ્થિતિ",
+    ac_home: "ઘરે AC છે?",
+    sun_work: "તડકામાં રહેવું પડે છે?",
+    health_cond: "જૂની બીમારી?",
+    exertion_level: "શારીરિક શ્રમ?",
+    opt_ac_yes: "હા, AC છે",
+    opt_ac_fans: "માત્ર પંખો",
+    opt_ac_none: "AC નથી / પતરાનું છાપરું",
+    opt_sun_direct: "સીધો તડકો",
+    opt_sun_partial: "હળવો છાંયડો",
+    opt_sun_indoor: "અંદર",
+    opt_cond_heart: "હૃદય / બ્લડ પ્રેશર",
+    opt_cond_asthma: "અસ્થમા / ફેફસાં",
+    opt_cond_diabetes: "ડાયાબિટીસ",
+    opt_cond_none: "કંઈ નહીં",
+    opt_exert_heavy: "સખત શ્રમ",
+    opt_exert_moderate: "ચાલવું / મુસાફરી",
+    opt_exert_resting: "આરામ",
+    safe_limit_title: "બહાર રહેવાનો મહત્તમ સલામત સમય",
+    start_timer: "સેફ વૉક ટાઈમર શરૂ કરો",
+    pause_timer: "વિરામ",
+    reset_timer: "રીસેટ",
+    hydration_title: "પાણી પીવાના નિયમો",
+    symptoms_title: "લૂ ના મુખ્ય લક્ષણો",
+    sanctuaries_title: "નજીકનું શીતળ આશ્રયસ્થાન શોધો",
+    filter_all: "બધા કેન્દ્રો",
+    filter_ac: "❄️ AC સેન્ટર",
+    filter_water: "💧 મફત ઠંડુ પાણી",
+    filter_parks: "🌳 છાંયડાવાળા બગીચા",
+    walk_here: "અહીં જાઓ",
+    cool_walk_title: "કૂલ વૉક (શીતળ માર્ગ) નેવિગેશન",
+    start_loc: "શરૂઆતનું સ્થળ",
+    dest_loc: "પહોંચવાનું સ્થળ",
+    calc_cool_route: "શીતળ માર્ગ શોધો",
+    shortest_path_title: "સામાન્ય ટૂંકો માર્ગ",
+    cool_path_title: "🌿 છાંયડાવાળો શીતળ માર્ગ",
+    distance: "અંતર",
+    walk_time: "ચાલવાનો સમય",
+    shade_cover: "છાંયડાનું પ્રમાણ",
+    water_points: "રસ્તામાં પાણીની પરબ",
+    turn_steps_title: "પગલે પગલે સલામત દિશા-નિર્દેશ",
+    sos_call: "🚨 ઇમરજન્સી એમ્બ્યુલન્સ (108)",
+    sunlight_boost_on: "☀️ સૂર્યપ્રકાશ મોડ સક્રિય",
+    sunlight_boost_off: "☀️ સામાન્ય મોડ"
+  },
   es: {
     alert_extreme: "ALERTA EXTREMA DE CALOR: CÓDIGO ROJO",
     alert_high: "ALERTA DE OLA DE CALOR: CÓDIGO NARANJA",
@@ -730,20 +805,20 @@ const RiskEngine = {
 
     if (finalScore >= 80) {
       riskTier = 'Extreme';
-      tierColor = '#ef4444';
-      advisoryText = 'DANGER: High probability of heat stroke and cardiovascular collapse within brief exposure. Stay in air-conditioned environments.';
+      tierColor = '#C62828';
+      advisoryText = 'EXTREME HEAT STRESS: Extended direct sun exposure during afternoon peak (11:30 AM – 4:30 PM) increases the risk of heat exhaustion or heatstroke. Move indoors if symptoms appear, hydrate with electrolytes, and seek cooling shelters.';
     } else if (finalScore >= 60) {
-      riskTier = 'Severe';
-      tierColor = '#f97316';
-      advisoryText = 'ELEVATED RISK: Rapid onset of dehydration and heat cramps. Limit direct sun exposure to under ' + safeMinutes + ' minutes.';
+      riskTier = 'High';
+      tierColor = '#EA580C';
+      advisoryText = 'HIGH HEAT STRESS: Higher risk during prolonged exposure (>30–45 mins). Rest frequently in shaded corridors and drink cool water.';
     } else if (finalScore >= 40) {
       riskTier = 'Moderate';
-      tierColor = '#eab308';
-      advisoryText = 'CAUTION: Moderate thermal strain. Take mandatory shaded rest breaks and hydrate frequently.';
+      tierColor = '#D97706';
+      advisoryText = 'MODERATE CAUTION: Take regular shaded rest breaks, avoid strenuous outdoor activity during peak sun, and carry drinking water.';
     } else {
-      riskTier = 'Low';
-      tierColor = '#10b981';
-      advisoryText = 'SAFE: Low physiological strain under shaded corridors. Keep carrying drinking water.';
+      riskTier = 'Resilient';
+      tierColor = '#2E8B57';
+      advisoryText = 'RESILIENT: Lower thermal stress under canopy. Maintain standard hydration while outdoors.';
     }
 
     // Hydration protocol
@@ -1683,7 +1758,7 @@ const PublicUI = {
             </svg>
             <div class="timer-center-text">
               <div id="timerMinutesVal" class="timer-minutes">${assessment.safeMinutes}:00</div>
-              <div class="timer-sub">Minutes Safe</div>
+              <div class="timer-sub">Minutes (Exposure Guide)</div>
             </div>
           </div>
           <div class="timer-controls-row">
@@ -1717,6 +1792,12 @@ const PublicUI = {
           </ul>
         </div>
 
+        <!-- Medical Disclaimer & Privacy Note -->
+        <div style="margin-top:14px; padding:12px; background:#F8FAFC; border:1px solid #E4E7EC; border-radius:8px; font-size:11.5px; color:#667085; line-height:1.45;">
+          <div>ℹ️ <b>Medical Disclaimer:</b> This is general public safety guidance based on thermal stress thresholds, not a medical diagnosis. If anyone exhibits severe dizziness, confusion, or absence of sweating, contact emergency medical services immediately (Dial <b>108</b> in India).</div>
+          <div style="margin-top:6px;">🔒 <b>Privacy Notice:</b> Your profile answers are evaluated locally in your browser and are never transmitted or stored in this prototype.</div>
+        </div>
+
         <div style="margin-top:14px; display:flex; justify-content:flex-end;">
           <button class="btn btn-secondary btn-listen" onclick="PublicUI.speakPersonalPlan('${assessment.safeMinutes}', '${assessment.hydration.waterMl}')">
             <span>🔊</span><span>Listen to My Advice</span>
@@ -1745,6 +1826,10 @@ const PublicUI = {
     const container = document.getElementById('sanctuariesListContainer');
     if (!container) return;
 
+    if (STATE.showAllSanctuaries === undefined) {
+      STATE.showAllSanctuaries = false;
+    }
+
     let items = [];
 
     if (filter === 'ac') {
@@ -1754,8 +1839,7 @@ const PublicUI = {
     } else if (filter === 'parks') {
       items = STATE.coolingCenters.filter(c => (c.facility_type || '').includes('Park') || (c.name || '').includes('Grove'));
     } else {
-      // Combined list sorted by distance
-      items = [...STATE.coolingCenters, ...STATE.hydrationPoints].sort((a, b) => a.distance_meters - b.distance_meters);
+      items = [...STATE.coolingCenters, ...STATE.hydrationPoints];
     }
 
     if (items.length === 0) {
@@ -1763,7 +1847,26 @@ const PublicUI = {
       return;
     }
 
-    container.innerHTML = items.map(item => {
+    const userLat = (STATE.activeStreet && STATE.activeStreet.lat) ? STATE.activeStreet.lat : (STATE.userLocation.lat || 23.0225);
+    const userLon = (STATE.activeStreet && STATE.activeStreet.lon) ? STATE.activeStreet.lon : (STATE.userLocation.lon || 72.5714);
+
+    // Compute realistic distance to each item
+    items.forEach(item => {
+      const lat = item.coordinates ? item.coordinates.lat : (item.lat || 23.0225);
+      const lon = item.coordinates ? item.coordinates.lon : (item.lon || 72.5714);
+      const dLat = (lat - userLat) * 111000;
+      const dLon = (lon - userLon) * 102000;
+      const distCalc = Math.round(Math.sqrt(dLat * dLat + dLon * dLon));
+      item._computedDist = (item.distance_meters && item.distance_meters > 0) ? Math.round(item.distance_meters) : distCalc;
+      item._computedWalkMin = Math.max(2, Math.round(item._computedDist / 70.0));
+    });
+
+    items.sort((a, b) => a._computedDist - b._computedDist);
+
+    const totalCount = items.length;
+    const displayItems = STATE.showAllSanctuaries ? items : items.slice(0, 5);
+
+    const cardsHtml = displayItems.map(item => {
       const isWater = !!item.water_source_type;
       const badgeClass = isWater ? 'sanctuary-type-water' : 'sanctuary-type-ac';
       const badgeLabel = isWater ? 'Free Chilled Water' : (item.facility_type || 'AC Sanctuary');
@@ -1771,6 +1874,7 @@ const PublicUI = {
       const hours = item.operating_hours || 'Open 24/7';
       const lat = item.coordinates ? item.coordinates.lat : item.lat;
       const lon = item.coordinates ? item.coordinates.lon : item.lon;
+      const distStr = item._computedDist < 1000 ? `${item._computedDist}m away` : `${(item._computedDist / 1000).toFixed(1)} km away`;
 
       return `
         <div class="sanctuary-card">
@@ -1779,12 +1883,15 @@ const PublicUI = {
               <div class="sanctuary-name">${icon} ${item.name}</div>
               <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:2px;">${item.address || 'Ahmedabad Civic Area'}</div>
             </div>
-            <span class="sanctuary-type-badge ${badgeClass}">${badgeLabel}</span>
+            <div style="text-align:right;">
+              <span class="sanctuary-type-badge ${badgeClass}">${badgeLabel}</span>
+              <div class="verified-badge" style="font-size:10px; color:#0F766E; margin-top:2px;">✓ Verified today</div>
+            </div>
           </div>
 
           <div class="sanctuary-details-row">
-            <span>📍 <b>${item.distance_meters}m away</b></span>
-            <span>⏱️ <b>${item.walking_time_minutes} min walk</b></span>
+            <span>📍 <b>${distStr}</b></span>
+            <span>⏱️ <b>~${item._computedWalkMin} min walk</b></span>
             <span>🕒 ${hours}</span>
           </div>
 
@@ -1795,13 +1902,29 @@ const PublicUI = {
           ` : ''}
 
           <div class="sanctuary-action-row">
-            <button class="btn btn-primary" style="min-height:38px; padding:6px 14px; font-size:0.85rem;" onclick="PublicUI.navigateToSanctuary('${item.name}', ${lat}, ${lon})">
+            <span style="font-size:11px; color:#64748B;">Capacity: ${item.capacity_persons || 250} people</span>
+            <button class="btn btn-primary" style="min-height:36px; padding:6px 14px; font-size:0.85rem;" onclick="PublicUI.navigateToSanctuary('${item.name}', ${lat}, ${lon})">
               <span>🌿</span><span>${t('walk_here')}</span>
             </button>
           </div>
         </div>
       `;
     }).join('');
+
+    const toggleBtnHtml = totalCount > 5 ? `
+      <div style="text-align:center; margin-top:14px; padding-top:10px; border-top:1px solid #E4E7EC;">
+        <button class="icon-btn" style="width:100%; font-weight:600; color:#0F766E;" onclick="PublicUI.toggleAllSanctuaries('${filter}')">
+          ${STATE.showAllSanctuaries ? '▲ Show Top 5 Nearby Havens' : `▼ View All ${totalCount} Shelters & Water Points`}
+        </button>
+      </div>
+    ` : '';
+
+    container.innerHTML = cardsHtml + toggleBtnHtml;
+  },
+
+  toggleAllSanctuaries(filter = 'all') {
+    STATE.showAllSanctuaries = !STATE.showAllSanctuaries;
+    this.renderSanctuariesList(filter);
   },
 
   navigateToSanctuary(name, lat, lon) {

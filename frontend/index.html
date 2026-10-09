@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>TERRA07 | Heat-Risk Intelligence Portal (Human Scale)</title>
-  <meta name="description" content="TERRA07 Unified Climate Resilience Platform: Urban Planner Command Center and Citizen Heat Advisory View for Ahmedabad Metropolitan Area.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+  <title>TERRA07 — Human-Scale Heat Risk Intelligence | Ahmedabad</title>
+  <meta name="description" content="Human-scale heat risk intelligence and urban mitigation platform for Ahmedabad Metropolitan Region. Grounded civic-tech tool for municipal planners and citizens.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2314213D%22/><text y=%2268%22 x=%2218%22 font-size=%2260%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%23FFFFFF%22>T7</text></svg>">
+
+  <!-- Inter and Google Sans compatible typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
           colors: {
-            terra: {
-              dark: '#080c14',
-              surface: '#0f172a',
-              card: '#1e293b',
-              amber: '#f59e0b',
-              orange: '#f97316',
-              crimson: '#ef4444',
-              teal: '#14b8a6',
-              blue: '#3b82f6'
+            civic: {
+              navy: '#14213D',
+              dark: '#172033',
+              secondary: '#667085',
+              bg: '#F7F9FC',
+              surface: '#FFFFFF',
+              border: '#E4E7EC',
+              teal: '#0F766E',
+              blue: '#2563EB',
+              safe: '#2E8B57',
+              moderate: '#D97706',
+              high: '#EA580C',
+              extreme: '#C62828',
+              safeBg: '#ECFDF3',
+              moderateBg: '#FFF8E7',
+              highBg: '#FFF2E8',
+              extremeBg: '#FFF1F0',
             }
           }
         }
@@ -32,32 +48,28 @@
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
-
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #080c14;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #F7F9FC;
+      color: #172033;
       overflow: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .font-mono {
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    /* Seamless Iframe container */
     .viewport-container {
       position: absolute;
-      top: 56px;
+      top: 60px;
       left: 0;
       right: 0;
       bottom: 0;
       width: 100%;
-      height: calc(100% - 56px);
+      height: calc(100% - 60px);
       overflow: hidden;
+      background-color: #F7F9FC;
     }
 
     .view-frame {
@@ -69,7 +81,7 @@
       border: none;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: opacity 0.15s ease;
     }
 
     .view-frame.active {
@@ -78,83 +90,99 @@
       z-index: 10;
     }
 
-    /* Pulse animation */
-    @keyframes heatPulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(1.15); }
+    .tab-nav-btn {
+      transition: all 0.15s ease;
+      color: #667085;
+      font-weight: 500;
     }
-    .heat-dot {
-      animation: heatPulse 1.8s infinite ease-in-out;
+    .tab-nav-btn:hover {
+      color: #14213D;
+      background-color: #F1F4F9;
     }
-
-    /* Pill tab active styling */
-    .tab-btn.active {
-      background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(249, 115, 22, 0.3));
-      border-color: rgba(249, 115, 22, 0.6);
-      color: #ffffff;
-      box-shadow: 0 0 15px rgba(249, 115, 22, 0.25);
+    .tab-nav-btn.active {
+      background-color: #FFFFFF;
+      color: #14213D;
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
     }
   </style>
 </head>
-<body class="bg-terra-dark text-slate-100 flex flex-col h-screen select-none">
+<body class="bg-civic-bg text-civic-dark flex flex-col h-screen select-none">
 
   <!-- =========================================================================
-       Unified Top Command Header
+       Global Top Civic Header (Material Design 3 & Google Civic Style)
        ========================================================================= -->
-  <header class="h-14 bg-terra-surface/95 backdrop-blur border-b border-slate-800/80 px-3 md:px-5 flex items-center justify-between z-50 flex-shrink-0 shadow-md">
+  <header class="h-[60px] bg-civic-surface border-b border-civic-border px-3 sm:px-6 flex items-center justify-between z-50 flex-shrink-0 shadow-sm">
     
-    <!-- Left: Brand & Track Identity -->
+    <!-- Left: Identity & Geography -->
     <div class="flex items-center space-x-3">
-      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 via-orange-600 to-crimson-600 flex items-center justify-center font-bold text-white shadow-lg shadow-orange-500/20">
+      <div class="w-8 h-8 rounded-lg bg-civic-navy text-white flex items-center justify-center font-bold text-xs tracking-wider shadow-sm">
         T7
       </div>
       <div class="flex flex-col">
         <div class="flex items-center space-x-2">
-          <span class="font-extrabold tracking-tight text-white text-sm md:text-base">TERRA07</span>
-          <span class="hidden sm:inline-block text-[11px] font-mono px-1.5 py-0.5 rounded bg-orange-500/10 border border-orange-500/30 text-orange-400">
-            Human-Scale Heat Risk
+          <span class="font-bold tracking-tight text-civic-navy text-sm sm:text-base">TERRA07</span>
+          <span class="text-xs text-civic-secondary font-medium hidden sm:inline">|</span>
+          <span class="text-xs sm:text-sm font-semibold text-civic-dark hidden sm:inline">Human-Scale Heat Risk</span>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200 font-medium hidden lg:inline">
+            Prototype Data
           </span>
         </div>
-        <span class="text-[10px] text-slate-400 hidden md:block">Ahmedabad Metropolitan Region • IPCC AR6 Framework</span>
+        <div class="flex items-center space-x-2 text-[11px] text-civic-secondary">
+          <span class="flex items-center">
+            <svg class="w-3 h-3 mr-1 text-civic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            Ahmedabad Metropolitan Region
+          </span>
+        </div>
       </div>
     </div>
 
-    <!-- Center: Interactive View Mode Switcher -->
-    <div class="flex items-center bg-slate-900/90 p-1 rounded-xl border border-slate-700/60 shadow-inner">
-      <button id="plannerTabBtn" onclick="switchView('planner')" class="tab-btn active px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold text-slate-300 hover:text-white transition flex items-center space-x-2 border border-transparent">
-        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Center: Primary Mode Switcher (Planner vs Citizen) -->
+    <div class="flex items-center bg-[#ECEFF5] p-1 rounded-lg border border-civic-border/70">
+      <button id="plannerTabBtn" onclick="switchView('planner')" class="tab-nav-btn active px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm flex items-center space-x-1.5" title="Switch to Urban Planner GIS Command Center">
+        <svg class="w-4 h-4 text-civic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
         </svg>
-        <span>Urban Planner Command</span>
+        <span>Urban Planner</span>
       </button>
 
-      <button id="citizenTabBtn" onclick="switchView('citizen')" class="tab-btn px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-semibold text-slate-300 hover:text-white transition flex items-center space-x-2 border border-transparent">
-        <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button id="citizenTabBtn" onclick="switchView('citizen')" class="tab-nav-btn px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm flex items-center space-x-1.5" title="Switch to Citizen Heat Safety Portal">
+        <svg class="w-4 h-4 text-civic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
         </svg>
-        <span>Citizen Heat Advisory</span>
+        <span>Citizen Safety</span>
       </button>
     </div>
 
-    <!-- Right: Telemetry & Actions -->
-    <div class="flex items-center space-x-2 md:space-x-3">
-      <!-- Live Microclimate Alert Pill -->
-      <div class="hidden lg:flex items-center space-x-2 bg-red-950/40 border border-red-500/40 px-2.5 py-1 rounded-full text-xs text-red-300">
-        <span class="w-2 h-2 rounded-full bg-red-500 heat-dot"></span>
-        <span class="font-mono font-semibold">43.8°C Extreme</span>
+    <!-- Right: Civic Alert Level, Language & Documentation Links -->
+    <div class="flex items-center space-x-2 sm:space-x-3">
+      <!-- Heatwave Status Pill -->
+      <div class="flex items-center space-x-1.5 bg-civic-extremeBg text-civic-extreme border border-red-200 px-2.5 py-1 rounded-full text-xs font-semibold" title="IMD / AMC Municipal Advisory Active">
+        <span class="w-2 h-2 rounded-full bg-civic-extreme animate-pulse"></span>
+        <span class="hidden sm:inline">Alert Level 3:</span>
+        <span>43.8°C Extreme</span>
       </div>
 
-      <!-- Quick Launch Direct Link -->
-      <a id="directViewLink" href="/static/planner_view.html" target="_blank" title="Open Current View in New Tab" class="p-1.5 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-lg transition border border-slate-700 text-xs flex items-center space-x-1">
+      <!-- Language Selector -->
+      <select id="langSelect" onchange="changeLanguage(this.value)" class="text-xs font-medium text-civic-dark bg-civic-bg border border-civic-border rounded-md px-2 py-1 outline-none focus:ring-1 focus:ring-civic-teal hidden md:block" title="Select Application Language">
+        <option value="en">English</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="hi">हिंदी</option>
+      </select>
+
+      <!-- Direct Link / Popout -->
+      <a id="directViewLink" href="/static/planner_view.html" target="_blank" title="Open current view in new window" class="p-1.5 text-civic-secondary hover:text-civic-navy hover:bg-slate-100 rounded-md transition border border-civic-border text-xs flex items-center space-x-1" aria-label="Open in new window">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
         </svg>
-        <span class="hidden sm:inline">Popout</span>
       </a>
 
       <!-- API Docs Link -->
-      <a href="/docs" target="_blank" class="px-2 py-1 text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 hover:text-white transition font-mono">
-        /docs
+      <a href="/docs" target="_blank" class="px-2 py-1 text-xs text-civic-secondary hover:text-civic-navy bg-slate-100 hover:bg-slate-200 rounded-md border border-civic-border transition font-mono font-medium hidden sm:inline" title="FastAPI Interactive Documentation">
+        API
       </a>
     </div>
   </header>
@@ -162,15 +190,15 @@
   <!-- =========================================================================
        Dual Viewport Mount
        ========================================================================= -->
-  <div class="viewport-container">
-    <!-- Frame 1: Urban Planner Command Center -->
+  <main class="viewport-container" role="main">
+    <!-- View 1: Urban Planner Command Center -->
     <iframe id="plannerFrame" src="/static/planner_view.html" class="view-frame active" title="Urban Planner Command Center"></iframe>
 
-    <!-- Frame 2: Citizen Heat Advisory View -->
+    <!-- View 2: Citizen Heat Advisory View -->
     <iframe id="citizenFrame" src="/static/public_view.html" class="view-frame" title="Citizen Heat Advisory View"></iframe>
-  </div>
+  </main>
 
-  <!-- Switch Logic -->
+  <!-- View Switcher Script -->
   <script>
     function switchView(viewName) {
       const plannerBtn = document.getElementById('plannerTabBtn');
@@ -193,6 +221,19 @@
         plannerFrame.classList.add('active');
         directLink.href = '/static/planner_view.html';
         window.location.hash = 'planner';
+      }
+    }
+
+    function changeLanguage(lang) {
+      const citizenFrame = document.getElementById('citizenFrame');
+      if (citizenFrame && citizenFrame.contentWindow) {
+        try {
+          const frameLang = citizenFrame.contentDocument.getElementById('langSelect');
+          if (frameLang) {
+            frameLang.value = lang;
+            frameLang.dispatchEvent(new Event('change'));
+          }
+        } catch (e) {}
       }
     }
 
