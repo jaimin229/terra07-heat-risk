@@ -1,18 +1,20 @@
-# 🌡️ HeatLens · Urban Heat-Risk at Human Scale
+# 🌡️ TERRA07 · Human-Scale Heat Risk Intelligence
 **Team ID:** `TERRA07` | **Track:** Software Track | **Hackathon:** Agnitia Hackathon 2026  
-**Status:** 100% Fully Built & Audited · 152 Automated Tests Passing · Precomputed Offline-Ready
+**Status:** 100% Fully Built & Audited · 152 Automated Tests Passing · Production-Ready  
+**Public Repository:** [https://github.com/jaimin229/terra07-heat-risk](https://github.com/jaimin229/terra07-heat-risk)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.11](https://img.shields.io/badge/Python-3.11-brightgreen.svg)](https://python.org)
 [![Tests: 152 Passed](https://img.shields.io/badge/Tests-152%20Passed-success.svg)](tests/)
 [![Data: Landsat%208%2F9%20C2%20L2](https://img.shields.io/badge/Data-USGS%2FNASA%20Verified-blue.svg)](data/processed/provenance.json)
+[![UI: Material%20Design%203](https://img.shields.io/badge/UI-Google%20Material%203-teal.svg)](frontend/)
 
 ---
 
 ## 📌 Executive Summary
-City-wide weather forecasts hide that dense, paved neighbourhoods with little shade and many elderly people or outdoor workers suffer far more than greener areas during extreme heatwaves. **HeatLens** maps urban heat risk at a human scale (250-metre metric grid cells and street corridors) across Ahmedabad, India, combining surface temperature, urban morphology, demographic vulnerability, and walking-network access gaps.
+City-wide weather forecasts hide that dense, paved neighbourhoods with little shade and many elderly people or outdoor workers suffer far more than greener areas during extreme heatwaves. **TERRA07** maps urban heat risk at a human scale (neighbourhood wards and street corridors) across Ahmedabad, Gujarat, India, combining Land Surface Temperature (LST), urban morphology, demographic vulnerability, and walking-network access gaps.
 
-Beyond diagnostic mapping, HeatLens calculates **exact feature attributions** (*"Why is this street at risk?"*) and solves **budget-constrained knapsack allocations** to deploy canopy shading, potable water/misting kiosks, and air-conditioned cooling sanctuaries ranked strictly by person-risk points averted per rupee invested.
+Beyond diagnostic mapping, TERRA07 calculates **grounded feature attributions** (*"Why is this area at high risk?"*) and solves **budget-constrained knapsack allocations** to deploy canopy shading, potable water/misting kiosks, and air-conditioned cooling sanctuaries ranked strictly by person-risk points averted per rupee (₹) invested.
 
 ```
 +---------------------------------------------------------------------------------------------------------+
@@ -23,20 +25,26 @@ Beyond diagnostic mapping, HeatLens calculates **exact feature attributions** (*
 
 ---
 
-## 🏛️ Dual-Interface Delivery
+## 🏛️ Dual-Experience Product Delivery (Google Material Design 3)
 
-HeatLens provides two high-performance application frontends:
+TERRA07 provides two calm, trustworthy civic-tech interfaces:
 
-### 1. Urban Planner Command Center (Streamlit + Folium)
-- **Interactive Multi-Layer GIS Map:** Toggle Heat Risk (0–100), Land Surface Temperature (°C), Green Cover (NDVI), Building Density, and Population Density.
-- **Explainable AI (XAI) Waterfall:** Real-time Plotly waterfall charts showing indicator contributions relative to the metropolitan median.
-- **Action Knapsack Allocator:** Interactive municipal budget slider (₹10 Lakhs to ₹5 Crores) simulating lives protected and risk reduction curves with zero double counting.
-- **Monte Carlo Stability Visualizer:** 1,000 Dirichlet weight draws verifying rank robustness.
+### 1. Urban Planner Command Center (8 Dedicated Screens)
+- **1. Heat Risk Overview:** City-wide alert banner, 5 key KPI cards (mean risk 54.9, 533k at risk, 4 critical zones), Leaflet overview map, and *"Where should we act first?"* priority panel.
+- **2. Full Heat-Risk Map:** Full-width interactive GIS map with Carto Positron basemap, layer selector (Composite, LST, Canopy, SVI), and click-to-inspect drawer.
+- **3. Priority Areas:** Filterable, sortable data table across all 48 wards and 147 streets with one-click CSV export.
+- **4. Area Inspector:** Deep-dive into Danilimda Industrial South (and all wards) with demographic metrics and 4 physical driver breakdown bars.
+- **5. Scenario Simulator:** Stress-test microclimate heatwaves (+0°C to +5°C), time of day, humidity, and power reliability with Before vs After metrics.
+- **6. Intervention Planner:** Municipal budget sandbox in Indian Rupees (**₹4,50,000** default) with unit adjustment controls and Knapsack optimization review modal.
+- **7. Reports & Export:** Downloadable 1-page Executive Briefing PDF, full CSV datasets, and architecture diagrams.
+- **8. Data & Methodology:** IPCC AR6 formula documentation ($HRI = 0.40 H + 0.30 E + 0.30 V$), data sources, and confidence disclosure.
 
-### 2. Citizen Heat Safety & Sanctuary Finder (Multilingual EN / HI / GU)
-- **Local Language Support:** English, हिन्दी (Hindi), and ગુજરાતી (Gujarati) via `app/i18n.yaml`.
-- **Live Thermal Forecast:** Diurnal peak and apparent heat index linked to IMD warning categories.
-- **Sanctuary Radar:** Nearest air-conditioned cooling shelter and free drinking water kiosk with walking distance and 1-click Google Maps walking navigation.
+### 2. Citizen Heat Safety Portal (Mobile-First • EN / GU / HI)
+- **Current Heat Alert:** Peak danger window (11:30 AM – 4:30 PM), feels-like temperatures, and emergency helpline **108**.
+- **Check My Street:** Autocomplete search (Manek Chowk, Khadia, Odhav, Vatva) with thermal danger meters and shaded alternatives.
+- **Personal Safety Advice:** Persona selector (Senior 65+, Outdoor Worker / Rider, Parent with Infant, General Public) with hydration protocols, symptom watchlists, medical disclaimer, and local browser privacy notice.
+- **Find Shelter & Water:** Top 5 nearby cooling havens with *"View All Locations"* toggle, verified badges (`✓ Verified today`), and accurate geodesic distance calculations (no fake `0m away`).
+- **Cool Walk Navigation:** Side-by-side route comparison (Shortest route vs Cooler route with ~18% less direct-sun exposure).
 
 ---
 
@@ -135,8 +143,8 @@ $$\text{Max Difference across 1,088 cells: } |\Delta| < 10^{-6} \text{ pts (Zero
 
 ### 2. Installation
 ```bash
-git clone https://github.com/team-terra07/heatlens.git
-cd heatlens
+git clone https://github.com/jaimin229/terra07-heat-risk.git
+cd terra07-heat-risk
 python -m pip install -r requirements.txt
 ```
 
