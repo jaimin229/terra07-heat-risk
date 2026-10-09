@@ -205,8 +205,7 @@
     loadAreaInspection('W-03');
   };
 
-  // --- 5. SCREEN 1 & 2: LEAFLET MAPS ---
-  function initOverviewMap() {
+  async function initOverviewMap() {
     const mapEl = document.getElementById('overview-map');
     if (!mapEl || STATE.overviewMap) return;
 
@@ -221,7 +220,48 @@
       maxZoom: 18
     }).addTo(STATE.overviewMap);
 
-    // Add Ward Circles
+    // Render true GIS ward polygons from GeoJSON
+    try {
+      const res = await fetch('/api/wards?format=geojson');
+      if (res.ok) {
+        const geojson = await res.json();
+        if (geojson.features && geojson.features.length > 0) {
+          L.geoJSON(geojson, {
+            style: (feature) => {
+              const score = feature.properties ? feature.properties.heat_risk_score : 50;
+              const tier = getRiskTier(score);
+              return {
+                fillColor: tier.color,
+                weight: 1.5,
+                opacity: 0.9,
+                color: '#FFFFFF',
+                fillOpacity: 0.72
+              };
+            },
+            onEachFeature: (feature, layer) => {
+              const p = feature.properties || {};
+              const tier = getRiskTier(p.heat_risk_score || 50);
+              layer.bindTooltip(`
+                <div style="font-family:Inter,sans-serif; font-size:12px;">
+                  <strong>${p.ward_name}</strong><br>
+                  <span>Score: ${p.heat_risk_score} (${tier.label})</span><br>
+                  <span>LST: ${p.mean_lst_celsius}°C</span>
+                </div>
+              `, { className: 'leaflet-custom-tooltip' });
+              layer.on('click', () => {
+                loadAreaInspection(p.ward_id);
+                switchTab('inspector');
+              });
+            }
+          }).addTo(STATE.overviewMap);
+          return;
+        }
+      }
+    } catch (e) {
+      console.warn('[TERRA07] GeoJSON fetch fallback to circles:', e);
+    }
+
+    // Fallback to circles if offline
     STATE.wards.forEach(w => {
       const tier = getRiskTier(w.risk_score);
       const circle = L.circleMarker([w.lat, w.lon], {
